@@ -1,0 +1,59 @@
+main:
+  - name: Home
+    url: /
+    weight: 1
+  - name: Packages
+    url: /packages/
+    weight: 1
+    child:
+      - name: "Workshops"
+        url: /packages/workshops/
+      - name: "Sprints"
+        url: /packages/sprints/
+      - name: "Career Growth"
+        url: /packages/career-growth/
+      - name: "Personal Coaching"
+        url: /packages/coaching/
+  - name: Podcast
+    url: /podcast/
+    weight: 3
+  - name: Insight
+    url: /insight/
+    weight: 4
+  - name: About
+    url: /about/
+    weight: 5
+footer_primary:
+  - name: Home
+    url: /
+    weight: 1
+  - name: Packages
+    url: /packages/
+    weight: 2
+  - name: Podcast
+    url: /podcast/
+    weight: 3
+footer_secondary:
+  - name: Insight
+    url: /insight/
+    weight: 1
+  - name: About
+    url: /about/
+    weight: 2
+  - name: Contact
+    url: /contact/
+    weight: 3
+footer_tertiary:
+  - name: Privacy Policy
+    url: /privacy-policy/
+    weight: 1
+  - name: Terms and Conditions
+    url: /terms-and-conditions/
+    weight: 2
+bottom:
+  - name: Privacy Policy
+    url: /privacy-policy/
+    weight: 3
+  - name: Terms and Conditions
+    url: /terms-and-conditions/
+    weight: 4
