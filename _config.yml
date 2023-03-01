@@ -72,7 +72,6 @@ exclude:
   - LICENSE
   - netlify.toml
 
-
 # -------------------
 # Theme Config
 # --------------------
@@ -81,10 +80,10 @@ category_dir: category
 
 colors:
   #light-mode colors
-  primary: "#2b3af7"
+  primary: "#144579"
   primary_2: "#424ff8"
   primary_text: "#fdfcf9"
-  secondary: "#702bf7"
+  secondary: "#412774"
   background: "#ffffff"
   background_2: "#f8f9ff"
   background_3: "#eef2f9"

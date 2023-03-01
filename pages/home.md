@@ -13,30 +13,20 @@ hero:
   text_color: "#FFFFFF"
   background_color: "#1d2830"
   background_gradient: true
-  background_image: ""
+  background_image: "/assets/images/home/Main-Hero-Watercolor-Small.png"
   background_image_blend_mode: overlay # "overlay", "multiply", "screen"
   fullscreen_mobile: true
   fullscreen_desktop: false
-  height: "400px"
-  buttons:
-    enabled: false
-    list:
-      - text: "Documentation"
-        url: "https://www.zerostatic.io/docs/jekyll-advance/v2.0/"
-        external: true
-        fa_icon: false
-        size: large
-        outline: true
-        style: "light"
+  height: "450px"
 
 services:
   enabled: true
-  heading: "Our Services"
+  heading: "Lightning fast workshops to long-term technical career growth"
   sub_heading: ""
   limit: 6
   sort: "weight" # 'date'
-  view_more_button_text: "View All Services"
-  view_more_button_link: "/services"
+  view_more_button_text: "View All Packages"
+  view_more_button_link: "/packages"
 
 intro:
   enabled: true
