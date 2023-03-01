@@ -5,8 +5,8 @@ date: 2019-08-10
 authors: ["Mike Vance"]
 categories: ["Branding"]
 description: Branding is an intrinsic part of your companies success, learn why your brand matters.
-thumbnail: "/assets/images/gen/blog/blog-5-thumbnail.webp"
-image: "/assets/images/gen/blog/blog-5.webp"
+thumbnail: "/assets/images/gen/insights/blog-5-thumbnail.webp"
+image: "/assets/images/gen/insights/blog-5.webp"
 weight: 2
 ---
 

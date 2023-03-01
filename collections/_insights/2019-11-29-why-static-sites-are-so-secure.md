@@ -5,8 +5,8 @@ date: 2019-11-29
 authors: ["Sage Kirk", "Mike Vance"]
 categories: ["Hosting", "Development"]
 description: "Hosting your website as a static site will improve performance and improve security."
-thumbnail: "/assets/images/gen/blog/blog-6-thumbnail.webp"
-image: "/assets/images/gen/blog/blog-6.webp"
+thumbnail: "/assets/images/gen/insights/blog-6-thumbnail.webp"
+image: "/assets/images/gen/insights/blog-6.webp"
 ---
 
 Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.

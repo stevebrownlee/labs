@@ -1,6 +1,6 @@
 ---
 title: "Sprints"
-description: "Work with a team of peers on smaller scale projects that target specific skills."
+description: "Work with a team of peers on smaller scale projects that develop an array of skills."
 date: 2019-10-03
 weight: 3
 header_transparent: true
@@ -12,7 +12,7 @@ image: "/assets/images/gen/packages/service-3.webp"
 hero:
   enabled: true
   heading: "Sprints"
-  sub_heading: "Work with a team of peers on smaller scale projects that target specific skills."
+  sub_heading: "Work with a team of peers on smaller scale projects that develop an array of skills."
   text_color: "#ffffff"
   background_color: ""
   background_gradient: true

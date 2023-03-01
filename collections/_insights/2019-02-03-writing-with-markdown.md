@@ -5,8 +5,8 @@ date: 2019-02-03T13:06:00Z
 authors: ["Sage Kirk"]
 categories: ["Development", "Javascript"]
 description: Learn how to use Markdown to write blog insights. Understand front-matter and how it is used in templates.
-thumbnail: "/assets/images/gen/blog/blog-4-thumbnail.webp"
-image: "/assets/images/gen/blog/blog-4.webp"
+thumbnail: "/assets/images/gen/insights/blog-4-thumbnail.webp"
+image: "/assets/images/gen/insights/blog-4.webp"
 ---
 
 Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.

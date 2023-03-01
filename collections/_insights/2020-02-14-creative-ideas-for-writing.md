@@ -5,8 +5,8 @@ date: 2020-02-14
 authors: ["Mike Vance"]
 categories: ["Branding"]
 description: Marketing a startup isn't easy, it takes a unique set of skills and a whole lot of determination
-thumbnail: "/assets/images/gen/blog/blog-9-thumbnail.webp"
-image: "/assets/images/gen/blog/blog-9.webp"
+thumbnail: "/assets/images/gen/insights/blog-9-thumbnail.webp"
+image: "/assets/images/gen/insights/blog-9.webp"
 featured: true
 ---
 
