@@ -17,44 +17,31 @@ paginate: 6
 paginate_path: "/blog/page/:num"
 
 collections:
-  services:
+  packages:
     output: true
     permalink: /:collection/:path/
-  projects:
+  podcasts:
     output: true
     permalink: /:collection/:path/
-  team:
+  insights:
     output: true
-    permalink: /:collection/:path/
-  posts:
-    output: true
-    permalink: /blog/:path/
+    permalink: /insight/:path/
 
 defaults:
   - scope:
       path: ""
-      type: services
+      type: packages
     values:
-      layout: service
+      layout: package
   - scope:
       path: ""
-      type: projects
+      type: insights
     values:
-      layout: project
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      weight: 999
+      layout: insight
   - scope:
       path: "images"
     values:
       image: true
-  - scope:
-      path: "categories"
-    values:
-      permalink: /category/:basename/
   - scope:
       path: "pages"
     values:

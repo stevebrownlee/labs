@@ -1,23 +1,23 @@
 ---
-title: "SEO"
-description: "Improving search engine rankings through techincal on page SEO and content creation."
+title: "Workshops"
+description: "Short, powerful workshops that target specific technical skills."
 date: 2021-07-23
 weight: 5
 header_transparent: true
 fa_icon: "far fa-chart-bar"
 icon: "assets/images/icons/icons8-bar-chart-100.png"
-thumbnail: "/assets/images/gen/services/service-5-thumbnail.webp"
-image: "/assets/images/gen/services/service-5.webp"
+thumbnail: "/assets/images/gen/packages/service-5-thumbnail.webp"
+image: "/assets/images/gen/packages/service-5.webp"
 
 hero:
   enabled: true
-  heading: "SEO"
-  sub_heading: "Improving search engine rankings through techincal on page SEO and content creation."
+  heading: "Workshops"
+  sub_heading: "Short, powerful workshops that target specific technical skills."
   text_color: "#ffffff"
   background_color: ""
   background_gradient: true
   background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"
-  background_image: "/assets/images/gen/services/service-5.webp"
+  background_image: "/assets/images/gen/packages/service-5.webp"
   fullscreen_mobile: false
   fullscreen_desktop: false
   height: 400px

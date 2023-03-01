@@ -1,23 +1,23 @@
 ---
-title: "Software Engineering"
-description: "Building complex web applications and system software."
+title: "Career Growth"
+description: "Long-term, large-scale project work to accelerate your career."
 date: 2019-10-03
 weight: 6
 header_transparent: true
 fa_icon: "fab fa-codepen"
 icon: "assets/images/icons/icons8-merge-git-100.png"
-thumbnail: "/assets/images/gen/services/service-6-thumbnail.webp"
-image: "/assets/images/gen/services/service-6.webp"
+thumbnail: "/assets/images/gen/packages/service-6-thumbnail.webp"
+image: "/assets/images/gen/packages/service-6.webp"
 
 hero:
   enabled: true
-  heading: "Software Engineering"
-  sub_heading: "Building complex web applications and system software."
+  heading: "Career Growth"
+  sub_heading: "Long-term, large-scale project work to accelerate your career."
   text_color: "#ffffff"
   background_color: ""
   background_gradient: true
   background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"
-  background_image: "/assets/images/gen/services/service-6.webp"
+  background_image: "/assets/images/gen/packages/service-6.webp"
   fullscreen_mobile: false
   fullscreen_desktop: false
   height: 400px

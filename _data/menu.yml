@@ -14,11 +14,11 @@ main:
         url: /packages/career-growth/
       - name: "Personal Coaching"
         url: /packages/coaching/
-  - name: Podcast
-    url: /podcast/
+  - name: Podcasts
+    url: /podcasts/
     weight: 3
-  - name: Insight
-    url: /insight/
+  - name: Insights
+    url: /insights/
     weight: 4
   - name: About
     url: /about/
@@ -30,12 +30,12 @@ footer_primary:
   - name: Packages
     url: /packages/
     weight: 2
-  - name: Podcast
-    url: /podcast/
+  - name: Podcasts
+    url: /podcasts/
     weight: 3
 footer_secondary:
-  - name: Insight
-    url: /insight/
+  - name: Insights
+    url: /insights/
     weight: 1
   - name: About
     url: /about/

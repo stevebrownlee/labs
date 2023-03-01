@@ -31,40 +31,40 @@ body_classes: page-home
   </div>
 {% endif %}
 
-{% assign cards = site.services | sort: 'date' | reverse %}
-{% assign limit = page.services.limit | default: 3 %}
-{% assign sort_by = page.services.sort | default: 'date' %}
-{% assign columns =  page.services.columns | default: 3 %}
+{% assign cards = site.packages | sort: 'date' | reverse %}
+{% assign limit = page.packages.limit | default: 3 %}
+{% assign sort_by = page.packages.sort | default: 'date' %}
+{% assign columns =  page.packages.columns | default: 3 %}
 {% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
 {% if sort_by == 'weight' %}
   {% assign cards = cards | sort: 'weight' %}
 {% endif %}
 
-{% if page.services.enabled %}
+{% if page.packages.enabled %}
   <div class="section bg-base-bg-2">
     <div class="container">
       <div class="row">
 
         {% include framework/blocks/components/grid-header.html
-          heading=page.services.heading
-          sub_heading=page.services.sub_heading
+          heading=page.packages.heading
+          sub_heading=page.packages.sub_heading
           align="center"
         %}
-        
+
         {% for card in cards limit: limit %}
           <div class="col-12 col-md-4 {{ columns }} mb-3 {% if forloop.first %}mt-0 {% endif %} {% if forloop.last %}mb-0 {% endif %}">
-            {% include theme/cards/card-services.html 
-              title=card.title 
+            {% include theme/cards/card-services.html
+              title=card.title
               description=card.description
               fa_icon=card.fa_icon
               icon=card.icon
-              url=card.url 
+              url=card.url
               weight=card.weight
             %}
           </div>
         {% endfor %}
 
-        {% include framework/blocks/components/grid-footer.html 
+        {% include framework/blocks/components/grid-footer.html
           view_more_button_text=page.services.view_more_button_text
           view_more_button_link=page.services.view_more_button_link
           align="center"
@@ -91,61 +91,41 @@ body_classes: page-home
 {% endif %}
 
 
-{% if page.partners.enabled %}
-{% assign partners = site.data.partners %}
-{% assign partners_limit = page.partners.limit | default: 4 %}
-{% assign partners_sort = page.partners.sort | default: 'weight' %}
-{% if partners.size > 0 %}
-<div class="section pt-0 partners">
-  <div class="container">
-    <div class="row justify-content-center align-items-center">
-      {% for partner in partners limit: partners_limit %}
-      <div class="col-4 col-lg-2 text-center mb-1 mt-1">
-        <img src="{{ partner.image | relative_url }}" alt="{{ partner.title }}" />
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
-{% endif %}
-{% endif %}
-
-
-{% assign cards = site.projects | sort: 'date' | reverse %}
-{% assign limit = page.projects.limit | default: 2 %}
-{% assign sort_by = page.projects.sort | default: 'date' %}
-{% assign columns =  page.projects.columns | default: 2 %}
+{% assign cards = site.podcasts | sort: 'date' | reverse %}
+{% assign limit = page.podcasts.limit | default: 2 %}
+{% assign sort_by = page.podcasts.sort | default: 'date' %}
+{% assign columns =  page.podcasts.columns | default: 2 %}
 {% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
 {% if sort_by == 'weight' %}
   {% assign cards = cards | sort: 'weight' %}
 {% endif %}
 
-{% if page.projects.enabled %}
+{% if page.podcasts.enabled %}
   <div class="section bg-base-bg-2">
     <div class="container">
       <div class="row">
 
         {% include framework/blocks/components/grid-header.html
-          heading=page.projects.heading
-          sub_heading=page.projects.sub_heading
+          heading=page.podcasts.heading
+          sub_heading=page.podcasts.sub_heading
           align="center"
         %}
-        
+
         {% for card in cards limit: limit %}
           <div class="col-12 col-md-4 {{ columns }} mb-3 {% if forloop.first %}mt-0 {% endif %} {% if forloop.last %}mb-0 {% endif %}">
-            {% include theme/cards/card-projects.html 
-              title=card.title 
+            {% include theme/cards/card-podcasts.html
+              title=card.title
               description=card.description
               thumbnail=card.thumbnail
-              url=card.url 
+              url=card.url
               weight=card.weight
             %}
           </div>
         {% endfor %}
 
-        {% include framework/blocks/components/grid-footer.html 
-          view_more_button_text=page.projects.view_more_button_text
-          view_more_button_link=page.projects.view_more_button_link
+        {% include framework/blocks/components/grid-footer.html
+          view_more_button_text=page.podcasts.view_more_button_text
+          view_more_button_link=page.podcasts.view_more_button_link
           align="center"
         %}
 
@@ -171,41 +151,41 @@ body_classes: page-home
 </div>
 {% endif %}
 
-{% assign cards = site.posts | sort: 'date' | reverse %}
-{% assign limit = page.posts.limit | default: 2 %}
-{% assign sort_by = page.posts.sort | default: 'date' %}
-{% assign columns =  page.posts.columns | default: 2 %}
+{% assign cards = site.insights | sort: 'date' | reverse %}
+{% assign limit = page.insights.limit | default: 2 %}
+{% assign sort_by = page.insights.sort | default: 'date' %}
+{% assign columns =  page.insights.columns | default: 2 %}
 {% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
 {% if sort_by == 'weight' %}
   {% assign cards = cards | sort: 'weight' %}
 {% endif %}
 
-{% if page.posts.enabled %}
+{% if page.insights.enabled %}
   <div class="section bg-base-bg-2">
     <div class="container">
       <div class="row">
 
         {% include framework/blocks/components/grid-header.html
-          heading=page.posts.heading
-          sub_heading=page.posts.sub_heading
+          heading=page.insights.heading
+          sub_heading=page.insights.sub_heading
           align="center"
         %}
-        
+
         {% for card in cards limit: limit %}
           <div class="col-12 col-md-4 {{ columns }} mb-3 {% if forloop.first %}mt-0 {% endif %} {% if forloop.last %}mb-0 {% endif %}">
-            {% include theme/cards/card-posts.html 
-              title=card.title 
+            {% include theme/cards/card-insights.html
+              title=card.title
               description=card.description
               thumbnail=card.thumbnail
-              url=card.url 
+              url=card.url
               weight=card.weight
             %}
           </div>
         {% endfor %}
 
-        {% include framework/blocks/components/grid-footer.html 
-          view_more_button_text=page.posts.view_more_button_text
-          view_more_button_link=page.posts.view_more_button_link
+        {% include framework/blocks/components/grid-footer.html
+          view_more_button_text=page.insights.view_more_button_text
+          view_more_button_link=page.insights.view_more_button_link
           align="center"
         %}
 

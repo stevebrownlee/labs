@@ -9,7 +9,7 @@ meta_title: Stepping Stone Labs
 hero:
   enabled: true
   heading: "Stepping Stone Labs"
-  sub_heading: "Pioneering the possible in learning & growth"
+  sub_heading: "A powerful, science-based program developed by Steve Brownlee"
   text_color: "#FFFFFF"
   background_color: "#1d2830"
   background_gradient: true
@@ -32,18 +32,18 @@ intro:
   enabled: true
   align: left
   image: "/assets/images/gen/content/content-6-thumbnail.webp"
-  heading: "We've helped hundreds of people grow their business online."
+  heading: "We've helped hundreds of people grow their technical careers."
   sub_heading: ""
   features:
     enabled: true
     list:
-      - text: "Configure the homepage sections in front-matter."
+      - text: "Seasoned professionals that want to accelerate a career."
         fa_icon: "fas fa-check"
-      - text: "An advanced hero image section with dozens of design options."
+      - text: "Technologists that need to acquire a specific skill."
         fa_icon: "fas fa-check"
-      - text: "Fully responsive and SEO optimised."
+      - text: "Beginners looking to break into the field."
         fa_icon: "fas fa-check"
-      - text: "Multiple content types including services, projects, blog and more."
+      - text: "Caring people seeking coaching for their personal goals."
         fa_icon: "fas fa-check"
   buttons:
     enabled: true
@@ -76,7 +76,7 @@ outro:
   align: center
   image: false
   heading: Get Started Today
-  sub_heading: "Save time and money using this premium Jekyll theme."
+  sub_heading: "Sign up for a package today."
   features:
     enabled: false
     list:
@@ -90,13 +90,13 @@ outro:
         external: false
         size: "large"
 
-posts:
+insights:
   enabled: true
-  heading: "Latest Posts"
+  heading: "Latest Insights"
   sub_heading: ""
   limit: 3
   columns: 3
   sort: "weight" # 'date'
-  view_more_button_text: "View All Posts"
-  view_more_button_link: "/blog"
+  view_more_button_text: "View All Insights"
+  view_more_button_link: "/insights"
 ---
