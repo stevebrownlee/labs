@@ -43,7 +43,7 @@ intro:
         fa_icon: "fas fa-check"
       - text: "Beginners looking to break into the field."
         fa_icon: "fas fa-check"
-      - text: "Caring people seeking coaching for their personal goals."
+      - text: "People seeking coaching for their personal goals."
         fa_icon: "fas fa-check"
   buttons:
     enabled: true
