@@ -11591,11 +11591,7 @@ html[data-mode=dark] .partners img {
   align-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: var(--color-base-2);
   min-height: 300px;
-}
-.hero.hero-gradient {
-  background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
 }
 @media (min-width: 768px) {
   .hero.hero-fullscreen-desktop {

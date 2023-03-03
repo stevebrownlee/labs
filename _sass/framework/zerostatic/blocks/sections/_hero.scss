@@ -4,10 +4,10 @@
   align-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: var(--color-base-2);
+  // background-color: var(--color-base-2);
   min-height: 300px;
   &.hero-gradient {
-    background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    // background-image: linear-gradient(to right, rgb(37, 55, 126), rgb(35, 83, 69));
   }
   &.hero-fullscreen-desktop {
     @include media-breakpoint-up(md) {

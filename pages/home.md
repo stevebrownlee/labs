@@ -9,7 +9,7 @@ meta_title: Stepping Stone Labs
 hero:
   enabled: true
   heading: "Stepping Stone Labs"
-  sub_heading: "A powerful, science-based program developed by Steve Brownlee"
+  sub_heading: "Powerful, science-based programs for technologists developed by Steve Brownlee"
   text_color: "#FFFFFF"
   background_color: "#1d2830"
   background_gradient: true
