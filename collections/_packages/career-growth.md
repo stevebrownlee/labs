@@ -14,8 +14,8 @@ hero:
   heading: "Career Growth"
   sub_heading: "Long-term, large-scale project work to accelerate your career."
   text_color: "#ffffff"
-  background_color: ""
-  background_gradient: true
+  background_color: "#2d2830"
+  background_gradient: false
   background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"
   background_image: "/assets/images/gen/packages/service-6.webp"
   fullscreen_mobile: false

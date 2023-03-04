@@ -1,23 +1,23 @@
 ---
 title: "Personal Coaching"
-description: "The expression of a brand including its name, trademark, and visual appearance."
+description: "I can partner with you to achieve your personal goals"
 date: 2019-10-03
 weight: 3
 header_transparent: true
 fa_icon: false
 icon: "assets/images/icons/icons8-color-palette-100.png"
 thumbnail: "/assets/images/gen/packages/service-3-thumbnail.webp"
-image: "/assets/images/gen/packages/service-3.webp"
+image: "/assets/images/gen/coaching/hero.png"
 
 hero:
   enabled: true
   heading: "Personal Coaching"
-  sub_heading: "The expression of a brand including its name, trademark, and visual appearance."
+  sub_heading: "I can partner with you to achieve your personal goals"
   text_color: "#ffffff"
-  background_color: ""
-  background_gradient: true
+  background_color: "#2d2830"
+  background_gradient: false
   background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"
-  background_image: "/assets/images/gen/packages/service-3.webp"
+  background_image: "/assets/images/gen/coaching/hero.png"
   fullscreen_mobile: false
   fullscreen_desktop: false
   height: 400px
