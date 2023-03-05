@@ -9,7 +9,7 @@ header_transparent: true
 hero:
   enabled: true
   heading: "Insights"
-  sub_heading: ""
+  sub_heading: "As we learn and grow, we share that knowledge with the world"
   text_color: "#FFFFFF"
   background_color: "#2d2830"
   background_gradient: false
@@ -17,7 +17,7 @@ hero:
   background_image: "/assets/images/gen/insights/hero.png"
   fullscreen_mobile: false
   fullscreen_desktop: false
-  height: "330px"
+  height: "450px"
   buttons:
     enabled: false
     list:

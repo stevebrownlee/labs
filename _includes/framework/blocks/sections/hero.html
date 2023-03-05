@@ -39,7 +39,7 @@
   <div class="hero-background-image" style="{{ bg_image }}"></div>
   {% if divider %}{% include framework/blocks/components/divider.html %}{% endif %}
   <div class="container {% if divider %}pb-10{% endif %}">
-    <div class="row align-items-center">
+    <div class="row align-items-center flex-row">
       <div class="col-12 {% if image %}col-lg-6{% else %}col-lg-8{% endif %}">
         <div class="hero-text" style="{% if text_color %}color: {{ text_color }};{% endif %}">
           {% if heading %}<h1>{{ heading }}</h1>{% endif %}
@@ -47,7 +47,7 @@
           {% if buttons.enabled and buttons.list.size > 0 %}
             <div class="hero-buttons">
               {% for button in buttons.list %}
-                {% include framework/blocks/components/button.html 
+                {% include framework/blocks/components/button.html
                   text=button.text
                   url=button.url
                   external=button.external
@@ -61,10 +61,14 @@
           {% endif %}
         </div>
       </div>
+      <div>
+        <img src="/assets/images/home/hex-small.png"/>
+      </div>
+
       {% if image %}
         <div class="col-12 col-lg-6">
           <div class="hero-image">
-            <img src="{{ image | relative_url }}"/>
+              <img src="{{ image | relative_url }}"/>
           </div>
         </div>
       {% endif %}

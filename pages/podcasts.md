@@ -17,7 +17,7 @@ hero:
   background_image: "/assets/images/gen/podcasts/hero.png"
   fullscreen_mobile: false
   fullscreen_desktop: false
-  height: "330px"
+  height: "450px"
   buttons:
     enabled: false
     list:

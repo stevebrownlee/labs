@@ -17,7 +17,7 @@ hero:
   background_image: "/assets/images/gen/packages/packages-large.png"
   fullscreen_mobile: false
   fullscreen_desktop: false
-  height: "400px"
+  height: "450px"
   buttons:
     enabled: false
     list:

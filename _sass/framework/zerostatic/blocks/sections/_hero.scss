@@ -54,6 +54,12 @@
       }
     }
   }
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
   .hero-flair {
     margin-left: 10px;
     font-weight: 500;
