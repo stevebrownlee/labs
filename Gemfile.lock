@@ -75,6 +75,7 @@ DEPENDENCIES
   jekyll-environment-variables
   jekyll-paginate
   webrick (~> 1.7)
+  bundler (~> 2.3.22)
 
 BUNDLED WITH
    2.3.26
