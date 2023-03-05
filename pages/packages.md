@@ -10,10 +10,11 @@ hero:
   heading: "Packages"
   sub_heading: "We offer a variety of packages that meet your needs and your budget."
   text_color: "#FFFFFF"
-  background_color: ""
-  background_gradient: true
-  background_image: false
-  background_image_blend_mode: overlay # "overlay", "multiply", "screen"
+  text_color: "#ffffff"
+  background_color: "#2d2830"
+  background_gradient: false
+  background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"
+  background_image: "/assets/images/gen/packages/packages-large.png"
   fullscreen_mobile: false
   fullscreen_desktop: false
   height: "400px"

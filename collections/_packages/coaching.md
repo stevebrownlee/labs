@@ -5,8 +5,8 @@ date: 2019-10-03
 weight: 3
 header_transparent: true
 fa_icon: false
-icon: "assets/images/icons/icons8-color-palette-100.png"
-thumbnail: "/assets/images/gen/packages/service-3-thumbnail.webp"
+icon: "assets/images/icons/icons8-flow-chart-100.png"
+thumbnail: "/assets/images/gen/coaching/hero.png"
 image: "/assets/images/gen/coaching/hero.png"
 
 hero:

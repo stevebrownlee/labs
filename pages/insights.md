@@ -11,10 +11,10 @@ hero:
   heading: "Insights"
   sub_heading: ""
   text_color: "#FFFFFF"
-  background_color: ""
-  background_gradient: true
-  background_image: false
-  background_image_blend_mode: overlay # "overlay", "multiply", "screen"
+  background_color: "#2d2830"
+  background_gradient: false
+  background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"
+  background_image: "/assets/images/gen/insights/hero.png"
   fullscreen_mobile: false
   fullscreen_desktop: false
   height: "330px"

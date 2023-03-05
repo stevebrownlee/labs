@@ -5,9 +5,9 @@ date: 2021-07-23
 weight: 5
 header_transparent: true
 fa_icon: "far fa-chart-bar"
-icon: "assets/images/icons/icons8-bar-chart-100.png"
-thumbnail: "/assets/images/gen/packages/service-5-thumbnail.webp"
-image: "/assets/images/gen/packages/service-5.webp"
+icon: "assets/images/icons/icons8-source-code-100.png"
+thumbnail: "/assets/images/gen/packages/workshop-thumbnail.png"
+image: "/assets/images/gen/packages/workshop-large.png"
 
 hero:
   enabled: true
@@ -17,7 +17,7 @@ hero:
   background_color: "#2d2830"
   background_gradient: false
   background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"
-  background_image: "/assets/images/gen/packages/service-6.webp"
+  background_image: "/assets/images/gen/packages/workshop-large.png"
   fullscreen_mobile: false
   fullscreen_desktop: false
   height: 400px

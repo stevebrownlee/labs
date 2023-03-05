@@ -5,9 +5,9 @@ date: 2019-10-03
 weight: 3
 header_transparent: true
 fa_icon: false
-icon: "assets/images/icons/icons8-color-palette-100.png"
-thumbnail: "/assets/images/gen/packages/service-3-thumbnail.webp"
-image: "/assets/images/gen/packages/service-3.webp"
+icon: "assets/images/icons/icons8-merge-git-100.png"
+thumbnail: "/assets/images/gen/packages/sprint-thumbnail.png"
+image: "/assets/images/gen/packages/sprint-large.png"
 
 hero:
   enabled: true
@@ -17,7 +17,7 @@ hero:
   background_color: "#2d2830"
   background_gradient: false
   background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"
-  background_image: "/assets/images/gen/packages/service-6.webp"
+  background_image: "/assets/images/gen/packages/sprint-large.png"
   fullscreen_mobile: false
   fullscreen_desktop: false
   height: 400px

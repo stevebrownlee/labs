@@ -5,9 +5,9 @@ date: 2019-10-03
 weight: 6
 header_transparent: true
 fa_icon: "fab fa-codepen"
-icon: "assets/images/icons/icons8-merge-git-100.png"
-thumbnail: "/assets/images/gen/packages/service-6-thumbnail.webp"
-image: "/assets/images/gen/packages/service-6.webp"
+icon: "assets/images/icons/icons8-source-code-100.png"
+thumbnail: "/assets/images/gen/packages/service-8-thumbnail.webp"
+image: "/assets/images/gen/packages/service-8.webp"
 
 hero:
   enabled: true
@@ -17,7 +17,7 @@ hero:
   background_color: "#2d2830"
   background_gradient: false
   background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"
-  background_image: "/assets/images/gen/packages/service-6.webp"
+  background_image: "/assets/images/gen/packages/service-8.webp"
   fullscreen_mobile: false
   fullscreen_desktop: false
   height: 400px

@@ -31,7 +31,7 @@ services:
 intro:
   enabled: true
   align: left
-  image: "/assets/images/gen/content/content-6-thumbnail.webp"
+  image: "/assets/images/gen/home/team-thumbnail.png"
   heading: "We've helped hundreds of people grow their technical careers."
   sub_heading: ""
   features:
