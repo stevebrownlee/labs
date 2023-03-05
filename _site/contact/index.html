@@ -5,7 +5,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <title>Contact - Stepping Stone Labs</title>
+    <title>Registration - Stepping Stone Labs</title>
 
 
 
@@ -301,7 +301,7 @@
       
       
         <div class="title-heading">
-          <h1>Contact</h1>
+          <h1>Registration</h1>
         </div>
       
       
@@ -338,19 +338,26 @@
     <div class="row justify-content-start">
       <div class="col-12 col-lg-8">
         
-          <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="" method="post">
+          <form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/mbjeywdy" method="post">
   <fieldset id="fs-frm-inputs">
     <label for="full-name">Full Name</label>
     <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
     <label for="email-address">Email Address</label>
     <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-    <label for="message">Message</label>
-    <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+    <label for="Package">Package you are interested in</label>
+      <select name="package" required="true">
+        <option value="" selected="" disabled="">Package</option>
+      	<option value="WS">Workshop</option>
+      	<option value="SP">Sprint</option>
+      	<option value="CG">Career Growth</option>
+      	<option value="PC">Personal Coaching</option>
+      </select>
+    <label for="note">Note</label>
+    <textarea rows="2" name="note" id="note" placeholder="Include any additional information"></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Registration Form Submission">
   </fieldset>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Register">
 </form><style>/* reset */
-
 #fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
@@ -373,6 +380,7 @@
 #fs-frm label,
 #fs-frm legend,
 #fs-frm ::placeholder {
+  font-size: .825rem;
   margin-bottom: .5rem;
   padding-top: .2rem;
   display: flex;
@@ -439,24 +447,9 @@
   appearance: radio;
 }
 
-/* address, locale */
-#fs-frm fieldset.locale input[name="city"],
-#fs-frm fieldset.locale select[name="state"],
-#fs-frm fieldset.locale input[name="postal-code"] {
-  display: inline;
-}
-#fs-frm fieldset.locale input[name="city"] {
-  width: 52%;
-}
-#fs-frm fieldset.locale select[name="state"],
-#fs-frm fieldset.locale input[name="postal-code"] {
-  width: 20%;
-}
-#fs-frm fieldset.locale input[name="city"],
-#fs-frm fieldset.locale select[name="state"] {
-  margin-right: 3%;
-}
 </style>
+
+
         
       </div>
       <div class="col-12 col-lg-4">

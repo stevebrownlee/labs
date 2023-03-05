@@ -19,7 +19,7 @@ hero:
   fullscreen_desktop: false
   height: "450px"
 
-services:
+packages:
   enabled: true
   heading: "Lightning fast workshops to long-term technical career growth"
   sub_heading: ""
@@ -56,31 +56,16 @@ intro:
         outline: false
         style: "primary"
 
-partners:
-  enabled: true
-  limit: 5
-  sort: "weight" # 'date'
-
-projects:
-  enabled: true
-  heading: "Our Projects"
-  sub_heading: ""
-  limit: 2
-  columns: 2
-  sort: "weight" # 'date'
-  view_more_button_text: "View All Projects"
-  view_more_button_link: "/projects"
-
 outro:
   enabled: true
   align: center
   image: false
   heading: Get Started Today
-  sub_heading: "Sign up for a package today."
+  sub_heading: "Register for a free consultation about your career goals."
   features:
-    enabled: false
+    enabled: true
     list:
-      - text: "Free Quote"
+      - text: "Free Consultation"
         fa_icon: "fas fa-envelope-open-text"
   buttons:
     enabled: true

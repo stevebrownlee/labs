@@ -1,63 +1,34 @@
 ---
 layout: basic
 title: "About Us"
-date: 2018-11-28T15:15:34+10:00
+date: Sun Mar 05 2023 11:33:20 GMT-0600 (Central Standard Time)
 header_transparent: false
 permalink: "/about/"
 description: "Pioneering the possible for learning and growth."
-image: "/assets/images/gen/content/content-5.webp"
+image: "/assets/images/about/stepping-stones-02.png"
 
 hero:
-  enabled: false
+  enabled: true
   heading: "About Us"
   sub_heading: "Pioneering the possible for learning and growth."
-  background_image: false
-  background_image_blend_mode: false
+  text_color: "#ffffff"
+  background_color: "#2d2830"
+  background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"
+  background_image: "/assets/images/about/stepping-stones-02.png"
+  fullscreen_mobile: true
+  fullscreen_desktop: false
   full_height_mobile: false
-  buttons:
-    enabled: false
-    list:
-      - text: "Buy Now"
-        url: "https://www.zerostatic.io/theme/jekyll-advance/"
-        external: true
-        fa_icon: false
-        size: large
+  height: 550px
 ---
 
-# Creating Modern Websites
+# Stepping Stone Labs
 
-Web design encompasses many different skills and disciplines in the production and maintenance of websites.
+This program was born out of a desire to empower people to grow in their career as software developers. Before Standing Stone Labs, the only structured learning environments were for beginners. University, interships, or bootcamps were your options to break into the field.
 
-Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. Web design partially overlaps web engineering in the broader scope of web development.
+Unfortunately, from the moment you acquire your first job, you are completely on your own. As you look ahead at your new careers, you see that there is a seemingly infinite ocean of information and choices available for you.
 
-## What is Web Design?
+As a novice, it is overwhelming without the proper guidance.
 
-User experience is about how a user interacts with, and experiences, a particular product, system or service. As a UX designer, you should consider the Why, What and How of product use.
+If you ask your community, team, or employer for guidance, you are given highly biased advice. Well intentioned, absolutely, but biases nonetheless. You also need a high risk tolerance so that you can switch jobs and not stagnate. You also need a certain amount of luck, and land on teams where you can learn new things.
 
-{% include framework/shortcodes/figure.html src="/assets/images/gen/content/content-1.webp" title="Steve Francia" caption="Designing in Figma" alt="Photo of designing a website in Figma" link="https://figma.com" target="_blank" %}
-
-## Front-end Development
-
-The What addresses the things people can do with a product—its functionality. Finally, the How relates to the design of functionality in an accessible and aesthetically pleasant way. UX designers start with the Why before determining the What and then, finally, the How in order to create products that users can form meaningful experiences with. In software designs, you will need to ensure the product’s “substance” comes through an existing device and offers a seamless, fluid experience.
-
-> As a UX designer, you should consider the Why, What and How of product use.
-
-Web designers are expected to have an awareness of usability and if their role involves creating markup then they are also expected to be up to date with web accessibility guidelines.
-
-## Design Systems
-
-A Design System is a set of interconnected patterns and shared practices coherently organized to aid in digital product design and development of products such as apps or websites.
-
-{% include framework/shortcodes/youtube.html id='2M6dJ2Uynhg' %}
-
-## Process
-
-There are two primary jobs involved in creating a website: the web designer and web developer, who often work closely together on a website. The web designers are responsible for the visual aspect, which includes the layout, coloring and typography of a web page.
-
-- User experience research
-- Visual design and illustration
-- Programming and coding
-
-![Design In Figma](/assets/images/gen/content/content-2.webp)
-
-Web designers will also have a working knowledge of markup languages such as HTML and CSS, although the extent of their knowledge will differ from one web designer to another.
+We are highly skilled coaches, mentors, technologists, and educators. This unique combination of skills allow us to cut through potential biases and identify the core skills and competencies that people need to succeed and grow in their software careers.

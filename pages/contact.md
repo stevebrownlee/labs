@@ -1,5 +1,8 @@
 ---
 layout: contact
-title: Contact
+title: Registration
 body_classes: page-contact
+
+
+
 ---

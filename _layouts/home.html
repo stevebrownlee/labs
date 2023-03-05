@@ -41,41 +41,6 @@ body_classes: page-home
   {% assign cards = cards | sort: 'weight' %}
 {% endif %}
 
-{% if page.packages.enabled %}
-  <div class="section bg-base-bg-2">
-    <div class="container">
-      <div class="row">
-
-        {% include framework/blocks/components/grid-header.html
-          heading=page.packages.heading
-          sub_heading=page.packages.sub_heading
-          align="center"
-        %}
-
-        {% for card in cards limit: limit %}
-          <div class="col-12 col-md-4 {{ columns }} mb-3 {% if forloop.first %}mt-0 {% endif %} {% if forloop.last %}mb-0 {% endif %}">
-            {% include theme/cards/card-services.html
-              title=card.title
-              description=card.description
-              fa_icon=card.fa_icon
-              icon=card.icon
-              url=card.url
-              weight=card.weight
-            %}
-          </div>
-        {% endfor %}
-
-        {% include framework/blocks/components/grid-footer.html
-          view_more_button_text=page.services.view_more_button_text
-          view_more_button_link=page.services.view_more_button_link
-          align="center"
-        %}
-
-    </div>
-  </div>
-</div>
-{% endif %}
-
 {% if page.intro.enabled %}
   <div class="section">
     <div class="container">
@@ -89,6 +54,42 @@ body_classes: page-home
       %}
     </div>
   </div>
+{% endif %}
+
+
+{% if page.packages.enabled %}
+  <div class="section bg-base-bg-2">
+    <div class="container">
+      <div class="row">
+
+        {% include framework/blocks/components/grid-header.html
+          heading=page.packages.heading
+          sub_heading=page.packages.sub_heading
+          align="center"
+        %}
+
+        {% for card in cards limit: limit %}
+          <div class="col-12 col-md-4 {{ columns }} mb-3 {% if forloop.first %}mt-0 {% endif %} {% if forloop.last %}mb-0 {% endif %}">
+            {% include theme/cards/card-packages.html
+              title=card.title
+              description=card.description
+              fa_icon=card.fa_icon
+              icon=card.icon
+              url=card.url
+              weight=card.weight
+            %}
+          </div>
+        {% endfor %}
+
+        {% include framework/blocks/components/grid-footer.html
+          view_more_button_text=page.packages.view_more_button_text
+          view_more_button_link=page.packages.view_more_button_link
+          align="center"
+        %}
+
+    </div>
+  </div>
+</div>
 {% endif %}
 
 
