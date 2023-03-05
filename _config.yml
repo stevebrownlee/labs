@@ -2,7 +2,7 @@
 # Jekyll Config
 # --------------------
 baseurl: "/labs"
-url: "www.steppingstonelabs.com"
+url: ""
 permalink: pretty
 markdown: kramdown
 highlighter: rouge
