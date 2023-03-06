@@ -1,10 +1,10 @@
 ---
 layout: workshop
-title: "Layouts with CSS"
+title: "Configuration and Automation in Linux"
 date: 2019-12-20
-weight: 3
+weight: 4
 categories: ["Development", "Web Design"]
-description: "Implement responsive, sophisticated layouts with CSS grid and flexbox."
+description: "Become proficient in Linux command line basics."
 thumbnail: "/assets/images/gen/insights/blog-7-thumbnail.webp"
 image: "/assets/images/gen/insights/blog-7.webp"
 ---

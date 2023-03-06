@@ -1,10 +1,10 @@
 ---
 layout: workshop
-title: "Layouts with CSS"
+title: "Mastering the Browser Developer Tools"
 date: 2019-12-20
-weight: 3
+weight: 2
 categories: ["Development", "Web Design"]
-description: "Implement responsive, sophisticated layouts with CSS grid and flexbox."
+description: "Master diagnosing, debugging, and evaluating your UI with the Developer Tools."
 thumbnail: "/assets/images/gen/insights/blog-7-thumbnail.webp"
 image: "/assets/images/gen/insights/blog-7.webp"
 ---

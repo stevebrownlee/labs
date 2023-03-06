@@ -1,10 +1,10 @@
 ---
 layout: workshop
-title: "Layouts with CSS"
+title: "Using Containers for Development"
 date: 2019-12-20
-weight: 3
+weight: 5
 categories: ["Development", "Web Design"]
-description: "Implement responsive, sophisticated layouts with CSS grid and flexbox."
+description: "Learn the basics of containerization for a local development environment."
 thumbnail: "/assets/images/gen/insights/blog-7-thumbnail.webp"
 image: "/assets/images/gen/insights/blog-7.webp"
 ---

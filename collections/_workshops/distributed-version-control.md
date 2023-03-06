@@ -2,6 +2,7 @@
 layout: workshop
 title: "Distributed Version Control Systems"
 date: 2019-12-20
+weight: 1
 categories: ["Development", "Web Design"]
 description: "Implement responsive, sophisticated layouts with CSS grid and flexbox."
 thumbnail: "/assets/images/gen/insights/blog-7-thumbnail.webp"
