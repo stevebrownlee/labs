@@ -1,6 +1,7 @@
 {% assign hero = include or page.hero %}
 
 {% assign heading = hero.heading %}
+{% assign intro_image = hero.intro_image %}
 {% assign sub_heading = hero.sub_heading %}
 {% assign text_color = hero.text_color %}
 {% assign divider = hero.divider %}
@@ -61,9 +62,6 @@
           {% endif %}
         </div>
       </div>
-      <div>
-        <img src="/assets/images/home/hex-small.png"/>
-      </div>
 
       {% if image %}
         <div class="col-12 col-lg-6">
@@ -75,3 +73,5 @@
     </div>
   </div>
 </div>
+
+

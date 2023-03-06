@@ -9,7 +9,7 @@ meta_title: Stepping Stone Labs
 hero:
   enabled: true
   heading: "Stepping Stone Labs"
-  sub_heading: "Powerful, competency-based programs for growing technical skills"
+  sub_heading: "Powerful, competency-based programs for growing technical careers"
   text_color: "#FFFFFF"
   background_color: "#1d2830"
   background_gradient: true
@@ -18,6 +18,7 @@ hero:
   fullscreen_mobile: true
   fullscreen_desktop: false
   height: "450px"
+  intro_image: "/assets/images/home/hex-small.png"
 
 packages:
   enabled: true
@@ -31,7 +32,7 @@ packages:
 intro:
   enabled: true
   align: left
-  image: "/assets/images/gen/home/team-thumbnail.png"
+  image: "/assets/images/home/team--small.png"
   heading: "We've helped hundreds of people grow their technical careers."
   sub_heading: ""
   features:
@@ -45,16 +46,7 @@ intro:
         fa_icon: "fas fa-check"
       - text: "People seeking coaching for their personal goals."
         fa_icon: "fas fa-check"
-  buttons:
-    enabled: true
-    list:
-      - text: "About Us"
-        url: "/about"
-        external: false
-        fa_icon: ""
-        size: large
-        outline: false
-        style: "primary"
+
 
 outro:
   enabled: true

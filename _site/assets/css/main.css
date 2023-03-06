@@ -11642,7 +11642,7 @@ html[data-mode=dark] .hero .hero-text.hero-text-invert {
 .hero .flex-row {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 .hero .hero-flair {
