@@ -18,16 +18,6 @@ hero:
   fullscreen_mobile: false
   fullscreen_desktop: false
   height: "450px"
-  buttons:
-    enabled: false
-    list:
-      - text: "Contact Us"
-        url: "/contact"
-        external: false
-        fa_icon: false
-        size: large
-        outline: true
-        style: "light"
 
 grid:
   collection: "insights"

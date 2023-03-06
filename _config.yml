@@ -26,6 +26,9 @@ collections:
   insights:
     output: true
     permalink: /insights/:path/
+  workshops:
+    output: true
+    permalink: /workshops/:path/
 
 defaults:
   - scope:

@@ -2,9 +2,12 @@ main:
   - name: Home
     url: /
     weight: 1
+  - name: Benefits
+    url: /benefits/
+    weight: 2
   - name: Packages
     url: /packages/
-    weight: 1
+    weight: 3
     child:
       - name: "Workshops"
         url: /packages/workshops/
@@ -16,23 +19,26 @@ main:
         url: /packages/coaching/
   - name: Podcasts
     url: /podcasts/
-    weight: 3
+    weight: 4
   - name: Insights
     url: /insights/
-    weight: 4
+    weight: 5
   - name: About
     url: /about/
-    weight: 5
+    weight: 6
 footer_primary:
   - name: Home
     url: /
     weight: 1
+  - name: Benefits
+    url: /benefits/
+    weight: 2
   - name: Packages
     url: /packages/
-    weight: 2
+    weight: 3
   - name: Podcasts
     url: /podcasts/
-    weight: 3
+    weight: 4
 footer_secondary:
   - name: Insights
     url: /insights/
