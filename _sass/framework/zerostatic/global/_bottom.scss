@@ -1,8 +1,8 @@
 .bottom {
   background-color: var(--color-base-bg-2);
   color: var(--color-base-text);
-  padding-top: $section-gutter / 2;
-  padding-bottom: $section-gutter / 2;
+  padding-top: calc($section-gutter / 2);
+  padding-bottom: calc($section-gutter / 2);
   font-size: 13px;
   .copyright {
     padding: 3px 0;

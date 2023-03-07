@@ -6,8 +6,8 @@ weight: 3
 header_transparent: true
 fa_icon: false
 icon: "assets/images/icons/icons8-merge-git-100.png"
-thumbnail: "/assets/images/gen/packages/sprint-thumbnail.png"
-image: "/assets/images/gen/packages/sprint-large.png"
+thumbnail: "/assets/images/gen/packages/sprint--thumbnail.png"
+image: "/assets/images/gen/packages/sprint--large.png"
 
 hero:
   enabled: true
@@ -17,7 +17,7 @@ hero:
   background_color: "#2d2830"
   background_gradient: false
   background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"
-  background_image: "/assets/images/gen/packages/sprint-large.png"
+  background_image: "/assets/images/gen/packages/sprint--large.png"
   fullscreen_mobile: false
   fullscreen_desktop: false
   height: 400px

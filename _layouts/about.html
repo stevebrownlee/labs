@@ -1,0 +1,61 @@
+---
+layout: default
+body_classes: page-basic
+---
+
+{% if page.hero.enabled %}
+  {% include framework/blocks/sections/hero.html
+    heading=page.hero.heading
+    sub_heading=page.hero.sub_heading
+    text_color=page.hero.text_color
+    background_image=page.hero.background_image
+    background_image_blend_mode=page.hero.background_image_blend_mode
+    background_color=page.hero.background_color
+    background_gradient=page.hero.background_gradient
+    fullscreen_mobile=page.hero.fullscreen_mobile
+    fullscreen_desktop=page.hero.fullscreen_desktop
+    height=page.hero.height
+    buttons=page.hero.buttons
+  %}
+{% else %}
+  <div class="section">
+    <div class="container">
+    {% include framework/blocks/sections/title.html
+      fa_icon=page.fa_icon
+      icon=page.icon
+      title=page.title
+      description=page.description
+      image=page.image
+    %}
+    </div>
+  </div>
+{% endif %}
+
+{% if page.intro.enabled %}
+  <div class="section">
+    <div class="container">
+      {% include framework/blocks/sections/info.html
+      heading=page.intro.heading
+      sub_heading=page.intro.sub_heading
+      align=page.intro.align
+      features=page.intro.features
+      buttons=page.intro.buttons
+      image=page.intro.image
+      %}
+    </div>
+  </div>
+{% endif %}
+
+
+{% assign content = content | strip_newlines %}
+{% if content != "" %}
+  <div class="section strip-border-top">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-12 col-lg-8">
+          <div class="content">{{ content }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

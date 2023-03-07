@@ -18,10 +18,10 @@ $container-max-widths: (
 $grid-gutter-width: 30px;
 $section-gutter: 30px;
 
-$spacers: 
+$spacers:
   (
     "gutter": $grid-gutter-width,
-    "gutter-half": $grid-gutter-width / 2,
+    "gutter-half": calc($grid-gutter-width / 2),
     0: 0,
     1: 10px,
     2: 20px,
