@@ -29,12 +29,18 @@ intro:
     list:
       - text: "Veteran of Technology and Software since 1993"
         fa_icon: "fas fa-check"
-      - text: "Technology Educator since 2014"
+      - text: "Technology Team Leader since 2001"
+        fa_icon: "fas fa-check"
+      - text: "Technology Mentor since 2007"
+        fa_icon: "fas fa-check"
+      - text: "Technology Educator since 2015"
+        fa_icon: "fas fa-check"
+      - text: "Head Coach for 30 Cohorts of Students"
         fa_icon: "fas fa-check"
       - text: "Certified Professional Coach (PCC) since 2023"
         fa_icon: "fas fa-check"
-      - text: "Learning Experience Designer since 2018"
-        fa_icon: "fas fa-check"
+      - text: "Calligraphy Hobbyist since 2019"
+        fa_icon: "fas fa-font"
 
 ---
 
