@@ -29,9 +29,9 @@ intro:
     list:
       - text: "Veteran of Technology and Software since 1993"
         fa_icon: "fas fa-check"
-      - text: "Technology Team Leader since 2001"
+      - text: "Technology Leadership since 2001"
         fa_icon: "fas fa-check"
-      - text: "Technology Mentor since 2007"
+      - text: "Technology Mentoring since 2007"
         fa_icon: "fas fa-check"
       - text: "Technology Educator since 2015"
         fa_icon: "fas fa-check"
@@ -50,10 +50,10 @@ After 30 years in the software development industry, and 10 years of building th
 
 This program was born out of a desire to empower people to grow in their career as software developers. Before Standing Stone Labs, the only structured learning environments were for beginners. University, interships, or bootcamps were your options to break into the field.
 
-Unfortunately, from the moment you acquire your first job, you are completely on your own. As you look ahead at your new careers, you see that there is a seemingly infinite ocean of information and choices available for you.
+Unfortunately, from the moment you acquire your first job, you are completely on your own. As you look ahead at your new careers, you see that there is an infinite ocean of information and choices available for you.
 
 As a novice, it is overwhelming without the proper guidance.
 
-If you ask your community, team, or employer for guidance, you are given highly biased advice. Well intentioned, absolutely, but biases nonetheless. You also need a high risk tolerance so that you can switch jobs and not stagnate. You also need a certain amount of luck, and land on teams where you can learn new things.
+If you ask your community, team, or employer for guidance you are given biased or myopic advice. Well intentioned, absolutely, but biased nonetheless. You also need a high risk tolerance so that you can switch jobs in order to ward off stagnation. You also need a certain amount of luck to land on teams where you can learn new things.
 
-We are highly skilled coaches, mentors, technologists, and educators. This unique combination of skills allow us to cut through potential biases and identify the core skills and competencies that people need to succeed and grow in their software careers.
+I am a highly skilled coach, mentor, technologist, and educator. This unique combination of skills allow me to cut through potential biases and identify the core skills and competencies that people need to succeed and grow in their software careers.

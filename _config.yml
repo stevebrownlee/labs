@@ -71,7 +71,7 @@ category_dir: category
 colors:
   #light-mode colors
   primary: "#144579"
-  primary_2: "#424ff8"
+  primary_2: "#51b1a0"
   primary_text: "#fdfcf9"
   secondary: "#412774"
   background: "#ffffff"
