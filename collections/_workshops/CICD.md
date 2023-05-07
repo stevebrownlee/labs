@@ -1,11 +1,10 @@
 ---
 layout: workshop
-title: "Continuous Integration, Delivery, and Deployment"
-date: 2019-12-20
+title: "Don't Stop Deploying - a Journey"
 weight: 6
-categories: ["Development", "Web Design"]
-description: "Build and project and a CI/CD pipeline for rapid release of features for your customers."
-thumbnail: "/assets/images/gen/insights/blog-7-thumbnail.webp"
+categories: ["Development", "CI/CD", "Automation"]
+description: "A beginner workshop for building a basic, but solid, CI/CD pipeline."
+thumbnail: "/assets/images/gen/packages/pipeline-thumbnail.png"
 image: "/assets/images/gen/insights/blog-7.webp"
 ---
 

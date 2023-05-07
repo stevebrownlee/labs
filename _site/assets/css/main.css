@@ -1,6 +1,6 @@
 :root {
   --color-primary: #144579;
-  --color-primary-2: #424ff8;
+  --color-primary-2: #51b1a0;
   --color-primary-text: #fdfcf9;
   --color-secondary: #412774;
   --color-base-bg: #ffffff;
@@ -10164,6 +10164,8 @@ img {
 .content code,
 .content pre {
   font-family: Fira Mono, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+  background-color: rgb(205, 213, 231);
+  padding: 0.1rem 0.5rem;
 }
 .content .highlight pre {
   background-color: var(--color-base-bg-2);
@@ -22455,8 +22457,11 @@ html[data-mode=dark] .card.card-service .card-icon img {
 .card-post {
   display: flex;
   flex-direction: column;
+  border: 1px dotted lightblue;
+  box-shadow: 0.2rem 0.2rem 0.8rem rgb(211, 211, 211);
+  border-radius: 0.25rem;
   height: 100%;
-  padding: 0;
+  padding: 2rem;
   overflow: hidden;
   position: relative;
 }
@@ -22488,7 +22493,7 @@ html[data-mode=dark] .card.card-service .card-icon img {
   }
 }
 .card-post .card-content {
-  padding-top: 20px;
+  padding-top: 2rem;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -22802,6 +22807,15 @@ html[data-mode=dark] .card.card-service .card-icon img {
 }
 .footer .menu-footer a {
   color: var(--color-primary-text);
+}
+
+.workshop-cost {
+  border: 1px solid rgb(111, 164, 32);
+  background-color: greenyellow;
+  width: fit-content;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 .grid-footer .grid-view-more-button {

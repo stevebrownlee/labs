@@ -4,10 +4,20 @@
 
   .menu-footer {
     font-size: 16px;
+
     a {
       color: var(--color-primary-text);
     }
   }
+}
+
+.workshop-cost {
+  border: 1px solid rgb(111, 164, 32);
+  background-color: greenyellow;
+  width: fit-content;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 .grid-footer {
@@ -19,6 +29,7 @@
     font-family: $font-family-base;
   }
 }
+
 .grid-header {
   h2 {
     text-transform: uppercase;

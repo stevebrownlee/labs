@@ -109,6 +109,8 @@
   code,
   pre {
     font-family: $font-family-monospace;
+    background-color: rgb(205, 213, 231);
+    padding: 0.1rem 0.5rem;
   }
   .highlight {
     pre {

@@ -5,10 +5,10 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <title>Mastering the Browser Developer Tools - Stepping Stone Labs</title>
+    <title>Terminal Velocity - Stepping Stone Labs</title>
 
 
-  <meta name="description" content="Master diagnosing, debugging, and evaluating your UI with the Developer Tools."/>
+  <meta name="description" content="Learn how to automate, configure, and customize your environment and applications with shell scripts."/>
 
 
 
@@ -299,11 +299,8 @@
 
     <div class="row justify-content-center">
       <div class="col-12 col-lg-8">
-          
-            <div class="post-date">20 December 2019</div>
-          
-          
-          <div class="post-categories">
+        
+        <div class="post-categories">
           
 
 
@@ -326,35 +323,63 @@
 
 
 <div class="category-link">
-<a href="/labs/labscategory/web-design">
-  Web Design
+<a href="/labs/labscategory/terminal">
+  Terminal
+</a>
+
+</div>
+  
+    
+
+
+
+
+<div class="category-link">
+<a href="/labs/labscategory/automation">
+  Automation
+</a>
+
+</div>
+  
+    
+
+
+
+
+<div class="category-link">
+<a href="/labs/labscategory/beginner">
+  Beginner
 </a>
 
 </div>
   
 
           
-          </div>
-          <div class="post-title">
-            <h1>Mastering the Browser Developer Tools</h1>
-          </div>
-          
-            <div class="post-description">
-              <p>Master diagnosing, debugging, and evaluating your UI with the Developer Tools.</p>
-            </div>
-          
-
-          
-
+        </div>
+        <div class="post-title">
+          <h1>Terminal Velocity</h1>
+        </div>
+        
+        <div class="post-description">
+          <p>Learn how to automate, configure, and customize your environment and applications with shell scripts.</p>
+        </div>
+        
       </div>
     </div>
+
+    
+    <div class="row justify-content-center">
+      <div class="workshop-cost">$350 USD</div>
+    </div>
+    
+
 
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         
-          <div class="post-image">
-            <img src="/assets/images/gen/insights/blog-7.webp" alt="Mastering the Browser Developer Tools" />
-          </div>
+        <div class="post-image">
+          <img src="/labs/assets/images/gen/packages/terminal-velocity.png" alt="Terminal Velocity" />
+        </div>
         
       </div>
     </div>
@@ -367,20 +392,68 @@
     <div class="row justify-content-center">
 
       <div class="col-12 col-lg-8">
-        <div class="content"><p>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.</p>
+        <div class="content"><h2 id="prerequisites">Prerequisites</h2>
+
+<ol>
+  <li>If you use Visual Studio Code as your main editor, install the <a href="https://marketplace.visualstudio.com/items?itemName=foxundermoon.shell-format">shell-format</a> extension</li>
+  <li>Come with one of the following setups
+    <ul>
+      <li>Mac OS</li>
+      <li>Linux</li>
+      <li>Windows with <a href="https://learn.microsoft.com/en-us/windows/wsl/install">Ubuntu installed in WSL</a></li>
+    </ul>
+  </li>
+  <li>Your account has admin access to run <code class="language-plaintext highlighter-rouge">sudo</code></li>
+  <li>Have node and npm installed. We recommend that you use <a href="https://github.com/nvm-sh/nvm#installing-and-updating">Node Version Manager</a> (nvm) to do this.</li>
+  <li>Have JSON Server installed with <code class="language-plaintext highlighter-rouge">npm i -g json-server</code></li>
+  <li>Collaborative mindset - you will be working with teammates.</li>
+  <li>Know what your default shell environment is by running <code class="language-plaintext highlighter-rouge">echo $SHELL</code> in your terminal. It will likely be bash (/bin/sh) or zsh (/bin/zsh).</li>
+</ol>
+
+<h2 id="overview">Overview</h2>
+
+<p>The Terminal Velocity workshop will celebrate the wonderous joys of the bash interactive environment. You will go on a brief history of kernels, shells, and terminal emulators. Then you will embark on a journey of discovery about using aliases, functions, and bash scripts to accelerate and automate common tasks you do in your terminal.</p>
+
+<p>You will use some commands and tools you may not know exist.</p>
+
+<ul>
+  <li>echo</li>
+  <li>sed</li>
+  <li>grep</li>
+  <li>curl</li>
+  <li>heredoc</li>
+  <li>case</li>
+  <li>PS3 prompt</li>
+</ul>
+
+<p>You will be competent in the follow skills:</p>
+
+<ol>
+  <li>Creating shell aliases for commonly used terminal commands that are cumbersome to type and remember.</li>
+  <li>Authoring shell functions for common tasks that you perform in the terminal that involves a few processes, or requires some parameterization.</li>
+  <li>Writing shell scripts that automate long, complex processes like building a consistent development environment, installing and configuring a sophisticated application, or setting up a cloud system consistently.</li>
+  <li>Basic proficiency with the vim terminal editor program. Just enough to get your started and able to make simple changes in a text file.</li>
+  <li>Defining and using environment variables to customize how your functions and scripts behave depending on the user and/or the environment. Environment variables are also key to keeping sensitive data out of your code.</li>
+</ol>
+
+<h2 id="workshops-unlocked">Workshops Unlocked</h2>
+
+<p><strong>Terraform Your Cloud</strong></p>
+
+<p><strong>Containers For Beginners</strong></p>
 </div>
         
         
-          <div class="comments mt-3">
-            <div id="disqus_thread"></div>
+        <div class="comments mt-3">
+          <div id="disqus_thread"></div>
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
     
     var disqus_config = function () {
-      this.page.url = 'http://localhost:4000/labs/workshops/browser-developer-tools-debugger/';
-      this.page.identifier = 'http://localhost:4000/labs/workshops/browser-developer-tools-debugger/';
+      this.page.url = 'http://localhost:4000/labs/workshops/terminal-velocity/';
+      this.page.identifier = 'http://localhost:4000/labs/workshops/terminal-velocity/';
     };
     
     (function() { // DON'T EDIT BELOW THIS LINE
@@ -393,7 +466,7 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-          </div>
+        </div>
         
         
       </div>
@@ -401,7 +474,6 @@
     </div>
   </div>
 </div>
-
 </div>
 
 

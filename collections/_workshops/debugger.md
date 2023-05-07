@@ -1,11 +1,10 @@
 ---
 layout: workshop
-title: "Mastering the Browser Developer Tools"
-date: 2019-12-20
+title: "Debugging With Power"
 weight: 2
 categories: ["Development", "Web Design"]
 description: "Master diagnosing, debugging, and evaluating your UI with the Developer Tools."
-thumbnail: "/assets/images/gen/insights/blog-7-thumbnail.webp"
+thumbnail: "/assets/images/gen/packages/tools-thumbnail.png"
 image: "/assets/images/gen/insights/blog-7.webp"
 ---
 

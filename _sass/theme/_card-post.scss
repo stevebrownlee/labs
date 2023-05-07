@@ -1,8 +1,11 @@
 .card-post {
   display: flex;
   flex-direction: column;
+  border: 1px dotted lightblue;
+  box-shadow: 0.2rem 0.2rem 0.8rem rgb(211, 211, 211);
+  border-radius: 0.25rem;
   height: 100%;
-  padding: 0;
+  padding: 2rem;
   overflow: hidden;
   position: relative;
   .card-thumbnail {
@@ -31,7 +34,7 @@
     }
   }
   .card-content {
-    padding-top: 20px;
+    padding-top: 2rem;
     display: flex;
     flex: 1;
     flex-direction: column;
