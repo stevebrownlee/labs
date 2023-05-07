@@ -6,7 +6,7 @@ cost: "$175 USD"
 categories: ["Development", "Source Control", "Terminal"]
 description: "Learn git to understand the foundations of branching, merging, commits, rollbacks, patches, and more."
 thumbnail: "/assets/images/gen/packages/dvcs-thumbnail.png"
-image: "/labs/assets/images/gen/packages/dvcs.png"
+image: "/assets/images/gen/packages/dvcs.png"
 ---
 
 ## Overview

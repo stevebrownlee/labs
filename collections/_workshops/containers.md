@@ -6,7 +6,7 @@ cost: "$350 USD"
 categories: ["Development", "Containers", "CI/CD", "Automation"]
 description: "Learn the basics of containerization for a local development environment."
 thumbnail: "/assets/images/gen/packages/containers-thumbnail.png"
-image: "/labs/assets/images/gen/packages/containers.png"
+image: "/assets/images/gen/packages/containers.png"
 ---
 
 ## Overview

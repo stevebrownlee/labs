@@ -6,7 +6,7 @@ cost: "$300 USD"
 categories: ["Development", "CSS"]
 description: "Implement responsive, sophisticated layouts with CSS grid and flexbox."
 thumbnail: "/assets/images/gen/packages/css-layouts-thumbnail.png"
-image: "/labs/assets/images/gen/packages/css-layouts.png"
+image: "/assets/images/gen/packages/css-layouts.png"
 ---
 
 ## Overview
