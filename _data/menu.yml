@@ -17,9 +17,6 @@ main:
         url: /packages/career-growth/
       - name: "Personal Coaching"
         url: /packages/coaching/
-  - name: Podcasts
-    url: /podcasts/
-    weight: 4
   - name: Insights
     url: /insights/
     weight: 5

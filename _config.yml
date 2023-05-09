@@ -20,9 +20,6 @@ collections:
   packages:
     output: true
     permalink: /:collection/:path/
-  podcasts:
-    output: true
-    permalink: /:collection/:path/
   insights:
     output: true
     permalink: /insights/:path/
