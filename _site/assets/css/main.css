@@ -22746,6 +22746,7 @@ html[data-mode=dark] .card.card-service .card-icon img {
 }
 .page-post-1 .post-header .post-image {
   margin-top: 40px;
+  text-align: center;
 }
 .page-post-1 .post-header .post-image img {
   margin-top: 20px;
