@@ -2,7 +2,7 @@
 layout: home
 permalink: "/"
 title: "Stepping Stone Labs"
-description: "Pioneering the possible in learning & growth"
+description: "Pioneering the possible in technical learning and growth"
 header_transparent: true
 meta_title: Stepping Stone Labs
 
@@ -47,25 +47,6 @@ intro:
       - text: "People seeking coaching for their personal goals."
         fa_icon: "fas fa-check"
 
-
-outro:
-  enabled: true
-  align: center
-  image: false
-  heading: Get Started Today
-  sub_heading: "Register for a free consultation about your career goals."
-  features:
-    enabled: true
-    list:
-      - text: "Free Consultation"
-        fa_icon: "fas fa-envelope-open-text"
-  buttons:
-    enabled: true
-    list:
-      - text: "Contact Us"
-        url: "/contact"
-        external: false
-        size: "large"
 
 insights:
   enabled: true

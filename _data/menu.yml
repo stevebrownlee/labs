@@ -33,9 +33,6 @@ footer_primary:
   - name: Packages
     url: /packages/
     weight: 3
-  - name: Podcasts
-    url: /podcasts/
-    weight: 4
 footer_secondary:
   - name: Insights
     url: /insights/

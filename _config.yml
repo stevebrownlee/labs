@@ -141,7 +141,7 @@ menu:
 footer:
   enable_footer: true # show/hide the entire footer
   footer_title: "Stepping Stone Labs"
-  footer_description: "Pioneering the possible in learning &amp; growth"
+  footer_description: "Pioneering the possible in technical learning and growth"
   enable_social_media_icons: true
   enable_contact_details: true
   enable_menu_footer_primary: true

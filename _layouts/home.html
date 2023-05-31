@@ -94,48 +94,6 @@ body_classes: page-home
 {% endif %}
 
 
-{% assign cards = site.podcasts | sort: 'date' | reverse %}
-{% assign limit = page.podcasts.limit | default: 2 %}
-{% assign sort_by = page.podcasts.sort | default: 'date' %}
-{% assign columns =  page.podcasts.columns | default: 2 %}
-{% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
-{% if sort_by == 'weight' %}
-  {% assign cards = cards | sort: 'weight' %}
-{% endif %}
-
-{% if page.podcasts.enabled %}
-  <div class="section bg-base-bg-2">
-    <div class="container">
-      <div class="row">
-
-        {% include framework/blocks/components/grid-header.html
-          heading=page.podcasts.heading
-          sub_heading=page.podcasts.sub_heading
-          align="center"
-        %}
-
-        {% for card in cards limit: limit %}
-          <div class="col-12 col-md-4 {{ columns }} mb-3 {% if forloop.first %}mt-0 {% endif %} {% if forloop.last %}mb-0 {% endif %}">
-            {% include theme/cards/card-podcasts.html
-              title=card.title
-              description=card.description
-              thumbnail=card.thumbnail
-              url=card.url
-              weight=card.weight
-            %}
-          </div>
-        {% endfor %}
-
-        {% include framework/blocks/components/grid-footer.html
-          view_more_button_text=page.podcasts.view_more_button_text
-          view_more_button_link=page.podcasts.view_more_button_link
-          align="center"
-        %}
-
-    </div>
-  </div>
-</div>
-{% endif %}
 
 
 

@@ -3,7 +3,7 @@ layout: basic
 date: 2018-02-12T15:37:57+07:00
 header_transparent: true
 title: "Benefits"
-description: "Pioneering the possible in learning & growth"
+description: "Pioneering the possible in technical learning and growth"
 permalink: "/benefits/"
 
 hero:

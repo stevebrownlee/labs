@@ -4,13 +4,13 @@ title: "About Us"
 date: Sun Mar 05 2023 11:33:20 GMT-0600 (Central Standard Time)
 header_transparent: true
 permalink: "/about/"
-description: "Pioneering the possible for learning and growth."
+description: "Pioneering the possible in technical learning and growth."
 image: "/assets/images/about/stepping-stones-02.png"
 
 hero:
   enabled: true
   heading: "About Us"
-  sub_heading: "Pioneering the possible for learning and growth."
+  sub_heading: "Pioneering the possible in technical learning and growth."
   text_color: "#ffffff"
   background_color: "#2d2830"
   background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"
