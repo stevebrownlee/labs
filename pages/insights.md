@@ -44,11 +44,11 @@ outro:
   align: left
   image: false
   heading: "Ready to get started?"
-  sub_heading: "Contact us today for a free quote!"
+  sub_heading: "Sign up today"
   buttons:
     enabled: true
     list:
-      - text: "Get A Quote"
+      - text: "Sign up"
         url: "/contact"
         external: false
         fa_icon: false
