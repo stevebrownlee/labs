@@ -4,8 +4,8 @@ title: "Debugging With Power"
 weight: 2
 categories: ["Development", "Web Design"]
 description: "Master diagnosing, debugging, and evaluating your UI with the Developer Tools."
-thumbnail: "/labs/assets/images/gen/packages/tools-thumbnail.png"
-image: "/labs/assets/images/gen/insights/blog-7.webp"
+thumbnail: "/assets/images/gen/packages/tools-thumbnail.png"
+image: "/assets/images/gen/insights/blog-7.webp"
 ---
 
 The **Debugging With Power** workshop is a hands-on and interactive training program designed to equip learners with comprehensive competencies in effectively using web browser developer tools to diagnose performance problems, debug code, inspect network requests and responses, view stack traces, and manipulate the Document Object Model (DOM) and Cascading Style Sheets (CSS). This workshop is ideal for web developers, software engineers, and anyone involved in web application development who wants to enhance their troubleshooting and debugging skills.
