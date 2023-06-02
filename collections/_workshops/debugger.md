@@ -2,10 +2,11 @@
 layout: workshop
 title: "Debugging With Power"
 weight: 2
-categories: ["Development", "Web Design"]
+cost: "$300 USD"
+categories: ["Development", "Debugging"]
 description: "Master diagnosing, debugging, and evaluating your UI with the Developer Tools."
 thumbnail: "/assets/images/gen/packages/tools-thumbnail.png"
-image: "/assets/images/gen/insights/blog-7.webp"
+image: "/assets/images/gen/packages/debugging.png"
 ---
 
 The **Debugging With Power** workshop is a hands-on and interactive training program designed to equip learners with comprehensive competencies in effectively using web browser developer tools to diagnose performance problems, debug code, inspect network requests and responses, view stack traces, and manipulate the Document Object Model (DOM) and Cascading Style Sheets (CSS). This workshop is ideal for web developers, software engineers, and anyone involved in web application development who wants to enhance their troubleshooting and debugging skills.
@@ -38,17 +39,6 @@ Acquire the skills to inspect and modify the Document Object Model (DOM) and Cas
 
 ## Workshop Format
 
-Duration: 4 hours
-Delivery: Virtual
-Participants: Web developers, software engineers, and individuals with basic web development knowledge
+**Duration**: 4 hours
 
-## Key Topics Covered
-
-* Introduction to Web Browser Developer Tools: Overview of various browser developer tools (e.g., Chrome DevTools, Firefox Developer Tools) and their functionalities.
-* Performance Profiling: Techniques for identifying and resolving performance issues, including analyzing rendering, network latency, and memory usage.
-* Debugging JavaScript Code: Utilizing breakpoints, stepping through code, monitoring variables, and handling errors.
-* Debugging CSS Code: Identifying and resolving CSS-related issues using the developer tools.
-* Network Inspection: Analyzing network requests and responses, optimizing caching and compression, and resolving network-related problems.
-* Error Handling and Stack Traces: Interpreting JavaScript error messages, examining stack traces, and resolving exceptions.
-* DOM Manipulation: Inspecting, modifying, and experimenting with the DOM in real-time for rapid development and debugging.
-* CSS Manipulation: Modifying CSS styles, experimenting with layouts, and troubleshooting CSS-related issues.
+**Delivery**: Virtual

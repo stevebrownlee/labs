@@ -44,6 +44,13 @@ You will be competent in the follow skills:
 4.  Basic proficiency with the vim terminal editor program. Just enough to get your started and able to make simple changes in a text file.
 5. Defining and using environment variables to customize how your functions and scripts behave depending on the user and/or the environment. Environment variables are also key to keeping sensitive data out of your code.
 
+## Workshop Format
+
+**Duration**: 8 hours
+
+**Delivery**: Virtual
+
+
 ## Workshops Unlocked
 
 **Terraform Your Cloud**
