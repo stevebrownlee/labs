@@ -4,7 +4,7 @@ body_classes: page-list
 ---
 
 {% if page.hero.enabled %}
-  {% include framework/blocks/sections/hero.html 
+  {% include framework/blocks/sections/hero.html
     heading=page.hero.heading
     sub_heading=page.hero.sub_heading
     background_image=page.hero.background_image
@@ -18,7 +18,7 @@ body_classes: page-list
     buttons=page.hero.buttons
   %}
 {% else %}
-  {% include framework/blocks/sections/title.html 
+  {% include framework/blocks/sections/title.html
     fa_icon=page.fa_icon
     icon=page.icon
     title=page.title
@@ -32,13 +32,13 @@ body_classes: page-list
     <div class="container">
       <div class="row">
         <div class="col-12">
-          {% include framework/blocks/sections/info.html 
+          {% include framework/blocks/sections/info.html
             heading=page.intro.heading
             sub_heading=page.intro.sub_heading
             align=page.intro.align
             buttons=page.intro.buttons
             features=page.intro.features
-            image=page.intro.image 
+            image=page.intro.image
           %}
         </div>
       </div>
@@ -66,23 +66,23 @@ body_classes: page-list
         sub_heading=page.services.sub_heading
         align="center"
       %}
-      
+
       {% for card in cards limit: limit %}
         <div class="col-12 col-md-4 {{ columns }} {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mb-3 mb-md-6">
           {% include theme/cards/card-{{ card_type | strip }}.html
-            title=card.title 
+            title=card.title
             description=card.description
             fa_icon=card.fa_icon
             icon=card.icon
             thumbnail=card.thumbnail
             image=card.image
-            url=card.url 
+            url=card.url
             weight=card.weight
           %}
         </div>
       {% endfor %}
 
-      {% include framework/blocks/components/grid-footer.html 
+      {% include framework/blocks/components/grid-footer.html
         view_more_button_text=page.services.view_more_button_text
         view_more_button_link=page.services.view_more_button_link
         align="right"
@@ -98,14 +98,14 @@ body_classes: page-list
     <div class="container">
       <div class="row">
         <div class="col-12">
-          {% include framework/blocks/sections/info.html 
+          {% include framework/blocks/sections/info.html
             heading=page.outro.heading
             sub_heading=page.outro.sub_heading
-            description=page.outro.description 
+            description=page.outro.description
             align=page.outro.align
             buttons=page.outro.buttons
             features=page.outro.features
-            image=page.outro.image 
+            image=page.outro.image
           %}
         </div>
       </div>
@@ -126,4 +126,4 @@ body_classes: page-list
       </div>
     </div>
   </div>
-{% endif %} 
+{% endif %}

@@ -5,7 +5,7 @@ weight: 2
 cost: "$300 USD"
 categories: ["Development", "Debugging"]
 description: "Master diagnosing, debugging, and evaluating your UI with the Developer Tools."
-thumbnail: "/assets/images/gen/packages/tools-thumbnail.png"
+thumbnail: "/assets/images/gen/packages/debugging-thumbnail.png"
 image: "/assets/images/gen/packages/debugging.png"
 ---
 

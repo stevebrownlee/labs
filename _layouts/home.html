@@ -34,9 +34,9 @@ body_classes: page-home
 {% endif %}
 
 {% assign cards = site.packages | sort: 'date' | reverse %}
-{% assign limit = page.packages.limit | default: 3 %}
+{% assign limit = page.packages.limit | default: 4 %}
 {% assign sort_by = page.packages.sort | default: 'date' %}
-{% assign columns =  page.packages.columns | default: 3 %}
+{% assign columns =  page.packages.columns | default: 2 %}
 {% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
 {% if sort_by == 'weight' %}
   {% assign cards = cards | sort: 'weight' %}

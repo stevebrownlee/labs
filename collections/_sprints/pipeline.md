@@ -2,7 +2,6 @@
 layout: workshop
 title: "Shipping Code"
 weight: 6
-cost: "$500 USD"
 categories: ["Development", "CI/CD", "Automation"]
 description: "Learn to build a basic CI/CD pipeline for shipping features quickly."
 thumbnail: "/assets/images/gen/packages/shipping-thumbnail.png"
@@ -25,8 +24,13 @@ Learn how to configure and deploy essential CI/CD tools and infrastructure, such
 
 Design and implement efficient build pipelines that automate the compilation, testing, and packaging of software applications.
 
-## Workshop Format
+### Implementing Continuous Testing
 
-**Duration**: 10 hours
-
-**Delivery**: Remote
+Integrate automated testing frameworks into the CI/CD pipeline to ensure code quality and reliability.
+Enabling Continuous Deployment: Configure the pipeline to automate the deployment process, enabling rapid and controlled feature releases to production environments.
+Monitoring and Rollback Strategies: Implement monitoring mechanisms and establish effective rollback strategies to mitigate risks and maintain system stability.
+Best Practices for CI/CD: Learn industry best practices, such as code branching and merging strategies, code review processes, and pipeline security considerations.
+Workshop Format:
+Duration: 2-3 days (can be customized based on requirements)
+Delivery: In-person or virtual (online)
+Participants: Software developers, DevOps engineers, and individuals with basic knowledge of software development and deployment processes

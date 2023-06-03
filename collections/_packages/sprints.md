@@ -1,11 +1,9 @@
 ---
 title: "Sprints"
 description: "Work with a team of peers on smaller scale projects that develop an array of skills."
-date: 2019-10-03
-weight: 3
+weight: 2
 header_transparent: true
 fa_icon: false
-icon: "assets/images/icons/icons8-merge-git-100.png"
 thumbnail: "/assets/images/gen/packages/sprint--thumbnail.png"
 image: "/assets/images/gen/packages/sprint--large.png"
 
@@ -21,16 +19,6 @@ hero:
   fullscreen_mobile: false
   fullscreen_desktop: false
   height: 400px
-  buttons:
-    enabled: false
-    list:
-      - text: "Buy Now"
-        url: "https://www.zerostatic.io/theme/jekyll-advance/"
-        external: true
-        fa_icon: false
-        size: large
-        outline: false
-        style: "primary"
 ---
 
 # Project Sprints

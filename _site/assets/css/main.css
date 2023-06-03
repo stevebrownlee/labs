@@ -22469,7 +22469,6 @@ html[data-mode=dark] .card.card-service .card-icon img {
   border-radius: 0px;
   overflow: hidden;
   display: inline-flex;
-  margin-right: 30px;
 }
 .card-post .card-thumbnail a {
   display: inline-flex;
@@ -22751,7 +22750,7 @@ html[data-mode=dark] .card.card-service .card-icon img {
 .page-post-1 .post-header .post-image img {
   margin-top: 20px;
   max-width: 100%;
-  height: auto;
+  height: 30rem;
   border-radius: 0.375rem;
 }
 

@@ -5,7 +5,7 @@ weight: 1
 cost: "$350 USD"
 categories: ["Development", "Terminal", "Automation", "Beginner"]
 description: "Learn how to automate, configure, and customize your environment and applications with shell scripts."
-thumbnail: "/assets/images/gen/packages/terminal-thumbnail.png"
+thumbnail: "/assets/images/gen/packages/terminal-velocity-thumbnail.png"
 image: "/assets/images/gen/packages/terminal-velocity.png"
 ---
 
@@ -26,9 +26,8 @@ image: "/assets/images/gen/packages/terminal-velocity.png"
 
 The Terminal Velocity workshop will celebrate the wonderous joys of the bash interactive environment. You will go on a brief history of kernels, shells, and terminal emulators. Then you will embark on a journey of discovery about using aliases, functions, and bash scripts to accelerate and automate common tasks you do in your terminal.
 
-You will use some commands and tools you may not know exist.
+You will use some commands and tools you likely have never used before.
 
-* echo
 * sed
 * grep
 * curl

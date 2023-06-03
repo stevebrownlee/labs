@@ -22,7 +22,8 @@ hero:
 
 packages:
   enabled: true
-  heading: "Lightning fast workshops to long-term technical career growth"
+  columns: 2
+  heading: "Different packages that suit your budget and career goals"
   sub_heading: ""
   limit: 6
   sort: "weight" # 'date'
