@@ -24,33 +24,4 @@ grid:
   sort_by: "date" # "date", "weight"
   columns: 3
 
-intro:
-  enabled: false
-  align: left
-  image: false
-  heading: "We are a full service digital agency"
-  sub_heading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget sapien in elit semper accumsan. Pellentesque accumsan ut tortor eu varius. Sed id tincidunt massa, ut egestas orci."
-  buttons:
-    enabled: false
-    list:
-      - text: "About Us"
-        url: "/about/"
-        external: false
-        fa_icon: false
-        size: normal
-
-outro:
-  enabled: false
-  align: left
-  image: false
-  heading: "Ready to get started?"
-  sub_heading: "Sign up today"
-  buttons:
-    enabled: true
-    list:
-      - text: "Sign up"
-        url: "/contact"
-        external: false
-        fa_icon: false
-        size: normal
 ---
