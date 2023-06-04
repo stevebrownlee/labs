@@ -3,7 +3,7 @@ layout: insight
 title: "Competency vs. Knowledge"
 date: "2023-06-03"
 authors: ["Steve Brownlee"]
-categories: ["Development", "Terminal"]
+categories: ["Learning", "Competency", "Productivity"]
 description: "Why we focus on building competencies instead of disseminating knowledge."
 thumbnail: "/assets/images/gen/insights/blacksmith.png"
 image: "/assets/images/gen/insights/blacksmith.png"
