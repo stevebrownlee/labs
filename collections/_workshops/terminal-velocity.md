@@ -5,8 +5,8 @@ weight: 1
 cost: "$350 USD"
 categories: ["Development", "Terminal", "Automation", "Beginner"]
 description: "Learn how to automate, configure, and customize your environment and applications with shell scripts."
-thumbnail: "/assets/images/gen/packages/terminal-velocity-thumbnail.png"
-image: "/assets/images/gen/packages/terminal-velocity.png"
+thumbnail: "/assets/images/gen/insights/blacksmith.png"
+image: "/assets/images/gen/insights/blacksmith.png"
 ---
 
 ## Prerequisites

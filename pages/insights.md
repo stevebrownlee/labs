@@ -21,7 +21,7 @@ hero:
 
 grid:
   collection: "insights"
-  sort_by: "weight" # "date", "weight"
+  sort_by: "date" # "date", "weight"
   columns: 3
 
 intro:

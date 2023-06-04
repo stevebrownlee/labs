@@ -1,12 +1,12 @@
 ---
 layout: insight
 title: "Inaugural Terminal Velocity Workshop a Success"
-date: 2023-05-08
+date: "2023-05-08"
 authors: ["Steve Brownlee"]
 categories: ["Development", "Terminal"]
 description: "To memorialize the first session of the first workshop ever run by Stepping Stone Labs, this first insight entry will talk about what was learned."
-thumbnail: "/assets/images/gen/insights/terminal.png"
-image: "/assets/images/gen/insights/terminal.png"
+thumbnail: "/assets/images/gen/packages/terminal-velocity-thumbnail.png"
+image: "/assets/images/gen/packages/terminal-velocity-thumbnail.png"
 ---
 
 ## Expectations

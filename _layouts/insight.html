@@ -13,7 +13,7 @@ body_classes: page-post page-post-1
           {% endif %}
           {% if page.categories %}
           <div class="post-categories">
-          {% include framework/blocks/components/categories-badges.html 
+          {% include framework/blocks/components/categories-badges.html
               categories=page.categories
           %}
           {% endif %}
@@ -32,7 +32,7 @@ body_classes: page-post page-post-1
               {% for author in page.authors %}
               {% assign author_id = author | replace: " ", "_" | downcase %}
               {% assign author_object = site.data.authors[author_id] %}
-              {% include framework/blocks/components/author.html 
+              {% include framework/blocks/components/author.html
                 name=author_object.name
                 job=author_object.job
                 image=author_object.image
@@ -43,12 +43,12 @@ body_classes: page-post page-post-1
 
       </div>
     </div>
-          
+
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         {% if page.image %}
           <div class="post-image">
-            <img src="{{ page.image }}" alt="{{ page.title }}" />
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" />
           </div>
         {% endif %}
       </div>
