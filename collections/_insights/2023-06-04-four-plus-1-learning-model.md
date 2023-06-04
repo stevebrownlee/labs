@@ -25,23 +25,25 @@ Another key aspect of maintaining a healthy team is professional development. En
 
 Imagine reaping the benefits of having both strategies integrated into your culture - a culture of learning and healthy productivity. The **4+1 Learning Model** combines the strengths of both to supercharge your team. The concept is simple to understand, and potentially simple to implement if you are already considering a four-day workweek.
 
-At an interval that works for your team _(every week, every two weeks, once per month, etc.)_ the 5th day o the traditional workweek becomes the **_Day of Learning_**. Teammates gather to for collaborative problem solving while building competencies, shaaring ideas, and strengthening their relationships.
+At an interval that works for your team _(every week, every two weeks, once per month, etc.)_ the 5th day of the traditional workweek becomes the **_Day of Learning_**. Teammates gather together for collaborative problem solving while building competencies, sharing ideas, and strengthening their relationships.
 
-2. Continuous Learning Culture
+### Details
+
+1. Continuous Learning Culture
    - The dedicated fifth day serves as a catalyst for continuous learning within your organization.
    - By designating it as a learning day, you provide uninterrupted time for your team to engage in our workshops and expand their skills.
    - This consistent focus on learning cultivates a culture of growth, innovation, and adaptability.
 
-3. Deep Dive into Development
+1. Deep Dive into Development
    - With an entire day dedicated to learning, your team can delve deep into our workshops, exploring concepts, engaging in hands-on exercises, and fostering meaningful discussions.
    - This extended time allows for a more comprehensive understanding of the subject matter and encourages experimentation and mastery.
 
-4. Nurturing Collaboration and Innovation
+1. Nurturing Collaboration and Innovation
    - The 4+1 Learning Model nurtures collaboration among team members.
    - As they collectively participate in workshops, they share insights, collaborate on projects, and ignite innovation.
    - The dedicated learning day provides a structured environment for brainstorming ideas, problem-solving, and cross-pollination of skills, resulting in enhanced team dynamics and breakthrough solutions.
 
-5. Retention and Attraction of Top Talent
+1. Retention and Attraction of Top Talent
    - Embracing the 4+1 Learning Model sends a strong message to current and prospective employees.
    - It demonstrates your commitment to their growth, development, and work-life balance.
    - This fosters employee loyalty, boosts retention rates, and attracts top talent seeking progressive organizations that prioritize their team's well-being and professional advancement.
