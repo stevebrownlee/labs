@@ -24,7 +24,7 @@ hero:
 
 <div style="display:flex">
   <div style="flex: 1; margin: 1rem">
-    <img src="/labs/assets/images/benefits/confidence.png" style="max-height: 300px; border-radius: 3rem;"  />
+    <img src="/assets/images/benefits/confidence.png" style="max-height: 300px; border-radius: 3rem;"  />
   </div>
   <div style="flex: 2; margin: 1rem">
     <h1>Confidence</h1>
@@ -49,14 +49,14 @@ hero:
     <p>Having a rich, diverse and well-developed network of peers is the greatest benefit you gain from working on projects at Stepping Stone Labs. You will be working with teams of people who are just as curious and driven as you, and likely in the same place in their careers. While they may not be hiring managers (but sometimes they are), they are definitely involved in the hiring process.</p>
   </div>
   <div style="flex: 1; margin: 1rem">
-    <img src="/labs/assets/images/benefits/network.png" style="max-height: 300px; border-radius: 3rem;"  />
+    <img src="/assets/images/benefits/network.png" style="max-height: 300px; border-radius: 3rem;"  />
   </div>
 </div>
 
 
 <div style="display:flex">
   <div style="flex: 1; margin: 1rem">
-    <img src="/labs/assets/images/benefits/options.png" style="max-height: 300px; border-radius: 3rem;"  />
+    <img src="/assets/images/benefits/options.png" style="max-height: 300px; border-radius: 3rem;"  />
   </div>
   <div style="flex: 2; margin: 1rem">
     <h1>More Career Options</h1>
