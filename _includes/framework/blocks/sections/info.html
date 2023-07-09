@@ -1,5 +1,6 @@
 {% assign heading = include.heading %}
 {% assign sub_heading = include.sub_heading %}
+{% assign sub_heading_2 = include.sub_heading_2 %}
 {% assign image = include.image %}
 {% assign align = include.align | default: 'left' %}
 {% assign features = include.features %}
@@ -13,7 +14,10 @@
           <h2>{{ heading }}</h2>
         {% endif %}
         {% if sub_heading %}
-          <p class="mt-1 large {% if align == 'center' %}mx-auto{% endif %}">{{ sub_heading }}</p>
+          <p class="mt-3 large {% if align == 'center' %}mx-auto{% endif %}">{{ sub_heading }}</p>
+        {% endif %}
+        {% if sub_heading_2 %}
+          <p class="mt-3 {% if align == 'center' %}mx-auto{% endif %}">{{ sub_heading_2 }}</p>
         {% endif %}
         {% if features.enabled and features.list.size > 0 %}
           <ul>

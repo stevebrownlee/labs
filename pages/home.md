@@ -2,22 +2,22 @@
 layout: home
 permalink: "/"
 title: "Stepping Stone Labs"
-description: "Pioneering the possible in technical learning and growth"
+description: "Reignite your passion for learning and accelerate your growth"
 header_transparent: true
 meta_title: Stepping Stone Labs
 
 hero:
   enabled: true
   heading: "Stepping Stone Labs"
-  sub_heading: "Powerful, competency-based programs for growing technical careers"
+  sub_heading: "Reignite your passion for learning and accelerate your growth"
   text_color: "#FFFFFF"
   background_color: "#1d2830"
   background_gradient: true
-  background_image: "/assets/images/home/Main-Hero-Watercolor-Small.png"
+  background_image: "/assets/images/home/stones.png"
   background_image_blend_mode: overlay # "overlay", "multiply", "screen"
   fullscreen_mobile: true
   fullscreen_desktop: false
-  height: "450px"
+  height: "370px"
   intro_image: "/assets/images/home/hex-small.png"
 
 packages:
@@ -34,16 +34,15 @@ intro:
   enabled: true
   align: left
   image: "/assets/images/home/team--small.png"
-  heading: "We've helped hundreds of people grow their technical careers."
-  sub_heading: ""
+  heading: "Rekindle The Flame 🔥"
+  sub_heading: "Remember the excitement when you started as a developer, when the whole world felt like it was yours to discover?"
+  sub_heading_2: "Reignite that passion for learning and deepen your competencies with Stepping Stone Labs' hands-on workshops. You will work with a select group of curious developers to gain in-demand skills and a strong network of peers that will transform you into a respected and valued developer that elevates any team."
   features:
-    enabled: true
+    enabled: false
     list:
-      - text: "Seasoned professionals that want to accelerate a career."
+      - text: "Experienced professionals wanting to accelerate a career."
         fa_icon: "fas fa-check"
       - text: "Technologists that need to acquire a specific skill."
-        fa_icon: "fas fa-check"
-      - text: "Beginners looking to break into the field."
         fa_icon: "fas fa-check"
       - text: "People seeking coaching for their personal goals."
         fa_icon: "fas fa-check"

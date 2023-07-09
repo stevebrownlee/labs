@@ -1,4 +1,5 @@
 ---
+layout: list
 title: "Sprints"
 description: "Work with a team of peers on smaller scale projects that develop an array of skills."
 weight: 2
@@ -10,7 +11,7 @@ image: "/assets/images/gen/packages/sprint--large.png"
 hero:
   enabled: true
   heading: "Sprints"
-  sub_heading: "Work with a team of peers on smaller scale projects that develop an array of skills."
+  sub_heading: "Sprint put you on a team with other curious and imaginitive developers to build a project that develops a variety of skills over a 6-8 week span."
   text_color: "#ffffff"
   background_color: "#2d2830"
   background_gradient: false
@@ -19,8 +20,9 @@ hero:
   fullscreen_mobile: false
   fullscreen_desktop: false
   height: 400px
+
+grid:
+  collection: "sprints"
+  sort_by: "weight" # "date", "weight"
+  columns: 3
 ---
-
-# Project Sprints
-
-Much more than a simple workshop where you learn a targeted, specific skills or tool, Sprints put you on a team with other curious and imaginitive developers to build a small project that develops a variety of skills.

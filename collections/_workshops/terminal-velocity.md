@@ -5,8 +5,8 @@ weight: 1
 cost: "$350 USD"
 categories: ["Development", "Terminal", "Automation", "Beginner"]
 description: "Learn how to automate, configure, and customize your environment and applications with shell scripts."
-thumbnail: "/assets/images/gen/insights/blacksmith.png"
-image: "/assets/images/gen/insights/blacksmith.png"
+thumbnail: "/assets/images/gen/packages/terminal-velocity-thumbnail.png"
+image: "/assets/images/gen/packages/terminal-velocity.png"
 ---
 
 ## Prerequisites
@@ -55,3 +55,31 @@ You will be competent in the follow skills:
 **Terraform Your Cloud**
 
 **Containers For Beginners**
+
+
+ <!-- Replace "test" with your own sandbox Business account app client ID -->
+ <script src="https://www.paypal.com/sdk/js?client-id=AU2T-_KiSEGLry9rRoWEtaXza2kWvdKR9mtSdqK0qY4Rh58yB3HtEsyFCgGgLHRk31Poi0N5eWPpC-xU"></script>
+
+ <div id="paypal-button-container"></div>
+
+<script>
+  paypal.Buttons({
+    createOrder: function(data, actions) {
+      // Set up the transaction details
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '350.00'
+          }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      // Capture the transaction when the customer approves the payment
+      return actions.order.capture().then(function(details) {
+        // Redirect or show a success message to the customer
+        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+      });
+    }
+  }).render('#paypal-button-container');
+</script>

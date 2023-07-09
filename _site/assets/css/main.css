@@ -10662,18 +10662,18 @@ html[data-mode=dark] .highlight .gi {
 
 .section {
   background-repeat: no-repeat;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 60px;
 }
 @media (min-width: 768px) {
   .section {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 60px;
   }
 }
 @media (min-width: 992px) {
   .section {
-    padding-top: 90px;
+    padding-top: 30px;
     padding-bottom: 90px;
   }
 }
@@ -11480,8 +11480,8 @@ form input[type=submit] {
 .info .info-content p {
   color: inherit;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.36;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 @media (min-width: 768px) {
   .info .info-content p {

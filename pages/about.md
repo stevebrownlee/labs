@@ -3,13 +3,13 @@ layout: about
 title: "Stepping Stone Labs"
 header_transparent: true
 permalink: "/about/"
-description: "Pioneering the possible in technical learning and growth."
+description: "Reignite your passion for learning and accelerate your growth."
 image: "/assets/images/about/stepping-stones-02.png"
 
 hero:
   enabled: true
   heading: "Stepping Stone Labs"
-  sub_heading: "Pioneering the possible in technical learning and growth."
+  sub_heading: "Reignite your passion for learning and accelerate your growth."
   text_color: "#ffffff"
   background_color: "#2d2830"
   background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"

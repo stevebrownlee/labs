@@ -1,7 +1,8 @@
 ---
 layout: workshop
 title: "Shipping Code"
-weight: 6
+weight: 1
+cost: "$500 USD"
 categories: ["Development", "CI/CD", "Automation"]
 description: "Learn to build a basic CI/CD pipeline for shipping features quickly."
 thumbnail: "/assets/images/gen/packages/shipping-thumbnail.png"

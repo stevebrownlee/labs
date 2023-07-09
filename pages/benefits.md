@@ -3,7 +3,7 @@ layout: basic
 date: 2018-02-12T15:37:57+07:00
 header_transparent: true
 title: "Benefits"
-description: "Pioneering the possible in technical learning and growth"
+description: "Reignite your passion for learning and accelerate your growth"
 permalink: "/benefits/"
 
 hero:
@@ -69,5 +69,3 @@ hero:
     <p>You will work with cloud orchestration tools, telemetry solutions, performance enhancing strategies, message queues for event driven systems, design patters, and more. While some, or even most, of those are not your career targets, having the versatility to understand how they work and be a part of the conversation when designing systems will give you options.</p>
   </div>
 </div>
-
-

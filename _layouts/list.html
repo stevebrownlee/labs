@@ -46,6 +46,21 @@ body_classes: page-list
   </div>
 {% endif %}
 
+{% assign content = content | strip_newlines %}
+{% if content != ""  %}
+  <div class="section strip-border-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="content">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
 {% assign cards = site[page.grid.collection] | sort: 'date' | reverse %}
 {% assign limit = page.grid.limit | default: nil %}
 {% assign sort_by = page.grid.sort_by | default: 'date' %}
@@ -113,17 +128,3 @@ body_classes: page-list
   </div>
 {% endif %}
 
-{% assign content = content | strip_newlines %}
-{% if content != ""  %}
-  <div class="section strip-border-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-8">
-          <div class="content">
-            {{ content }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-{% endif %}

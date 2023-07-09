@@ -30,6 +30,6 @@ If you want to invest in your career by partnering with us for some personal coa
 My coaching style focuses on three main factors
 
 1. **Curiosity and Learning** - We will approach every goal with a curious mindset to explore all possibilities and learn new strategies along the way that work for you.
-2. **Honest and Direct Conversations** - Building on a foundation of trust, all of our conversations will focus on honest observations, and then directly identifying addressing obstacles in your way of achieving your goals.
+2. **Honest and Direct Conversations** - Building on a foundation of trust, all of our conversations will focus on honest observations, and then directly identifying and addressing obstacles preventing you from achieving your goals.
 3. **Identify and Develop Strengths** - You have strengths that are unique, and we will uncover what those are and how you can use them to overcome obstacles and achieve your goals.
 
