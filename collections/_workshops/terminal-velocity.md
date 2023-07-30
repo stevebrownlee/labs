@@ -7,6 +7,29 @@ categories: ["Development", "Terminal", "Automation", "Beginner"]
 description: "Learn how to automate, configure, and customize your environment and applications with shell scripts."
 thumbnail: "/assets/images/gen/packages/terminal-velocity-thumbnail.png"
 image: "/assets/images/gen/packages/terminal-velocity.png"
+sessions:
+  enabled: true
+  list:
+    - competencies: ["Aliases", "Functions", "Automation"]
+      title: "Tame the Terminal"
+      description: "Learn the basics of shells, terminals, and kernels. Make your shell environment work for you by defining aliases and functions."
+      project: "Your team will build fast, easy to use, terminal-based REST client functions for testing APIs"
+      duration: 2
+    - competencies: ["Basic Bash Syntax"]
+      title: "Git Workflow"
+      description: "Learn the basic syntax of bash scripting to automate complex workflow."
+      project: "Your team will author a bash script that automates initializing a new git repository, downloads the correct .gitignore, and configures a Github remote origin."
+      duration: 2.5
+    - competencies: ["Intermediate Bash Syntax"]
+      title: "API Setup"
+      description: "Learn how to install software, execute other programs, redirect I/O, and configure a database with a Bash script."
+      project: "Your team will build fast, easy to use, terminal-based REST client functions for testing APIs"
+      duration: 4.5
+    - competencies: ["Shell Manipulation"]
+      title: "Personalization"
+      description: "Learn how to install software, execute other programs, redirect I/O, and configure a database with a Bash script."
+      project: "Your team will build fast, easy to use, terminal-based REST client functions for testing APIs"
+      duration: 4.5
 ---
 
 ## Prerequisites

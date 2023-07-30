@@ -37,16 +37,6 @@ intro:
   heading: "Rekindle The Flame 🔥"
   sub_heading: "Remember the excitement when you started as a developer, when the whole world felt like it was yours to discover?"
   sub_heading_2: "Reignite that passion for learning and deepen your competencies with Stepping Stone Labs' hands-on workshops. You will work with a select group of curious developers to gain in-demand skills and a strong network of peers that will transform you into a respected and valued developer that elevates any team."
-  features:
-    enabled: false
-    list:
-      - text: "Experienced professionals wanting to accelerate a career."
-        fa_icon: "fas fa-check"
-      - text: "Technologists that need to acquire a specific skill."
-        fa_icon: "fas fa-check"
-      - text: "People seeking coaching for their personal goals."
-        fa_icon: "fas fa-check"
-
 
 insights:
   enabled: true

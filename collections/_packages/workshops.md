@@ -1,7 +1,7 @@
 ---
-layout: list
+layout: stackedlist
 title: "Workshops"
-description: "Short, powerful workshops that target specific technical skills."
+description: "Short, powerful workshops that target specific skills."
 weight: 1
 header_transparent: true
 fa_icon: false
@@ -19,7 +19,7 @@ hero:
   background_image: "/assets/images/gen/packages/workshop-large.png"
   fullscreen_mobile: false
   fullscreen_desktop: false
-  height: 300px
+  height: "200px"
 
 grid:
   collection: "workshops"
@@ -27,6 +27,6 @@ grid:
   columns: 3
 ---
 
-# Targeted and Low Risk
+# Monthly Workshops
 
-Workshops from Stepping Stone Labs focus on one or two specific concepts, tools, or processes. They typically last a few weeks. Learners gain confidence that their competencies have been strengthened and can be immediately applied on the job.
+Workshops typically last a 1 or 2 days. You gain competencies that can be immediately applied on the job.

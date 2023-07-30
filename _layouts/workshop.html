@@ -3,6 +3,8 @@ layout: default
 body_classes: page-post page-post-1
 ---
 
+{% assign sessions = page.sessions %}
+
 <div class="section">
   <div class="container post-header">
 
@@ -31,36 +33,41 @@ body_classes: page-post page-post-1
       <div class="workshop-cost">{{ page.cost }}</div>
     </div>
     {% endif %}
-
-
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-10">
-        {% if page.image %}
-        <div class="post-image">
-          <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" />
-        </div>
-        {% endif %}
-      </div>
-    </div>
-
   </div>
 </div>
+
+{% if page.sessions and page.sessions.list.size > 0 %}
+<div class="section pt-0">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <h2>Sessions</h2>
+        <div class="d-flex flex-row justify-content-between">
+          {% for session in page.sessions.list %}
+          <div class="m-1" style="display: flex; flex-direction: column; flex: 1 1 20%;">
+            <div class="card-title">
+              <h3>{{ session.title }}</h3>
+            </div>
+            <div class="card-body" style="margin: 1rem 0;flex-grow: 1;">
+              {{ session.description }}
+            </div>
+            <div class="card-footer" style="margin-top:auto;">Duration: {{ session.duration }} hours</div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
 
 <div class="section pt-0">
   <div class="container">
     <div class="row justify-content-center">
-
       <div class="col-12 col-lg-8">
         <div class="content">{{ content }}</div>
-        {% if site.disqus.shortname %}
-        {% if page.comments != false %}
-        <div class="comments mt-3">
-          {% include framework/global/integrations/disqus.html %}
-        </div>
-        {% endif %}
-        {% endif %}
       </div>
-
     </div>
   </div>
 </div>

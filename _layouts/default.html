@@ -11,6 +11,8 @@
     <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="{{ site.fonts.google_fonts }}" rel="stylesheet">
+    <link href="{{ '/assets/css/tailwind.css' | relative_url }}" rel="stylesheet">
+
 
     {% if site.darkmode.enable_dark_mode != false %}
       <script>
@@ -24,7 +26,7 @@
 {% include framework/global/menu/menu-main-mobile.html %}
 {% include framework/global/header/header.html %}
 
-<div id="wrapper" class="wrapper">     
+<div id="wrapper" class="wrapper">
   {{ content }}
 </div>
 

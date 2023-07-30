@@ -18,17 +18,9 @@
 @import "bootstrap/mixins";
 
 // 6. Optionally include any other parts as needed
-@import "bootstrap/utilities";
-@import "bootstrap/containers"; 
+@import "bootstrap/containers";
 @import "bootstrap/grid";
 @import "bootstrap/buttons";
-
-// 7. Include utilties overrides
-@import "utilities";
-
-// 8. Include utilities API last to generate classes based on the Sass map in `_utilities.scss`
-@import "bootstrap/utilities/api";
-
 
 // Zerostatic Core SCSS
 @import "zerostatic/global/reset";
