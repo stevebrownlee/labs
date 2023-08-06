@@ -2,7 +2,7 @@
 layout: workshop
 title: "Terminal Velocity"
 weight: 1
-cost: "$350 USD"
+cost: 350
 categories: ["Development", "Terminal", "Automation", "Beginner"]
 description: "Learn how to automate, configure, and customize your environment and applications with shell scripts."
 thumbnail: "/assets/images/gen/packages/terminal-velocity-thumbnail.png"
@@ -10,14 +10,14 @@ image: "/assets/images/gen/packages/terminal-velocity.png"
 sessions:
   enabled: true
   list:
-    - competencies: ["Aliases", "Functions", "Automation"]
-      title: "Tame the Terminal"
+    - competencies: ["Aliases", "Shells", "Functions", "Variables"]
+      title: "Shell Basics"
       description: "Learn the basics of shells, terminals, and kernels. Make your shell environment work for you by defining aliases and functions."
       project: "Your team will build fast, easy to use, terminal-based REST client functions for testing APIs"
       duration: 2
-    - competencies: ["Basic Bash Syntax"]
-      title: "Git Workflow"
-      description: "Learn the basic syntax of bash scripting to automate complex workflow."
+    - competencies: ["Prompts", "Workflows", "Functions", "Conditions"]
+      title: "Basic Automation of Workflows"
+      description: "Learn how to build interactive bash scripts and automate complex workflows."
       project: "Your team will author a bash script that automates initializing a new git repository, downloads the correct .gitignore, and configures a Github remote origin."
       duration: 2.5
     - competencies: ["Intermediate Bash Syntax"]
@@ -32,33 +32,11 @@ sessions:
       duration: 4.5
 ---
 
-## Prerequisites
+## Overview and Competencies
 
-1. If you use Visual Studio Code as your main editor, install the [shell-format](https://marketplace.visualstudio.com/items?itemName=foxundermoon.shell-format) extension
-2. Come with one of the following setups
-	* Mac OS
-	* Linux
-	* Windows with [Ubuntu installed in WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
-3. Your account has admin access to run `sudo`
-4. Have node and npm installed. We recommend that you use [Node Version Manager](https://github.com/nvm-sh/nvm#installing-and-updating) (nvm) to do this.
-5. Have JSON Server installed with `npm i -g json-server`
-6. Collaborative mindset - you will be working with teammates.
-7. Know what your default shell environment is by running `echo $SHELL` in your terminal. It will likely be bash (/bin/sh) or zsh (/bin/zsh).
+This workshop is for beginner to expert software developers who want to build competencies in using the power of bash scripts to automate tasks, configure platforms, and customize their shell environment. It builds a foundation of knowledge for those who wish to understand the full depth of DevOps/Platform Engineering.
 
-## Overview
-
-The Terminal Velocity workshop will celebrate the wonderous joys of the bash interactive environment. You will go on a brief history of kernels, shells, and terminal emulators. Then you will embark on a journey of discovery about using aliases, functions, and bash scripts to accelerate and automate common tasks you do in your terminal.
-
-You will use some commands and tools you likely have never used before.
-
-* sed
-* grep
-* curl
-* heredoc
-* case
-* PS3 prompt
-
-You will be competent in the follow skills:
+You will build the following competencies in this workshop's sessions:
 
 1.  Creating shell aliases for commonly used terminal commands that are cumbersome to type and remember.
 2.  Authoring shell functions for common tasks that you perform in the terminal that involves a few processes, or requires some parameterization.
@@ -66,43 +44,18 @@ You will be competent in the follow skills:
 4.  Basic proficiency with the vim terminal editor program. Just enough to get your started and able to make simple changes in a text file.
 5. Defining and using environment variables to customize how your functions and scripts behave depending on the user and/or the environment. Environment variables are also key to keeping sensitive data out of your code.
 
-## Workshop Format
 
-**Duration**: 8 hours
+## How It Works
 
-**Delivery**: Virtual
+You will received an email containing the Zoom URL and instructions for preparing your machine for the workshop 3 days in advance. It will contain the steps needed to install the tools you will be using for the workshop. The workshop will run for 4 consecutive evenings. The topics covered in each session is listed below.
+
+In each session, your coach will provide a guided tour of the concepts, and their application, in the terminal. After that, you will work with your teammates to collaboratively implement the concepts on your own project.
+
+## Prerequisites
+
+1. Basic competence in bash commands _(e.g. ls, mkdir, touch, etc.)_
+2. Your user account must have administrative rights for your machine.
+3. You will need a machine running the Mac OS, Linux, or Windows with [Ubuntu installed in WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
 
 
-## Workshops Unlocked
 
-**Terraform Your Cloud**
-
-**Containers For Beginners**
-
-
- <!-- Replace "test" with your own sandbox Business account app client ID -->
- <script src="https://www.paypal.com/sdk/js?client-id=AU2T-_KiSEGLry9rRoWEtaXza2kWvdKR9mtSdqK0qY4Rh58yB3HtEsyFCgGgLHRk31Poi0N5eWPpC-xU"></script>
-
- <div id="paypal-button-container"></div>
-
-<script>
-  paypal.Buttons({
-    createOrder: function(data, actions) {
-      // Set up the transaction details
-      return actions.order.create({
-        purchase_units: [{
-          amount: {
-            value: '350.00'
-          }
-        }]
-      });
-    },
-    onApprove: function(data, actions) {
-      // Capture the transaction when the customer approves the payment
-      return actions.order.capture().then(function(details) {
-        // Redirect or show a success message to the customer
-        alert('Transaction completed by ' + details.payer.name.given_name + '!');
-      });
-    }
-  }).render('#paypal-button-container');
-</script>

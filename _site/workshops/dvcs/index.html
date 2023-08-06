@@ -287,9 +287,7 @@
 <div id="wrapper" class="wrapper">
   
 
-<div class="section">
   <div class="container post-header">
-
     <div class="row justify-content-center">
       <div class="col-12 col-lg-8">
         
@@ -350,16 +348,12 @@
 
     
     <div class="row justify-content-center">
-      <div class="workshop-cost">$175 USD</div>
+      <div class="workshop-cost">$$175 USD</div>
     </div>
     
   </div>
-</div>
 
-
-
-
-<div class="section pt-0">
+<div class="pt-0">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-8">
@@ -381,6 +375,36 @@
     </div>
   </div>
 </div>
+
+
+
+
+<script src="https://www.paypal.com/sdk/js?client-id=AU2T-_KiSEGLry9rRoWEtaXza2kWvdKR9mtSdqK0qY4Rh58yB3HtEsyFCgGgLHRk31Poi0N5eWPpC-xU"></script>
+
+<div id="paypal-button-container" class="text-center ml-40 mr-40"></div>
+
+<script>
+ paypal.Buttons({
+   createOrder: function(data, actions) {
+     // Set up the transaction details
+     return actions.order.create({
+       purchase_units: [{
+         amount: {
+           value: '$175 USD'
+         }
+       }]
+     });
+   },
+   onApprove: function(data, actions) {
+     // Capture the transaction when the customer approves the payment
+     return actions.order.capture().then(function(details) {
+       // Redirect or show a success message to the customer
+       alert('Transaction completed by ' + details.payer.name.given_name + '!');
+     });
+   }
+ }).render('#paypal-button-container');
+</script>
+
 </div>
 
 

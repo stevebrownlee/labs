@@ -12,20 +12,23 @@
 {% assign client = include.client %}
 {% assign thumbnail_size = include.thumbnail_size %}
 
-<div class="flex flex-col border-solid border-slate-700 border m-10">
+<div class="flex flex-row border-solid border-slate-700 border ml-40 mr-40 mb-4">
 
-    <div class="m-1 text-2xl">
-        <a href="{{ url | relative_url }}">{{ title }}</a>
+    <div class="b bg-sky-800 max-w-xs">&nbsp;</div>
+
+    {% if thumbnail %}
+    <div class="p-4">
+        <a href="{{ url | relative_url }}">
+            <img style="max-width:5rem;" alt="{{ title }}" src="{{ thumbnail | relative_url }}" />
+        </a>
     </div>
+    {% endif %}
 
-    <div class="flex flex-row flex-nowrap flex-1 pt-10">
-        {% if thumbnail %}
-        <div class="">
-            <a href="{{ url | relative_url }}">
-                <img style="max-width:5rem;" alt="{{ title }}" src="{{ thumbnail | relative_url }}" />
-            </a>
+
+    <div class="flex flex-col flex-nowrap flex-1 p-4">
+        <div class="m-1 text-2xl">
+            <a href="{{ url | relative_url }}">{{ title }}</a>
         </div>
-        {% endif %}
 
         {% if description %}
         <div class="">
@@ -33,4 +36,6 @@
         </div>
         {% endif %}
     </div>
+
+    <div><p><a class="button rounded" href="{{ url | relative_url }}">Details</a></p></div>
 </div>
