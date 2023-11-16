@@ -11,23 +11,23 @@ sessions:
   enabled: true
   list:
     - competencies: ["Aliases", "Shells", "Functions", "Variables"]
-      title: "Shell Basics"
+      title: "Session 1: Shell Basics"
       description: "Learn the basics of shells, terminals, and kernels. Make your shell environment work for you by defining aliases and functions."
       project: "Your team will build fast, easy to use, terminal-based REST client functions for testing APIs"
       duration: 2
     - competencies: ["Prompts", "Workflows", "Functions", "Conditions"]
-      title: "Basic Automation of Workflows"
+      title: "Session 2: Basic Automation of Workflows"
       description: "Learn how to build interactive bash scripts and automate complex workflows."
       project: "Your team will author a bash script that automates initializing a new git repository, downloads the correct .gitignore, and configures a Github remote origin."
       duration: 2.5
     - competencies: ["Intermediate Bash Syntax"]
-      title: "API Setup"
+      title: "Session 3: Intro to DevOps"
       description: "Learn how to install software, execute other programs, redirect I/O, and configure a database with a Bash script."
       project: "Your team will build fast, easy to use, terminal-based REST client functions for testing APIs"
       duration: 4.5
-    - competencies: ["Shell Manipulation"]
-      title: "Personalization"
-      description: "Learn how to install software, execute other programs, redirect I/O, and configure a database with a Bash script."
+    - competencies: ["Shell Customization"]
+      title: "Session 4: Personalization"
+      description: "Learn how to personalize your own shell sessions with advanced tools like pm2, Oh My Zsh, LS Deluxe, autojump."
       project: "Your team will build fast, easy to use, terminal-based REST client functions for testing APIs"
       duration: 4.5
 ---

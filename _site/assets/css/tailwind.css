@@ -545,11 +545,17 @@ video {
 .mb-4 {
   margin-bottom: 1rem;
 }
+.ml-20 {
+  margin-left: 5rem;
+}
 .ml-40 {
   margin-left: 10rem;
 }
 .mr-1 {
   margin-right: 0.25rem;
+}
+.mr-20 {
+  margin-right: 5rem;
 }
 .mr-40 {
   margin-right: 10rem;
@@ -624,9 +630,6 @@ video {
 }
 .pt-0 {
   padding-top: 0px;
-}
-.pt-10 {
-  padding-top: 2.5rem;
 }
 .text-center {
   text-align: center;

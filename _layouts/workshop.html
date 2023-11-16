@@ -5,91 +5,80 @@ body_classes: page-post page-post-1
 
 {% assign sessions = page.sessions %}
 
-  <div class="container post-header">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-8">
-        {% if page.categories %}
-        <div class="post-categories">
-          {% include framework/blocks/components/categories-badges.html
-          categories=page.categories
-          %}
-          {% endif %}
-        </div>
-        <div class="post-title">
-          <h1>{{ page.title }}</h1>
-        </div>
-        {% if page.description %}
-        <div class="post-description">
-          <p>{{ page.description }}</p>
-        </div>
+<div class="container post-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      {% if page.categories %}
+      <div class="post-categories">
+        {% include framework/blocks/components/categories-badges.html
+        categories=page.categories
+        %}
         {% endif %}
       </div>
-    </div>
-
-    {% if page.cost %}
-    <div class="row justify-content-center">
-      <div class="workshop-cost">${{ page.cost }}</div>
-    </div>
-    {% endif %}
-  </div>
-
-<div class="pt-0">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-8">
-        <div class="content">{{ content }}</div>
+      <div class="post-title">
+        <h1>{{ page.title }}</h1>
       </div>
+      {% if page.description %}
+      <div class="post-description">
+        <p>{{ page.description }}</p>
+      </div>
+      {% endif %}
     </div>
   </div>
+
+  {% if page.cost %}
+  <div class="row justify-content-center">
+    <div class="workshop-cost">${{ page.cost }}</div>
+  </div>
+  {% endif %}
+</div>
+
+<div class="ml-20 mr-20">
+  <div class="content">{{ content }}</div>
 </div>
 
 {% if page.sessions and page.sessions.list.size > 0 %}
-<div class="pt-10">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-10">
-        <h2 class="text-3xl pb-4">Sessions</h2>
-        <div class="d-flex flex-row justify-content-between">
-          {% for session in page.sessions.list %}
-          <div class="m-1" style="display: flex; flex-direction: column; flex: 1 1 20%;">
-            <div class="card-title">
-              <h3 class="text-xl">{{ session.title }}</h3>
-            </div>
-            <div class="card-body" style="margin: 1rem 0;flex-grow: 1;">
-              {{ session.description }}
-            </div>
-          </div>
-          {% endfor %}
-        </div>
+<div class="ml-20 mr-20">
+  <h2 class="text-3xl pb-4">Sessions</h2>
+  <div class="d-flex flex-row justify-content-between">
+    {% for session in page.sessions.list %}
+    <div class="m-1" style="display: flex; flex-direction: column; flex: 1 1 20%;">
+      <div class="card-title">
+        <h3 class="text-xl">{{ session.title }}</h3>
+      </div>
+      <div class="card-body" style="margin: 1rem 0;flex-grow: 1;">
+        {{ session.description }}
       </div>
     </div>
+    {% endfor %}
   </div>
 </div>
 {% endif %}
 
 
-<script src="https://www.paypal.com/sdk/js?client-id=AU2T-_KiSEGLry9rRoWEtaXza2kWvdKR9mtSdqK0qY4Rh58yB3HtEsyFCgGgLHRk31Poi0N5eWPpC-xU"></script>
+<script
+  src="https://www.paypal.com/sdk/js?client-id=AU2T-_KiSEGLry9rRoWEtaXza2kWvdKR9mtSdqK0qY4Rh58yB3HtEsyFCgGgLHRk31Poi0N5eWPpC-xU"></script>
 
 <div id="paypal-button-container" class="text-center ml-40 mr-40"></div>
 
 <script>
- paypal.Buttons({
-   createOrder: function(data, actions) {
-     // Set up the transaction details
-     return actions.order.create({
-       purchase_units: [{
-         amount: {
-           value: '{{ page.cost }}'
-         }
-       }]
-     });
-   },
-   onApprove: function(data, actions) {
-     // Capture the transaction when the customer approves the payment
-     return actions.order.capture().then(function(details) {
-       // Redirect or show a success message to the customer
-       alert('Transaction completed by ' + details.payer.name.given_name + '!');
-     });
-   }
- }).render('#paypal-button-container');
+  paypal.Buttons({
+    createOrder: function (data, actions) {
+      // Set up the transaction details
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '{{ page.cost }}'
+          }
+        }]
+      });
+    },
+    onApprove: function (data, actions) {
+      // Capture the transaction when the customer approves the payment
+      return actions.order.capture().then(function (details) {
+        // Redirect or show a success message to the customer
+        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+      });
+    }
+  }).render('#paypal-button-container');
 </script>

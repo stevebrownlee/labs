@@ -22,24 +22,29 @@ hero:
   height: 400px
 ---
 
-# Ascend - A program for long-term technical growth
+# Ascend
+
+## An Accelerated Path to Senior Software Roles
 
 
-Our **Ascend** program is a comprehensive and structured initiative designed to support the long-term professional development and advancement of software developers. This program aims to equip participants with the necessary technical skills, industry knowledge, leadership capabilities, and career guidance to thrive in their roles and pursue rewarding career paths in the software development field.
+The **Ascend** program is a comprehensive and structured initiative designed to support the long-term professional development and advancement of software developers. This program aims to equip participants with the necessary technical skills, industry knowledge, leadership capabilities, and career guidance to thrive in their roles and pursue rewarding career paths in the software development field.
+
+When you enter the program, you will join a small, select cohort of curious and motivated peers, alongside an experienced veteran as a mentor, to work on system challenges to expand your capabilities with every session. Our immersive, hands-on program has your team taking ownership of an existing system that must be grown and scaled to meet an ambitious technical vision.
 
 ## Program Objectives
 
-<img src="/assets/images/ascend/mindmap.png" style="margin: 0 0 0 4rem;" width="40%" align="right" alt="program outline" />
+<img src="{{ site.baseurl }}/assets/images/ascend/mindmap.png" style="margin: 0 0 0 4rem;" width="40%" align="right" alt="program outline" />
 
 ### Skill Enhancement
 
-For technologist who want to build a strong foundation of knowledge and competencies, the Ascend program guides learners through a four stage program that deepens and broadens their skills to be able to think in systems.
+For technologist who want to build a strong foundation of knowledge and competencies, the Ascend program guides them through a three stage program that deepens and broadens their skills to be able to think in systems and deliver business value.
 
 * Understanding how operating systems work and how to configure them.
-* Understanding and implemention of common design patterns.
+* Understanding and implementation of common design patterns.
 * Competency in event-based architectures.
-* Understanding all of the constituent parts of modern CI/CD pipelines.
+* Understanding the constituent parts of modern CI/CD pipelines.
 * Making valuable technical decisions and communicating them effectively to non-technical teammates.
+* Cloud services: From basic to advanced
 
 ### Networking and Collaboration
 
@@ -50,3 +55,17 @@ An integral part of this program is that each learner will be collaborating with
 This program has an additional, powerful effect. It will develop the leadership capabilities of each learner by helping them devise strategies for conflict resolution, defining vision, mentoring, and thinking strategically. This will enable them to take on increasingly complex and strategic roles within the organization - from senior engineer, to staff engineer, and principal engineer.
 
 If that is the path you want to take, you must have solid technical leadership skills so that you can partner with personnel managers to keep teams producing and growing consistently.
+
+## Structure and Commitment
+
+Ascend cohorts will be comprised of either 3 or 4 technologists and your cohort's mentor. This is a very limited and intimate engagement that requires a total commitment from each member of the team.  Each cohort will decide on the days and times of the sessions, and their frequency. People have families, travel plans, hobbies, and other interests that will dictate these factors.
+
+One cohort may be meeting two nights per week for 1-hour sessions. Another cohort may want to meet for 3 hours every Saturday. Your cohort will operate as a partnership and a peer support group, so ensuring that each member is in agreement about timing and cadence ensures accountability.
+
+Each cohort is designed to complete one tier of the program. Once a tier is complete, it is up to the cohort to continue together if everyone wants to take on the next tier, or to disband.
+
+## Pricing and Length
+
+Each tier's cost is $2500, with 25% due on acceptance and then 6 monthly payments of $312.50.
+
+Each tier will last approximately 6-8 months depending on the frequency of the cohort's sessions. If you are looking for a quick tutorial, look elsewhere. This program is based on science and these complex competencies take time, reflection, and practice to build.
