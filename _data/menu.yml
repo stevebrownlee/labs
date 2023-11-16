@@ -9,12 +9,10 @@ main:
     url: /packages/
     weight: 3
     child:
+      - name: "Ascend"
+        url: /packages/ascend/
       - name: "Workshops"
         url: /packages/workshops/
-      - name: "Sprints"
-        url: /packages/sprints/
-      - name: "Career Growth"
-        url: /packages/career-growth/
       - name: "Personal Coaching"
         url: /packages/coaching/
   - name: Insights

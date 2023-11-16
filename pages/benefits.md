@@ -62,7 +62,7 @@ hero:
     <h1>More Career Options</h1>
 
 
-    <p>There are jobs that you want that require a competency that you don't have, but you have all of the others. A diverse skillset allows you to attack opportunities that other can't - with confidence.</p>
+    <p>There are jobs that you want that require a competency that you don't have, but you have all of the others. A diverse skill set allows you to attack opportunities that other can't - with confidence.</p>
 
     <p>Because the projects at Stepping Stone Labs have you working across the entire spectrum of a tech stacks, and the necessary tools, you will gain a versatility of competencies that you might not ever gain on the job.</p>
 

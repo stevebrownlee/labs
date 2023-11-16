@@ -27,13 +27,13 @@ hero:
 ## An Accelerated Path to Senior Software Roles
 
 
+<img src="{{ site.baseurl }}/assets/images/ascend/mindmap.png" style="margin: 0 0 0 4rem;" width="40%" align="right" alt="program outline" />
+
 The **Ascend** program is a comprehensive and structured initiative designed to support the long-term professional development and advancement of software developers. This program aims to equip participants with the necessary technical skills, industry knowledge, leadership capabilities, and career guidance to thrive in their roles and pursue rewarding career paths in the software development field.
 
 When you enter the program, you will join a small, select cohort of curious and motivated peers, alongside an experienced veteran as a mentor, to work on system challenges to expand your capabilities with every session. Our immersive, hands-on program has your team taking ownership of an existing system that must be grown and scaled to meet an ambitious technical vision.
 
 ## Program Objectives
-
-<img src="{{ site.baseurl }}/assets/images/ascend/mindmap.png" style="margin: 0 0 0 4rem;" width="40%" align="right" alt="program outline" />
 
 ### Skill Enhancement
 
