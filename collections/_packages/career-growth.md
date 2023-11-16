@@ -74,7 +74,7 @@ The second tier of Ascend continues to both broaden and deepen your competencies
 
 ### Tier 3
 
-In the final tier of Ascend, your cohort will begin the journey of learning the thought processes, behaviors, technical prowess and business alignment that the highest value, most senior technologist bring to an organization. You will explore sophisticated telemetry solutions for high observability, modern cloud architecture tools, and implement a frictionless CI/CD solution. You will build the core skills of evaluating work that needs to be done, and evaluate the tools needed and be able to defend those decision when working with the business side of the organization.
+In the final tier of Ascend, your cohort will begin the journey of learning the thought processes, behaviors, technical prowess and business alignment that the highest value, most senior technologist bring to an organization. You will explore sophisticated telemetry solutions for high observability, modern cloud architecture tools, and implement a frictionless CI/CD solution. You will build the core skills of evaluating work that needs to be done, evaluate the tools needed, and be able to defend those decisions when working with the business side of the organization.
 
 
 ## Pricing and Length
