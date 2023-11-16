@@ -64,6 +64,19 @@ One cohort may be meeting two nights per week for 1-hour sessions. Another cohor
 
 Each cohort is designed to complete one tier of the program. Once a tier is complete, it is up to the cohort to continue together if everyone wants to take on the next tier, or to disband.
 
+### Tier 1
+
+In the first tier fo Ascend, you will be building the foundational competencies and understanding of automation, the Linux operating system, caching strategies, virtual machines, and some basic cloud services. The concepts are the bedrock of modern tools and processes, and give your cohort the ability to start meeting the technical vision.
+
+### Tier 2
+
+The second tier of Ascend continues to both broaden and deepen your competencies. You will learn how all of the pieces of a mature CI/CD process. You will deepen your understanding of software fundamentals like inheritance, common software patterns, and data structures. You will explore the fundamentals of automating the creation of infrastructure. You will also grow your ability to provide high value to any organization by making smart, reliable technology decisions that are maintainable, cost-effective, and observable.
+
+### Tier 3
+
+In the final tier of Ascend, your cohort will begin the journey of learning the thought processes, behaviors, technical prowess and business alignment that the highest value, most senior technologist bring to an organization. You will explore sophisticated telemetry solutions for high observability, modern cloud architecture tools, and implement a frictionless CI/CD solution. You will build the core skills of evaluating work that needs to be done, and evaluate the tools needed and be able to defend those decision when working with the business side of the organization.
+
+
 ## Pricing and Length
 
 Each tier's cost is $2500, with 25% due on acceptance and then 6 monthly payments of $312.50.
