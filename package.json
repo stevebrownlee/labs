@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm-watch tailwind",
-    "tailwind": "postcss ./assets/css/tailwind.css -o ./_site/assets/css/tailwind.css"
+    "tailwind": "postcss ./assets/css/tailwind.css -o ./assets/css/tailwind.compiled.css"
   },
   "watch": {
     "tailwind": {
