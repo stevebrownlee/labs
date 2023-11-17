@@ -4,7 +4,7 @@ title: "Terminal Velocity"
 weight: 1
 cost: 350
 categories: ["Development", "Terminal", "Automation", "Beginner"]
-description: "Learn how to automate, configure, and customize your environment and applications with shell scripts."
+description: "Learn how to automate, configure, and customize your environment and applications with shell scripts. Shell scripting is the foundational competency for understanding automation."
 thumbnail: "/assets/images/gen/packages/terminal-velocity-thumbnail.png"
 image: "/assets/images/gen/packages/terminal-velocity.png"
 sessions:

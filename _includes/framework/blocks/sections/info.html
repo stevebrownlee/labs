@@ -17,11 +17,15 @@
           <p class="mt-3 large {% if align == 'center' %}mx-auto{% endif %}">{{ sub_heading }}</p>
         {% endif %}
         {% if sub_heading_2 %}
-          <p class="mt-3 {% if align == 'center' %}mx-auto{% endif %}">{{ sub_heading_2 }}</p>
+          <p style="line-height: 1.65;" class="mt-3 {% if align == 'center' %}mx-auto{% endif %}">{{ sub_heading_2 }}</p>
           {% assign workshopURL = "packages/workshops" %}
+          {% assign ascendURL = "packages/ascend" %}
 
+          <a href="{{ascendURL | relative_url }}" class="button mt-4">
+            ✈️ Ascend Your Career
+          </a>
           <a href="{{workshopURL | relative_url }}" class="button mt-4">
-            See Upcoming Workshops
+            ⚒️ See Upcoming Workshops
           </a>
         {% endif %}
         {% if features.enabled and features.list.size > 0 %}

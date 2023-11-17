@@ -5,8 +5,10 @@ body_classes: page-post page-post-1
 
 {% assign sessions = page.sessions %}
 
+<div style="height: 10rem;"></div>
+
 <div class="container post-header">
-  <div class="row justify-content-center">
+  <div class="row" style="justify-content: center;">
     <div class="col-lg-8">
       {% if page.categories %}
       <div class="post-categories">
@@ -16,7 +18,7 @@ body_classes: page-post page-post-1
         {% endif %}
       </div>
       <div class="post-title">
-        <h1>{{ page.title }}</h1>
+        <h1 class="text-5xl" style="margin: 3rem 0;">{{ page.title }}</h1>
       </div>
       {% if page.description %}
       <div class="post-description">
@@ -25,41 +27,55 @@ body_classes: page-post page-post-1
       {% endif %}
     </div>
   </div>
-
-  {% if page.cost %}
-  <div class="row justify-content-center">
-    <div class="workshop-cost">${{ page.cost }}</div>
-  </div>
-  {% endif %}
 </div>
 
-<div class="ml-20 mr-20">
-  <div class="content">{{ content }}</div>
-</div>
+<div style="height: 5rem;"></div>
 
-{% if page.sessions and page.sessions.list.size > 0 %}
-<div class="ml-20 mr-20">
-  <h2 class="text-3xl pb-4">Sessions</h2>
-  <div class="d-flex flex-row justify-content-between">
-    {% for session in page.sessions.list %}
-    <div class="m-1" style="display: flex; flex-direction: column; flex: 1 1 20%;">
-      <div class="card-title">
-        <h3 class="text-xl">{{ session.title }}</h3>
+<div class="container post-header">
+  <div class="row" style="justify-content: center;">
+    <div class="col-lg-8">
+
+      <div class="content">{{ content }}</div>
+
+      {% if page.sessions and page.sessions.list.size > 0 %}
+        <h2 class="text-3xl pb-4">Sessions</h2>
+        <div class="d-flex flex-row justify-content-between">
+          {% for session in page.sessions.list %}
+          <div class="m-1 mb-4 border-cyan-700 p-4 border bg-slate-100 flex flex-col flex-1">
+            <div class="card-title bg-teal-100 p-1">
+              <h3 class="text-xl">{{ session.title }}</h3>
+            </div>
+            <div class="card-body p-1" style="margin: 1rem 0;flex-grow: 1;">
+              {{ session.description }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if page.cost %}
+      <div class="row" style="justify-content: center;">
+        <div class="workshop-cost">${{ page.cost }}</div>
       </div>
-      <div class="card-body" style="margin: 1rem 0;flex-grow: 1;">
-        {{ session.description }}
-      </div>
+      {% endif %}
+
+      <div style="height: 5rem;"></div>
+
+      <div id="paypal-button-container" class="text-center ml-40 mr-40"></div>
+
+
     </div>
-    {% endfor %}
   </div>
 </div>
-{% endif %}
+
+
+
 
 
 <script
   src="https://www.paypal.com/sdk/js?client-id=AU2T-_KiSEGLry9rRoWEtaXza2kWvdKR9mtSdqK0qY4Rh58yB3HtEsyFCgGgLHRk31Poi0N5eWPpC-xU"></script>
 
-<div id="paypal-button-container" class="text-center ml-40 mr-40"></div>
+
 
 <script>
   paypal.Buttons({

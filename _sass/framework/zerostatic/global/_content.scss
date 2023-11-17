@@ -58,8 +58,9 @@
     list-style: decimal;
   }
   li {
-    margin-left: 20px;
+    margin: 0 0 0.75rem 1rem;
     line-height: 1.5;
+
   }
   a {
     color: var(--color-base-text);

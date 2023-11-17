@@ -2,7 +2,7 @@
 layout: workshop
 title: "Container Explainer"
 weight: 5
-cost: "$350 USD"
+cost: "350 USD"
 categories: ["Development", "Containers", "CI/CD", "Automation"]
 description: "Learn the basics of containerization for a local development environment."
 thumbnail: "/assets/images/gen/packages/containers-thumbnail.png"

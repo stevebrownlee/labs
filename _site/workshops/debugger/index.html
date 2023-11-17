@@ -207,36 +207,24 @@
           
           <div class="dropdown-menu">
             
+              <a href="/labs/packages/ascend/" class="dropdown-item ">
+                
+                
+
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-name">Ascend</div>
+                  
+                </div>
+
+              </a>
+
+            
               <a href="/labs/packages/workshops/" class="dropdown-item ">
                 
                 
 
                 <div class="dropdown-item-content">
                   <div class="dropdown-item-name">Workshops</div>
-                  
-                </div>
-
-              </a>
-
-            
-              <a href="/labs/packages/sprints/" class="dropdown-item ">
-                
-                
-
-                <div class="dropdown-item-content">
-                  <div class="dropdown-item-name">Sprints</div>
-                  
-                </div>
-
-              </a>
-
-            
-              <a href="/labs/packages/career-growth/" class="dropdown-item ">
-                
-                
-
-                <div class="dropdown-item-content">
-                  <div class="dropdown-item-name">Career Growth</div>
                   
                 </div>
 
@@ -287,8 +275,10 @@
 <div id="wrapper" class="wrapper">
   
 
+<div style="height: 10rem;"></div>
+
 <div class="container post-header">
-  <div class="row justify-content-center">
+  <div class="row" style="justify-content: center;">
     <div class="col-lg-8">
       
       <div class="post-categories">
@@ -324,7 +314,7 @@
         
       </div>
       <div class="post-title">
-        <h1>Debugging With Power</h1>
+        <h1 class="text-5xl" style="margin: 3rem 0;">Debugging With Power</h1>
       </div>
       
       <div class="post-description">
@@ -333,16 +323,15 @@
       
     </div>
   </div>
-
-  
-  <div class="row justify-content-center">
-    <div class="workshop-cost">$$300 USD</div>
-  </div>
-  
 </div>
 
-<div class="ml-20 mr-20">
-  <div class="content"><p>The <strong>Debugging With Power</strong> workshop is a hands-on and interactive training program designed to equip learners with comprehensive competencies in effectively using web browser developer tools to diagnose performance problems, debug code, inspect network requests and responses, view stack traces, and manipulate the Document Object Model (DOM) and Cascading Style Sheets (CSS). This workshop is ideal for web developers, software engineers, and anyone involved in web application development who wants to enhance their troubleshooting and debugging skills.</p>
+<div style="height: 5rem;"></div>
+
+<div class="container post-header">
+  <div class="row" style="justify-content: center;">
+    <div class="col-lg-8">
+
+      <div class="content"><p>The <strong>Debugging With Power</strong> workshop is a hands-on and interactive training program designed to equip learners with comprehensive competencies in effectively using web browser developer tools to diagnose performance problems, debug code, inspect network requests and responses, view stack traces, and manipulate the Document Object Model (DOM) and Cascading Style Sheets (CSS). This workshop is ideal for web developers, software engineers, and anyone involved in web application development who wants to enhance their troubleshooting and debugging skills.</p>
 
 <h2 id="key-learning-objectives">Key Learning Objectives</h2>
 
@@ -376,7 +365,24 @@
 
 <p><strong>Delivery</strong>: Virtual</p>
 </div>
+
+      
+
+      
+      <div class="row" style="justify-content: center;">
+        <div class="workshop-cost">$300 USD</div>
+      </div>
+      
+
+      <div style="height: 5rem;"></div>
+
+      <div id="paypal-button-container" class="text-center ml-40 mr-40"></div>
+
+
+    </div>
+  </div>
 </div>
+
 
 
 
@@ -384,7 +390,7 @@
 <script
   src="https://www.paypal.com/sdk/js?client-id=AU2T-_KiSEGLry9rRoWEtaXza2kWvdKR9mtSdqK0qY4Rh58yB3HtEsyFCgGgLHRk31Poi0N5eWPpC-xU"></script>
 
-<div id="paypal-button-container" class="text-center ml-40 mr-40"></div>
+
 
 <script>
   paypal.Buttons({
@@ -393,7 +399,7 @@
       return actions.order.create({
         purchase_units: [{
           amount: {
-            value: '$300 USD'
+            value: '300 USD'
           }
         }]
       });

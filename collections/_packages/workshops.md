@@ -29,4 +29,6 @@ grid:
 
 # Monthly Workshops
 
-Workshops typically last a 1 or 2 days. You gain competencies that can be immediately applied on the job.
+Workshops typically run just a few sessions since each covers a specific topic. You gain competencies that can be immediately applied on the job.
+
+<div style="height: 3rem">&nbsp;</div>

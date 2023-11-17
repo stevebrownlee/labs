@@ -207,36 +207,24 @@
           
           <div class="dropdown-menu">
             
+              <a href="/labs/packages/ascend/" class="dropdown-item ">
+                
+                
+
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-name">Ascend</div>
+                  
+                </div>
+
+              </a>
+
+            
               <a href="/labs/packages/workshops/" class="dropdown-item ">
                 
                 
 
                 <div class="dropdown-item-content">
                   <div class="dropdown-item-name">Workshops</div>
-                  
-                </div>
-
-              </a>
-
-            
-              <a href="/labs/packages/sprints/" class="dropdown-item ">
-                
-                
-
-                <div class="dropdown-item-content">
-                  <div class="dropdown-item-name">Sprints</div>
-                  
-                </div>
-
-              </a>
-
-            
-              <a href="/labs/packages/career-growth/" class="dropdown-item ">
-                
-                
-
-                <div class="dropdown-item-content">
-                  <div class="dropdown-item-name">Career Growth</div>
                   
                 </div>
 
@@ -287,8 +275,10 @@
 <div id="wrapper" class="wrapper">
   
 
+<div style="height: 10rem;"></div>
+
 <div class="container post-header">
-  <div class="row justify-content-center">
+  <div class="row" style="justify-content: center;">
     <div class="col-lg-8">
       
       <div class="post-categories">
@@ -348,7 +338,7 @@
         
       </div>
       <div class="post-title">
-        <h1>Container Explainer</h1>
+        <h1 class="text-5xl" style="margin: 3rem 0;">Container Explainer</h1>
       </div>
       
       <div class="post-description">
@@ -357,16 +347,15 @@
       
     </div>
   </div>
-
-  
-  <div class="row justify-content-center">
-    <div class="workshop-cost">$$350 USD</div>
-  </div>
-  
 </div>
 
-<div class="ml-20 mr-20">
-  <div class="content"><h2 id="overview">Overview</h2>
+<div style="height: 5rem;"></div>
+
+<div class="container post-header">
+  <div class="row" style="justify-content: center;">
+    <div class="col-lg-8">
+
+      <div class="content"><h2 id="overview">Overview</h2>
 
 <p>This workshop is designed for beginners who want to learn the basics of containerization to create consistent environments for development and production environments. Containerization is a popular technology that has revolutionized software development and deployment. Containers provide a lightweight and portable way to package and run software applications. They offer a consistent and reproducible environment for developers, testers, and operators.</p>
 
@@ -396,7 +385,24 @@
 
 <p><strong>Your First CI/CD Pipeline</strong></p>
 </div>
+
+      
+
+      
+      <div class="row" style="justify-content: center;">
+        <div class="workshop-cost">$350 USD</div>
+      </div>
+      
+
+      <div style="height: 5rem;"></div>
+
+      <div id="paypal-button-container" class="text-center ml-40 mr-40"></div>
+
+
+    </div>
+  </div>
 </div>
+
 
 
 
@@ -404,7 +410,7 @@
 <script
   src="https://www.paypal.com/sdk/js?client-id=AU2T-_KiSEGLry9rRoWEtaXza2kWvdKR9mtSdqK0qY4Rh58yB3HtEsyFCgGgLHRk31Poi0N5eWPpC-xU"></script>
 
-<div id="paypal-button-container" class="text-center ml-40 mr-40"></div>
+
 
 <script>
   paypal.Buttons({
@@ -413,7 +419,7 @@
       return actions.order.create({
         purchase_units: [{
           amount: {
-            value: '$350 USD'
+            value: '350 USD'
           }
         }]
       });

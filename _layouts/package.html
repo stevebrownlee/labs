@@ -4,7 +4,7 @@ body_classes: page-service
 ---
 
 {% if page.hero.enabled %}
-  {% include framework/blocks/sections/hero.html 
+  {% include framework/blocks/sections/hero.html
     heading=page.hero.heading
     sub_heading=page.hero.sub_heading
     background_image=page.hero.background_image
@@ -43,7 +43,7 @@ body_classes: page-service
       </div>
 
       {% if site.enable_sidebar_services %}
-        <div class="col-12 col-lg-3 offset-lg-1">
+        <div class="col-12 col-lg-4 offset-lg-1">
           {% include framework/blocks/components/sidebar.html collection="services" %}
         </div>
       {% endif %}

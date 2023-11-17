@@ -2,7 +2,7 @@
 layout: workshop
 title: "Debugging With Power"
 weight: 2
-cost: "$300 USD"
+cost: "300 USD"
 categories: ["Development", "Debugging"]
 description: "Master diagnosing, debugging, and evaluating your UI with the Developer Tools."
 thumbnail: "/assets/images/gen/packages/debugging-thumbnail.png"
