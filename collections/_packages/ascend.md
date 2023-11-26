@@ -22,9 +22,7 @@ hero:
   height: 400px
 ---
 
-# Ascend
-
-<img src="{{ site.baseurl }}/assets/images/gen/packages/ascend-thumbnail.png" style="width: 0; height: 0;" width="0" height="0"  alt="Ascend" />
+<img src="{{ site.baseurl }}/assets/images/ascend/Ascending-Medium.png" style="width: 0; height: 0;" width="0" height="0"  alt="Ascend" />
 
 ## An Accelerated Path to Senior Software Roles
 
