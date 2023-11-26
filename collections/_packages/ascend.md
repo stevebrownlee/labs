@@ -24,8 +24,9 @@ hero:
 
 # Ascend
 
-## An Accelerated Path to Senior Software Roles
+<img src="{{ site.baseurl }}/assets/images/gen/packages/ascend-thumbnail.png" style="width: 0; height: 0;" width="0" height="0"  alt="Ascend" />
 
+## An Accelerated Path to Senior Software Roles
 
 <img src="{{ site.baseurl }}/assets/images/ascend/mindmap.png" style="margin: 0 0 0 4rem;" width="40%" align="right" alt="program outline" />
 
