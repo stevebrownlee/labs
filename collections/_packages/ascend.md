@@ -1,7 +1,9 @@
 ---
 layout: "about"
-title: "Ascend"
+title: "Ascend: Elevate Your Tech Career"
+meta_og_title: "Ascend: Elevate Your Tech Career"
 description: "Long-term, large-scale project work to accelerate your career."
+meta_og_description: "Ascend is a comprehensive and structured initiative designed to support the long-term professional development and advancement of software developers."
 weight: 3
 header_transparent: true
 fa_icon: false
