@@ -7,6 +7,7 @@ header_transparent: true
 fa_icon: false
 thumbnail: "/assets/images/gen/packages/ascend-thumbnail.png"
 image: "/assets/images/gen/packages/ascend.png"
+meta_og_image: "https://www.steppingstonelabs.com/assets/images/ascend/Ascending.png"
 
 hero:
   enabled: true
@@ -21,8 +22,6 @@ hero:
   fullscreen_desktop: false
   height: 400px
 ---
-
-<meta property="og:image" content="{{ site.baseurl }}/assets/images/ascend/Ascending.png" />
 
 <img src="{{ site.baseurl }}/assets/images/ascend/Ascending.png" style="width: 0; height: 0;" width="0" height="0"  alt="Ascend" />
 
