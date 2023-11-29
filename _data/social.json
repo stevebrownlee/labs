@@ -2,17 +2,12 @@
   {
     "title": "Twitter",
     "fa_icon": "fab fa-twitter",
-    "url": "https://twitter.com/stepstonelabs"
+    "url": "https://twitter.com/steppingstonelabs"
   },
   {
     "title": "Github",
     "fa_icon": "fab fa-github",
     "url": "https://github.com/steppingstonelabs"
-  },
-  {
-    "title": "Discord",
-    "fa_icon": "fab fa-discord",
-    "url": "https://www.zerostatic.io"
   },
   {
     "title": "Linkedin",

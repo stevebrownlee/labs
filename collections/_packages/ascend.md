@@ -25,8 +25,6 @@ hero:
   height: 400px
 ---
 
-<img src="{{ site.baseurl }}/assets/images/ascend/Ascending.png" style="width: 0; height: 0;" width="0" height="0"  alt="Ascend" />
-
 ## An Accelerated Path to Senior Software Roles
 
 <img src="{{ site.baseurl }}/assets/images/ascend/mindmap.png" style="margin: 0 0 0 4rem;" width="40%" align="right" alt="program outline" />
@@ -84,3 +82,7 @@ In the final tier of Ascend, your cohort will begin the journey of learning the 
 Each tier's cost is $2500, with 25% due on acceptance and then 6 monthly payments of $312.50.
 
 Each tier will last approximately 6-8 months depending on the frequency of the cohort's sessions. If you are looking for a quick tutorial, look elsewhere. This program is based on science and these complex competencies take time, reflection, and practice to build.
+
+Are ready to to learn more details and talk about your goals?
+
+<a href="https://calendly.com/stevebrownlee/ascend-program-overview" style="color:snow" class="button mt-4" target="_blank">🙋🏼‍♂️ Schedule a time to chat with Steve</a>
