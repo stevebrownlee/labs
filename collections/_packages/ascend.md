@@ -25,13 +25,21 @@ hero:
   height: 400px
 ---
 
-## An Accelerated Path to Senior Software Roles
+## Pioneering Effective Tech Career Development
 
 <img src="{{ site.baseurl }}/assets/images/ascend/mindmap.png" style="margin: 0 0 0 4rem;" width="40%" align="right" alt="program outline" />
 
-The **Ascend** program is a comprehensive and structured initiative designed to support the long-term professional development and advancement of software developers. This program aims to equip participants with the necessary technical skills, industry knowledge, leadership capabilities, and career guidance to thrive in their roles and pursue rewarding career paths in the software development field.
+In the landscape of software development learning, there are conventional paths, and then there's **Ascend**. We've carved out a unique niche for  developers seeking to transform into tech innovators and leaders, without conforming to the traditional boundaries of tech education.
 
-When you enter the program, you will join a small, select cohort of curious and motivated peers, alongside an experienced veteran as a mentor, to work on system challenges to expand your capabilities with every session. Our immersive, hands-on program has your team taking ownership of an existing system that must be grown and scaled to meet an ambitious technical vision.
+## What Makes Ascend Stand Apart
+
+- **Real-World Application**: Step beyond the typical training experience into a realm of hands-on, practical learning. Ascend is about embracing the challenges and unpredictability you'll face in real tech roles.
+- **Dynamic Skill Evolution**: In Ascend, your growth is driven by actual project work, not a static curriculum. This approach is designed to adapt and evolve, mirroring the fluidity of the tech industry.
+- **Developer to Innovator Transformation**: We're not just about enhancing coding skills. Ascend is about shaping you into a forward-thinking innovator, ready to solve complex problems and lead with confidence in any tech environment.
+
+Here, learning is not confined to videos, or textbooks, or lectures. It's about getting your hands dirty in the soil of real-world tech problems. It's about those lightbulb moments when a complex problem suddenly makes sense, about the camaraderie of solving tough challenges with your peers, and about the satisfaction of seeing your ideas come to life.
+
+When you enter the program, you will join a carefully selected team of 3 or 4 curious and motivated peers, alongside an experienced veteran as a mentor, to work on system challenges to expand your capabilities with every session. Our immersive, hands-on program has your team taking ownership of an existing system that must be grown and scaled to meet an ambitious technical vision.
 
 ## Program Objectives
 
@@ -79,7 +87,7 @@ In the final tier of Ascend, your cohort will begin the journey of learning the 
 
 ## Pricing and Length
 
-Each tier's cost is $2500, with 25% due on acceptance and then 6 monthly payments of $312.50.
+Each tier's cost is $3000, with 25% due on acceptance _(which is $750)_ and then 6 monthly payments of $375.00.
 
 Each tier will last approximately 6-8 months depending on the frequency of the cohort's sessions. If you are looking for a quick tutorial, look elsewhere. This program is based on science and these complex competencies take time, reflection, and practice to build.
 
