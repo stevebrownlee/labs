@@ -1,9 +1,9 @@
 ---
-layout: list
+layout: insight
 title: "Insights"
 description: "Meet our dedicated team."
 permalink: "/insights/"
-date: 2018-02-12T15:37:57+07:00
+date: 2024-10-07
 header_transparent: true
 
 hero:
