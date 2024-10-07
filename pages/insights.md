@@ -1,5 +1,5 @@
 ---
-layout: insight
+layout: list
 title: "Insights"
 description: "Meet our dedicated team."
 permalink: "/insights/"
