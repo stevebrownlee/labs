@@ -31,13 +31,13 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: '22' # or another version of Node.js
+          node-version: '22'
 
       - name: Install Node.js dependencies
         run: npm install
 
       - name: Build Tailwind CSS
-        run: npm run tailwind # Replace with your Tailwind build command
+        run: npm run tailwind
 
       - name: Setup Pages
         id: pages
@@ -48,8 +48,10 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
 
   deploy:
     environment:
@@ -60,4 +62,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
