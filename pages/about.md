@@ -20,7 +20,7 @@ hero:
 intro:
   enabled: true
   align: left
-  image: "/assets/images/about/steve.png"
+  image: "/assets/images/about/steve.jpg"
   heading: "Launched by Steve Brownlee."
   sub_heading: ""
   features:
