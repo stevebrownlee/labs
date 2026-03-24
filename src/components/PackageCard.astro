@@ -1,0 +1,35 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  href: string;
+  icon: string;
+  price?: string;
+  accentClass?: string;
+}
+
+const { title, description, href, icon, price, accentClass = 'border-zinc-200' } = Astro.props;
+---
+
+<a
+  href={href}
+  class:list={[
+    'group block bg-white border rounded-2xl p-8 hover:shadow-xl hover:shadow-indigo-100/50 transition-all duration-300 hover:-translate-y-1',
+    accentClass,
+  ]}
+>
+  <div class="text-4xl mb-5">{icon}</div>
+  <h3 class="font-display text-2xl font-bold text-zinc-900 mb-3 group-hover:text-indigo-600 transition-colors duration-200">
+    {title}
+  </h3>
+  <p class="text-zinc-500 text-sm leading-relaxed mb-5">{description}</p>
+  {price && (
+    <p class="font-mono text-indigo-600 text-sm font-medium mb-4">{price}</p>
+  )}
+  <span class="inline-flex items-center gap-1.5 text-sm font-medium text-indigo-500 group-hover:text-indigo-700 transition-colors duration-200">
+    Learn more
+    <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+    </svg>
+  </span>
+</a>

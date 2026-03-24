@@ -1,0 +1,369 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PackageCard from "../components/PackageCard.astro";
+import Icon from "../components/Icon.astro";
+---
+
+<BaseLayout
+  title="Home"
+  description="Evolve faster than the tools you depend on. Hands-on coaching and workshops for software developers."
+>
+  <!-- SECTION 1: Hero -->
+  <section
+    class="relative min-h-screen flex items-start bg-white overflow-hidden"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-24">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-1 gap-12 lg:gap-16 items-center"
+      >
+        <div class="max-w-4xl">
+          <img
+            src="/images/logo/ssl-logo.jpg"
+            style="max-width: 200px; margin: 0 auto 3rem auto;"
+            alt="Stepping Stone Labs — interconnected nodes symbolizing growth and learning pathways"
+            class="w-full"
+          />
+
+          <h1
+            class="font-display text-4xl sm:text-5xl lg:text-8xl xl:text-7xl font-bold leading-[1.05] mb-8"
+          >
+            <span class="block text-zinc-900">Evolve Faster</span>
+            <span class="block text-zinc-900">Than the Tools</span>
+            <span class="block text-indigo-600">You Depend On.</span>
+          </h1>
+          <p
+            class="text-lg sm:text-xl text-zinc-500 max-w-xl leading-relaxed mb-10"
+          >
+            Hands-on coaching, mentoring, and AI training for software
+            developers ready to accelerate their careers.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="/packages/ascend/"
+              class="inline-flex items-center justify-center px-8 py-4 bg-indigo-600 text-white font-semibold rounded-xl hover:bg-indigo-700 transition-colors duration-200 text-base"
+            >
+              Explore Ascend
+            </a>
+            <a
+              href="https://calendly.com/stevebrownlee/consultation"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center px-8 py-4 border border-zinc-300 text-zinc-700 font-semibold rounded-xl hover:bg-zinc-50 hover:border-zinc-400 transition-all duration-200 text-base"
+            >
+              Book a Free Call
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scrolling marquee at bottom -->
+    <div
+      class="absolute bottom-0 left-0 right-0 border-t border-zinc-200 bg-white/80 backdrop-blur-sm py-4 overflow-hidden"
+    >
+      <div class="flex animate-marquee whitespace-nowrap">
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >CI/CD</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >Shell Scripting</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >AI Tools</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >Cloud Infrastructure</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >System Design</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >Debugging</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >Leadership</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >Containerization</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >CI/CD</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >Shell Scripting</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >AI Tools</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >Cloud Infrastructure</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >System Design</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >Debugging</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >Leadership</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+        <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
+          >Containerization</span
+        >
+        <span class="text-zinc-300 mx-2">•</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: The Problem -->
+  <section class="bg-zinc-50 py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center"
+      >
+        <div class="animate-on-scroll">
+          <blockquote
+            class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold italic text-zinc-900 leading-tight"
+          >
+            "From the moment you get your first job, you're completely on your
+            own."
+          </blockquote>
+          <div class="mt-6 w-16 h-1 bg-amber-400"></div>
+        </div>
+        <div class="animate-on-scroll space-y-6">
+          <p class="text-zinc-500 leading-relaxed text-lg">
+            Before Stepping Stone Labs, the only structured learning
+            environments were for beginners. University, internships, or
+            bootcamps were your options to break into the field.
+          </p>
+          <p class="text-zinc-500 leading-relaxed text-lg">
+            As you look ahead at your career, you see an infinite ocean of
+            information and choices. As a novice, it is overwhelming without
+            proper guidance. You need someone who can cut through potential
+            biases and identify the core skills and competencies you need to
+            succeed.
+          </p>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div
+        class="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8 animate-on-scroll"
+      >
+        <div class="text-center sm:text-left">
+          <div
+            class="font-display text-5xl lg:text-6xl font-bold text-indigo-600"
+          >
+            30
+          </div>
+          <div class="text-zinc-500 mt-2 text-sm uppercase tracking-wider">
+            Years in Tech
+          </div>
+        </div>
+        <div class="text-center sm:text-left">
+          <div
+            class="font-display text-5xl lg:text-6xl font-bold text-indigo-600"
+          >
+            10
+          </div>
+          <div class="text-zinc-500 mt-2 text-sm uppercase tracking-wider">
+            Years Teaching
+          </div>
+        </div>
+        <div class="text-center sm:text-left">
+          <div
+            class="font-display text-5xl lg:text-6xl font-bold text-indigo-600"
+          >
+            30+
+          </div>
+          <div class="text-zinc-500 mt-2 text-sm uppercase tracking-wider">
+            Cohorts Led
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Programs/Packages -->
+  <section class="bg-white py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-16 animate-on-scroll">
+        <p
+          class="text-teal-600 font-mono text-sm font-medium uppercase tracking-widest mb-3"
+        >
+          How We Help
+        </p>
+        <h2 class="font-display text-4xl sm:text-5xl font-bold text-zinc-900">
+          Choose your path to growth
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 animate-on-scroll">
+        <a
+          href="/packages/ascend/"
+          class="group block bg-indigo-50 border-2 border-indigo-200 rounded-2xl p-8 hover:shadow-xl hover:shadow-indigo-100/50 transition-all duration-300 hover:-translate-y-1"
+        >
+          <div class="mb-5">
+            <Icon name="plane-takeoff" class="w-10 h-10 text-indigo-600" />
+          </div>
+          <h3
+            class="font-display text-2xl font-bold text-zinc-900 mb-3 group-hover:text-indigo-600 transition-colors duration-200"
+          >
+            Ascend
+          </h3>
+          <p class="text-zinc-600 text-sm leading-relaxed mb-5">
+            Long-term career acceleration program. Transform from capable
+            developer to respected senior engineer.
+          </p>
+          <p class="font-mono text-indigo-600 text-sm font-medium mb-4">
+            From $3,000 / tier
+          </p>
+          <span
+            class="inline-flex items-center gap-1.5 text-sm font-medium text-indigo-500 group-hover:text-indigo-700 transition-colors"
+          >
+            Learn more →
+          </span>
+        </a>
+
+        <a
+          href="/packages/coaching/"
+          class="group block bg-white border-2 border-teal-200 rounded-2xl p-8 hover:shadow-xl hover:shadow-teal-100/50 transition-all duration-300 hover:-translate-y-1"
+        >
+          <div class="mb-5">
+            <Icon name="message-circle" class="w-10 h-10 text-teal-500" />
+          </div>
+          <h3
+            class="font-display text-2xl font-bold text-zinc-900 mb-3 group-hover:text-teal-600 transition-colors duration-200"
+          >
+            Coaching & Mentoring
+          </h3>
+          <p class="text-zinc-600 text-sm leading-relaxed mb-5">
+            1-on-1 expert guidance on any technical challenge, plus weekly AI
+            coaching sessions.
+          </p>
+          <p class="font-mono text-teal-600 text-sm font-medium mb-4">
+            Free consultation
+          </p>
+          <span
+            class="inline-flex items-center gap-1.5 text-sm font-medium text-teal-600 group-hover:text-teal-700 transition-colors"
+          >
+            Learn more →
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Why SSL -->
+  <section class="bg-zinc-50 py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="mb-16 animate-on-scroll">
+        <h2
+          class="font-display text-4xl sm:text-5xl font-bold text-zinc-900 mb-4"
+        >
+          Not Another Tutorial Site
+        </h2>
+        <p class="text-zinc-500 text-lg max-w-2xl mx-auto">
+          We build real competencies through hands-on, mentored learning
+          experiences.
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto animate-on-scroll"
+      >
+        <div
+          class="bg-white border border-zinc-200 rounded-2xl p-8 text-left shadow-sm"
+        >
+          <div class="mb-4">
+            <Icon name="brain" class="w-8 h-8 text-indigo-500" />
+          </div>
+          <h3 class="font-display text-xl font-bold text-zinc-900 mb-3">
+            Competency Over Knowledge
+          </h3>
+          <p class="text-zinc-500 text-sm leading-relaxed">
+            We build skills you can use tomorrow, not theory you'll forget next
+            week.
+          </p>
+        </div>
+        <div
+          class="bg-white border border-zinc-200 rounded-2xl p-8 text-left shadow-sm"
+        >
+          <div class="mb-4">
+            <Icon name="handshake" class="w-8 h-8 text-indigo-500" />
+          </div>
+          <h3 class="font-display text-xl font-bold text-zinc-900 mb-3">
+            Cohort-Based Learning
+          </h3>
+          <p class="text-zinc-500 text-sm leading-relaxed">
+            Learn alongside peers who challenge and support you.
+          </p>
+        </div>
+        <div
+          class="bg-white border border-zinc-200 rounded-2xl p-8 text-left shadow-sm"
+        >
+          <div class="mb-4">
+            <Icon name="hammer" class="w-8 h-8 text-indigo-500" />
+          </div>
+          <h3 class="font-display text-xl font-bold text-zinc-900 mb-3">
+            Real-World Projects
+          </h3>
+          <p class="text-zinc-500 text-sm leading-relaxed">
+            Work on actual systems with an experienced mentor guiding you.
+          </p>
+        </div>
+        <div
+          class="bg-white border border-zinc-200 rounded-2xl p-8 text-left shadow-sm"
+        >
+          <div class="mb-4">
+            <Icon name="rocket" class="w-8 h-8 text-indigo-500" />
+          </div>
+          <h3 class="font-display text-xl font-bold text-zinc-900 mb-3">
+            Career Transformation
+          </h3>
+          <p class="text-zinc-500 text-sm leading-relaxed">
+            From competent developer to respected senior engineer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: CTA Banner -->
+  <section class="bg-indigo-600 py-20 lg:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2
+        class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
+      >
+        Ready to accelerate your career?
+      </h2>
+      <p class="text-indigo-100 text-lg mb-10 max-w-xl mx-auto">
+        Schedule a free 30-minute discovery call. No pressure, no pitch — just
+        an honest conversation.
+      </p>
+      <a
+        href="https://calendly.com/stevebrownlee/consultation"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center px-10 py-4 bg-white text-indigo-700 font-semibold rounded-xl hover:bg-indigo-50 transition-colors duration-200 text-lg"
+      >
+        Book Your Free Call
+      </a>
+    </div>
+  </section>
+</BaseLayout>

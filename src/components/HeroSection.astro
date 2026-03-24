@@ -1,0 +1,23 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  backgroundClass?: string;
+}
+
+const { title, subtitle, backgroundClass = 'bg-zinc-50' } = Astro.props;
+---
+
+<section class:list={['py-24 lg:py-32', backgroundClass]}>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-zinc-900 leading-tight mb-6 animate-on-scroll">
+      {title}
+    </h1>
+    {subtitle && (
+      <p class="text-lg sm:text-xl text-zinc-500 max-w-2xl leading-relaxed animate-on-scroll">
+        {subtitle}
+      </p>
+    )}
+    <slot />
+  </div>
+</section>

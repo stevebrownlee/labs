@@ -1,0 +1,213 @@
+---
+const currentPath = Astro.url.pathname;
+
+const navLinks = [
+  { href: '/', label: 'Home' },
+  {
+    href: '/packages/',
+    label: 'Packages',
+    children: [
+      { href: '/packages/ascend/', label: 'Ascend Program' },
+      { href: '/packages/coaching/', label: 'Coaching & Mentoring' },
+    ],
+  },
+  { href: '/about/', label: 'About' },
+];
+
+function isActive(href: string): boolean {
+  if (href === '/') return currentPath === '/';
+  return currentPath.startsWith(href);
+}
+---
+
+<header
+  class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-zinc-200 transition-all duration-300"
+  id="main-nav"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-3 group">
+        <span class="font-display text-2xl lg:text-3xl font-bold tracking-tight text-zinc-900">
+          SSL<span class="text-amber-500">.</span>
+        </span>
+        <span class="hidden sm:block text-sm text-zinc-500 font-sans font-light border-l border-zinc-300 pl-3">
+          Stepping Stone Labs
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Main navigation">
+        {navLinks.map((link) => (
+          <div class="relative group">
+            <a
+              href={link.href}
+              class:list={[
+                'px-4 py-2 text-sm font-medium rounded-lg transition-colors duration-200',
+                isActive(link.href)
+                  ? 'text-indigo-600'
+                  : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100',
+              ]}
+            >
+              {link.label}
+              {link.children && (
+                <svg class="inline-block w-3.5 h-3.5 ml-1 -mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              )}
+            </a>
+            {link.children && (
+              <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div class="bg-white border border-zinc-200 rounded-xl shadow-xl shadow-zinc-200/50 p-2 min-w-[220px]">
+                  {link.children.map((child) => (
+                    <a
+                      href={child.href}
+                      class:list={[
+                        'block px-4 py-2.5 text-sm rounded-lg transition-colors duration-200',
+                        isActive(child.href)
+                          ? 'text-indigo-600 bg-indigo-50'
+                          : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50',
+                      ]}
+                    >
+                      {child.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+
+        <a
+          href="https://calendly.com/stevebrownlee/consultation"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="ml-4 px-5 py-2.5 bg-indigo-600 text-white text-sm font-semibold rounded-lg hover:bg-indigo-700 transition-colors duration-200"
+        >
+          Book a Call
+        </a>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button
+        class="lg:hidden flex flex-col gap-1.5 p-2 -mr-2"
+        id="mobile-menu-btn"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span class="block w-6 h-0.5 bg-zinc-600 transition-all duration-300 origin-center" id="bar1"></span>
+        <span class="block w-6 h-0.5 bg-zinc-600 transition-all duration-300" id="bar2"></span>
+        <span class="block w-6 h-0.5 bg-zinc-600 transition-all duration-300 origin-center" id="bar3"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu overlay -->
+  <div
+    class="lg:hidden fixed inset-0 top-16 bg-white/98 backdrop-blur-lg z-40 hidden flex-col"
+    id="mobile-menu"
+  >
+    <nav class="flex flex-col px-6 py-8 gap-2 overflow-y-auto" aria-label="Mobile navigation">
+      {navLinks.map((link) => (
+        <div>
+          {link.children ? (
+            <div>
+              <button
+                class="w-full flex items-center justify-between px-4 py-3 text-lg font-medium text-zinc-700 hover:text-zinc-900 rounded-lg hover:bg-zinc-50 transition-colors mobile-accordion-btn"
+                data-target={`mobile-sub-${link.label}`}
+              >
+                {link.label}
+                <svg class="w-5 h-5 transition-transform duration-200 accordion-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden pl-4 mt-1 space-y-1" id={`mobile-sub-${link.label}`}>
+                {link.children.map((child) => (
+                  <a
+                    href={child.href}
+                    class="block px-4 py-2.5 text-base text-zinc-500 hover:text-zinc-900 rounded-lg hover:bg-zinc-50 transition-colors"
+                  >
+                    {child.label}
+                  </a>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <a
+              href={link.href}
+              class:list={[
+                'block px-4 py-3 text-lg font-medium rounded-lg transition-colors',
+                isActive(link.href) ? 'text-indigo-600' : 'text-zinc-700 hover:text-zinc-900 hover:bg-zinc-50',
+              ]}
+            >
+              {link.label}
+            </a>
+          )}
+        </div>
+      ))}
+
+      <div class="mt-6 pt-6 border-t border-zinc-200">
+        <a
+          href="https://calendly.com/stevebrownlee/consultation"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block w-full text-center px-6 py-3.5 bg-indigo-600 text-white text-lg font-semibold rounded-lg hover:bg-indigo-700 transition-colors"
+        >
+          Book a Call
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Spacer for fixed nav -->
+<div class="h-16 lg:h-20"></div>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const bar1 = document.getElementById('bar1');
+  const bar2 = document.getElementById('bar2');
+  const bar3 = document.getElementById('bar3');
+
+  let menuOpen = false;
+
+  btn?.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    btn.setAttribute('aria-expanded', String(menuOpen));
+
+    if (menuOpen) {
+      menu?.classList.remove('hidden');
+      menu?.classList.add('flex');
+      bar1?.classList.add('rotate-45', 'translate-y-[4px]');
+      bar2?.classList.add('opacity-0');
+      bar3?.classList.add('-rotate-45', '-translate-y-[4px]');
+      document.body.style.overflow = 'hidden';
+    } else {
+      menu?.classList.add('hidden');
+      menu?.classList.remove('flex');
+      bar1?.classList.remove('rotate-45', 'translate-y-[4px]');
+      bar2?.classList.remove('opacity-0');
+      bar3?.classList.remove('-rotate-45', '-translate-y-[4px]');
+      document.body.style.overflow = '';
+    }
+  });
+
+  // Mobile accordion
+  document.querySelectorAll('.mobile-accordion-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      if (!targetId) return;
+      const target = document.getElementById(targetId);
+      const arrow = btn.querySelector('.accordion-arrow');
+
+      if (target?.classList.contains('hidden')) {
+        target.classList.remove('hidden');
+        arrow?.classList.add('rotate-180');
+      } else {
+        target?.classList.add('hidden');
+        arrow?.classList.remove('rotate-180');
+      }
+    });
+  });
+</script>

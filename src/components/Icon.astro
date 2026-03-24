@@ -1,0 +1,53 @@
+---
+/**
+ * Dynamic Lucide icon component.
+ * Pass an icon name (kebab-case) to render the corresponding Lucide SVG icon.
+ */
+import {
+  PlaneTakeoff,
+  MessageCircle,
+  Brain,
+  Handshake,
+  Hammer,
+  Rocket,
+  Building2,
+  Search,
+  TrendingUp,
+  Settings,
+  CheckCircle,
+  Bot,
+  Users,
+  Compass,
+  CalendarCheck,
+} from 'lucide-astro';
+
+interface Props {
+  name: string;
+  class?: string;
+  size?: number;
+}
+
+const { name, class: className = '', size = 24 } = Astro.props;
+
+const icons: Record<string, any> = {
+  'plane-takeoff': PlaneTakeoff,
+  'message-circle': MessageCircle,
+  'brain': Brain,
+  'handshake': Handshake,
+  'hammer': Hammer,
+  'rocket': Rocket,
+  'building-2': Building2,
+  'search': Search,
+  'trending-up': TrendingUp,
+  'settings': Settings,
+  'check-circle': CheckCircle,
+  'bot': Bot,
+  'users': Users,
+  'compass': Compass,
+  'calendar-check': CalendarCheck,
+};
+
+const IconComponent = icons[name];
+---
+
+{IconComponent && <IconComponent class={className} size={size} />}
