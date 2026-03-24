@@ -46,15 +46,54 @@ body_classes: page-home
 {% if page.intro.enabled %}
   <div class="section">
     <div class="container">
-      {% include framework/blocks/sections/info.html
-      heading=page.intro.heading
-      sub_heading=page.intro.sub_heading
-      sub_heading_2=page.intro.sub_heading_2
-      align=page.intro.align
-      features=page.intro.features
-      buttons=page.intro.buttons
-      image=page.intro.image
-      %}
+      <div class="row">
+
+        <div class="col-12 col-md-6 order-1">
+          <div class="info-content">
+            {% if page.intro.heading %}
+              <h2>{{ page.intro.heading }}</h2>
+            {% endif %}
+            {% if page.intro.sub_heading %}
+              <p class="mt-3 large">{{ page.intro.sub_heading }}</p>
+            {% endif %}
+            {% if page.intro.sub_heading_2 %}
+              <p style="line-height: 1.65;" class="mt-3">{{ page.intro.sub_heading_2 }}</p>
+              {% assign workshopURL = "packages/workshops" %}
+              {% assign ascendURL = "packages/ascend" %}
+              <a href="{{ascendURL | relative_url }}" class="button mt-4">✈️ Ascend Your Career</a>
+            {% endif %}
+          </div>
+        </div>
+
+        {% if page.outro.enabled %}
+        <div class="col-12 col-md-6 order-2 mt-4 mt-md-0">
+          <div class="info-content">
+            {% if page.outro.heading %}
+              <h2>{{ page.outro.heading }}</h2>
+            {% endif %}
+            {% if page.outro.sub_heading %}
+              <p class="mt-3 large">{{ page.outro.sub_heading }}</p>
+            {% endif %}
+            {% if page.outro.buttons.enabled and page.outro.buttons.list.size > 0 %}
+              <div class="info-buttons mt-2">
+                {% for button in page.outro.buttons.list %}
+                  {% include framework/blocks/components/button.html
+                    text=button.text
+                    url=button.url
+                    external=button.external
+                    size=button.size
+                    outline=button.outline
+                    style=button.style
+                    fa_icon=button.fa_icon
+                  %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
+
+      </div>
     </div>
   </div>
 {% endif %}
@@ -99,20 +138,6 @@ body_classes: page-home
 
 
 
-{% if page.outro.enabled %}
-<div class="section">
-  <div class="container">
-    {% include framework/blocks/sections/info.html
-    heading=page.outro.heading
-    sub_heading=page.outro.sub_heading
-    align=page.outro.align
-    features=page.outro.features
-    buttons=page.outro.buttons
-    image=page.outro.image
-    %}
-  </div>
-</div>
-{% endif %}
 
 {% assign cards = site.insights | sort: 'date' | reverse %}
 {% assign limit = page.insights.limit | default: 2 %}

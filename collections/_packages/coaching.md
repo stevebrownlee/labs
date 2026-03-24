@@ -1,6 +1,7 @@
 ---
-title: "Personal Coaching"
-description: "I can partner with you, as your coach, to help you achieve your personal goals."
+layout: "about"
+title: "AI Coaching for Developers & Founders"
+description: "Stop experimenting with AI. Start mastering it."
 weight: 4
 header_transparent: true
 fa_icon: false
@@ -9,8 +10,8 @@ image: "/assets/images/gen/packages/coaching.png"
 
 hero:
   enabled: true
-  heading: "Personal Coaching"
-  sub_heading: "I can partner with you, as your coach, to help you achieve your personal goals."
+  heading: "AI Coaching"
+  sub_heading: "Stop Experimenting With AI. Start Mastering It."
   text_color: "#ffffff"
   background_color: "#2d2830"
   background_gradient: false
@@ -21,27 +22,70 @@ hero:
   height: 400px
 ---
 
-# Personal Coaching
+You're already using AI tools. But there's a gap between using AI and truly leveraging it — and that gap is widening every month.
 
-If you want to invest in your career by partnering with me for some personal coaching, I would be thrilled to help you achieve your goals.
+I coach software developers and founders to close that gap: building real fluency with AI tools, designing workflows that compound, and thinking AI-natively from the ground up.
 
-## What Is Coaching?
+<a href="#consultation" class="button mt-4">Book Your Free 30-Minute Call</a>
 
-Coaching is an outcome focused process, with the goal being to support you to move forward confidently to the goals that you set for yourself.  My job is to facilitate your movement from where you are now to where you want to be. We will have a partnership that allows you to have control of the entire process.
+## The Problem
 
-You will set the intention for each session, identify your goals, and bring forward any blockages or challenges. You do this within a structure and a process provided by your coach.
+Most people are stuck at surface-level AI use.
+
+They prompt when they remember to. They get inconsistent results. They've watched the tutorials but haven't changed how they actually work. And meanwhile, the developers and founders who've gone deeper are building faster, thinking clearer, and pulling ahead.
+
+This isn't about knowing more tools. It's about developing a fundamentally different relationship with AI — one where it extends your thinking, not just your typing speed.
+
+## What We Work On
+
+### AI Tools Mastery
+
+Move beyond copy-paste prompting. Learn how to use ChatGPT, Claude, and the right tool for the right job — with precision and consistency.
+
+### Prompting Strategy
+
+Build prompting systems that work for your specific context — your stack, your clients, your goals. Stop guessing. Start engineering.
+
+### AI-Powered Workflow Automation
+
+Identify the highest-leverage tasks in your work and redesign them around AI. Reclaim hours. Eliminate bottlenecks. Operate at a different level.
+
+### AI-Native Development
+
+For developers: learn to think about AI as a first-class component in how you design, build, and ship — not an afterthought bolted on at the end.
+
+## Who This Is For
+
+This coaching is built for you if:
+
+- You're a software developer who knows AI is changing your field and wants to stay ahead of it — not catch up to it
+- You're a founder or entrepreneur who needs to move faster, do more with less, and build AI into the core of how your business operates
+- You've dabbled with AI tools but haven't built a system around them
+- You want someone to help you think it through strategically — not just hand you a list of prompts
 
 ## My Coaching Style
 
-My coaching style focuses on three main factors -
+### Curious and Technical
 
-1. **Curiosity and Learning** - We will approach every goal with a curious mindset to explore all possibilities and learn new strategies along the way that work for you.
-2. **Honest and Direct Conversations** - Building on a foundation of trust, all of our conversations will focus on honest observations, and then directly identifying and addressing obstacles preventing you from achieving your goals.
-3. **Identify and Develop Strengths** - You have strengths that are unique, and we will uncover what those are and how you can use them to overcome obstacles and achieve your goals.
+We go as deep as your work demands. Whether it's dissecting a prompting failure or redesigning a full workflow, we dig into the specifics — not just the surface.
 
-## Free 30-Minute Consultation
+### Honest and Direct
 
-I offer a free, 30-minute consultation so that we can talk about what your needs are, and we can determine if coaching sessions are what you need to move forward. Use the calendar below to find a time for us to meet each other.
+I'll tell you where your AI approach has gaps. Not to critique, but because identifying the real obstacle is the fastest path to real change.
+
+### Built Around Your Actual Work
+
+Every session is grounded in what you're working on right now. We don't deal in hypotheticals — we build skills you can apply before the week is out.
+
+## What This Is Not
+
+This isn't a course. It isn't a workshop with slides you'll forget by Friday. It's 1-on-1, strategic, and built around where you specifically are — and where you want to go.
+
+## Free 30-Minute Consultation {#consultation}
+
+Not sure if this is right for you? Let's find out together.
+
+In 30 minutes, we'll talk about where you are with AI right now, where the biggest gaps are, and whether coaching is the right move. No pressure, no pitch — just an honest conversation.
 
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/stevebrownlee/consultation?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>

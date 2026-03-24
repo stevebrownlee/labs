@@ -13,7 +13,7 @@ hero:
   text_color: "#FFFFFF"
   background_color: "#1d2830"
   background_gradient: true
-  background_image: "/assets/images/home/stones.png"
+  background_image: "/assets/images/home/stones.jpg"
   background_image_blend_mode: overlay # "overlay", "multiply", "screen"
   fullscreen_mobile: true
   fullscreen_desktop: false
@@ -33,10 +33,21 @@ packages:
 intro:
   enabled: true
   align: left
-  image: "/assets/images/home/team--small.png"
-  heading: "Rekindle The Flame 🔥"
+  heading: "Rekindle The Flame"
   sub_heading: "Remember the excitement when you started as a developer, when the whole world felt like it was yours to discover?"
   sub_heading_2: "Reignite that passion for learning and deepen your competencies with Stepping Stone Labs' hands-on workshops. You will work with a select group of curious developers to gain in-demand skills and a strong network of peers that will transform you into a respected and valued developer that elevates any team."
+
+outro:
+  enabled: true
+  align: center
+  heading: "AI Coaching for Developers"
+  sub_heading: "Stop experimenting with AI. Start mastering it. Get 1-on-1 strategic coaching to build real fluency with AI tools, design workflows that compound, and learn to think AI-natively."
+  buttons:
+    enabled: true
+    list:
+      - text: "Learn About AI Coaching"
+        url: "/packages/coaching"
+        external: false
 
 insights:
   enabled: true
