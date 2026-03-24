@@ -7,7 +7,7 @@ const navLinks = [
     href: '/packages/',
     label: 'Packages',
     children: [
-      { href: '/packages/ascend/', label: 'Ascend Program' },
+      { href: '/packages/ascend/', label: 'Ascend Cohort' },
       { href: '/packages/coaching/', label: 'Coaching & Mentoring' },
     ],
   },
@@ -29,7 +29,13 @@ function isActive(href: string): boolean {
       <!-- Logo -->
       <a href="/" class="flex items-center gap-3 group">
         <span class="font-display text-2xl lg:text-3xl font-bold tracking-tight text-zinc-900">
-          SSL<span class="text-amber-500">.</span>
+          <img
+            src="/images/logo/ssl-nodes.png"
+            style="max-height: 38px;"
+            alt="Stepping Stone Labs — interconnected nodes symbolizing growth and learning pathways"
+            class="w-full"
+          />
+
         </span>
         <span class="hidden sm:block text-sm text-zinc-500 font-sans font-light border-l border-zinc-300 pl-3">
           Stepping Stone Labs
