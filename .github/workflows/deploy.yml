@@ -28,10 +28,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Update browserslist database
-        run: npx update-browserslist-db@latest
+        run: npm ci
 
       - name: Setup Pages
         id: pages
