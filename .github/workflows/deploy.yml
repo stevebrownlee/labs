@@ -25,10 +25,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Resolve broken symlinks in public/
+        run: |
+          find public -type l ! -exec test -e {} \; -print | while read link; do
+            echo "Removing broken symlink: $link"
+            rm "$link"
+            mkdir -p "$link"
+          done
 
       - name: Setup Pages
         id: pages
