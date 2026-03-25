@@ -9,8 +9,19 @@ import Icon from "../components/Icon.astro";
 >
   <!-- SECTION 1: Hero -->
   <section
-    class="relative min-h-screen flex items-start bg-white overflow-hidden"
+    class="relative min-h-screen flex items-start overflow-hidden"
+    style="background: linear-gradient(135deg, #f8f7ff 0%, #eef2ff 40%, #f5f3ff 70%, #faf5ff 100%);"
   >
+    <!-- Decorative blobs -->
+    <div
+      class="pointer-events-none absolute"
+      style="top: -10%; right: -8%; width: 620px; height: 620px; border-radius: 50%; background: radial-gradient(circle, rgba(251, 191, 36, 0.28) 0%, rgba(251, 191, 36, 0) 65%); filter: blur(80px);"
+    ></div>
+    <div
+      class="pointer-events-none absolute"
+      style="bottom: 2%; left: -4%; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, rgba(253, 224, 71, 0.32) 0%, rgba(253, 224, 71, 0) 65%); filter: blur(90px);"
+    ></div>
+
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-24">
       <div
         class="grid grid-cols-1 lg:grid-cols-1 gap-12 lg:gap-16 items-center"
@@ -65,7 +76,8 @@ import Icon from "../components/Icon.astro";
 
     <!-- Scrolling marquee at bottom -->
     <div
-      class="absolute bottom-0 left-0 right-0 border-t border-zinc-200 bg-white/80 backdrop-blur-sm py-4 overflow-hidden"
+      class="absolute bottom-0 left-0 right-0 border-t border-zinc-200 backdrop-blur-sm py-4 overflow-hidden"
+      style="background: linear-gradient(to right, rgba(238, 242, 255, 0.6), rgba(255, 255, 255, 0.85), rgba(245, 243, 255, 0.6));"
     >
       <div class="flex animate-marquee whitespace-nowrap">
         <span class="text-indigo-500/70 text-sm font-mono tracking-wider mx-6"
