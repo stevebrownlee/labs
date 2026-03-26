@@ -12,13 +12,13 @@ import Icon from "../components/Icon.astro";
     class="relative min-h-screen flex items-start overflow-hidden"
     style="background: linear-gradient(135deg, #f8f7ff 0%, #eef2ff 40%, #f5f3ff 70%, #faf5ff 100%);"
   >
-    <!-- Decorative blobs -->
+    <!-- Decorative blobs — float gently on a looping keyframe -->
     <div
-      class="pointer-events-none absolute"
+      class="pointer-events-none absolute blob-a"
       style="top: -10%; right: -8%; width: 620px; height: 620px; border-radius: 50%; background: radial-gradient(circle, rgba(251, 191, 36, 0.28) 0%, rgba(251, 191, 36, 0) 65%); filter: blur(80px);"
     ></div>
     <div
-      class="pointer-events-none absolute"
+      class="pointer-events-none absolute blob-b"
       style="bottom: 2%; left: -4%; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, rgba(253, 224, 71, 0.32) 0%, rgba(253, 224, 71, 0) 65%); filter: blur(90px);"
     ></div>
 
@@ -31,23 +31,23 @@ import Icon from "../components/Icon.astro";
             src="/images/logo/ssl-nodes.png"
             style="max-width: 200px; margin: 0 auto 3rem auto;"
             alt="Stepping Stone Labs — interconnected nodes symbolizing growth and learning pathways"
-            class="w-full"
+            class="w-full hero-logo"
           />
 
           <h1
             class="font-display text-4xl sm:text-5xl lg:text-8xl xl:text-7xl font-bold leading-[1.05] mb-8"
           >
-            <span class="block text-zinc-900">Evolve Faster</span>
-            <span class="block text-zinc-900">Than the Tools</span>
-            <span class="block text-indigo-600">You Depend On.</span>
+            <span class="block text-zinc-900 hero-line-1">Evolve Faster</span>
+            <span class="block text-zinc-900 hero-line-2">Than the Tools</span>
+            <span class="block text-indigo-600 hero-line-3">You Depend On.</span>
           </h1>
           <p
-            class="text-lg sm:text-xl text-zinc-500 max-w-xl leading-relaxed mb-10"
+            class="text-lg sm:text-xl text-zinc-500 max-w-xl leading-relaxed mb-10 hero-subtext"
           >
             Hands-on coaching, mentoring, and AI training for software
             developers ready to accelerate their careers.
           </p>
-          <div class="flex flex-col sm:flex-row gap-4">
+          <div class="flex flex-col sm:flex-row gap-4 hero-ctas">
             <a
               href="/packages/ascend/"
               class="inline-flex items-center justify-center px-8 py-4 bg-indigo-600 text-white font-semibold rounded-xl hover:bg-indigo-700 transition-colors duration-200 text-base"
@@ -186,6 +186,8 @@ import Icon from "../components/Icon.astro";
         <div class="text-center sm:text-left">
           <div
             class="font-display text-5xl lg:text-6xl font-bold text-indigo-600"
+            data-count-to="30"
+            data-count-suffix="+"
           >
             30+
           </div>
@@ -196,6 +198,8 @@ import Icon from "../components/Icon.astro";
         <div class="text-center sm:text-left">
           <div
             class="font-display text-5xl lg:text-6xl font-bold text-indigo-600"
+            data-count-to="12"
+            data-count-suffix="+"
           >
             12+
           </div>
@@ -206,6 +210,8 @@ import Icon from "../components/Icon.astro";
         <div class="text-center sm:text-left">
           <div
             class="font-display text-5xl lg:text-6xl font-bold text-indigo-600"
+            data-count-to="1000"
+            data-count-suffix="+"
           >
             1000+
           </div>
@@ -231,10 +237,10 @@ import Icon from "../components/Icon.astro";
         </h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 animate-on-scroll">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <a
           href="/packages/ascend/"
-          class="group block bg-indigo-50 border-2 border-indigo-200 rounded-2xl p-8 hover:shadow-xl hover:shadow-indigo-100/50 transition-all duration-300 hover:-translate-y-1"
+          class="animate-on-scroll stagger-1 group block bg-indigo-50 border-2 border-indigo-200 rounded-2xl p-8 hover:shadow-xl hover:shadow-indigo-100/50 transition-all duration-300 hover:-translate-y-1"
         >
           <div class="mb-5">
             <Icon name="plane-takeoff" class="w-10 h-10 text-indigo-600" />
@@ -260,7 +266,7 @@ import Icon from "../components/Icon.astro";
 
         <a
           href="/packages/coaching/"
-          class="group block bg-white border-2 border-teal-200 rounded-2xl p-8 hover:shadow-xl hover:shadow-teal-100/50 transition-all duration-300 hover:-translate-y-1"
+          class="animate-on-scroll stagger-2 group block bg-white border-2 border-teal-200 rounded-2xl p-8 hover:shadow-xl hover:shadow-teal-100/50 transition-all duration-300 hover:-translate-y-1"
         >
           <div class="mb-5">
             <Icon name="message-circle" class="w-10 h-10 text-teal-500" />
@@ -303,10 +309,10 @@ import Icon from "../components/Icon.astro";
       </div>
 
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto animate-on-scroll"
+        class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto"
       >
         <div
-          class="bg-white border border-zinc-200 rounded-2xl p-8 text-left shadow-sm"
+          class="animate-on-scroll stagger-1 bg-white border border-zinc-200 rounded-2xl p-8 text-left shadow-sm"
         >
           <div class="mb-4">
             <Icon name="brain" class="w-8 h-8 text-indigo-500" />
@@ -320,20 +326,20 @@ import Icon from "../components/Icon.astro";
           </p>
         </div>
         <div
-          class="bg-white border border-zinc-200 rounded-2xl p-8 text-left shadow-sm"
+          class="animate-on-scroll stagger-2 bg-white border border-zinc-200 rounded-2xl p-8 text-left shadow-sm"
         >
           <div class="mb-4">
             <Icon name="handshake" class="w-8 h-8 text-indigo-500" />
           </div>
           <h3 class="font-display text-xl font-bold text-zinc-900 mb-3">
-            Cohort-Based Learning
+            Pragmatic AI Usage
           </h3>
           <p class="text-zinc-500 text-sm leading-relaxed">
-            Learn alongside peers who challenge and support you.
+            How to use LLMs as a tool to augment your existing skills, not a crutch that replaces them.
           </p>
         </div>
         <div
-          class="bg-white border border-zinc-200 rounded-2xl p-8 text-left shadow-sm"
+          class="animate-on-scroll stagger-3 bg-white border border-zinc-200 rounded-2xl p-8 text-left shadow-sm"
         >
           <div class="mb-4">
             <Icon name="hammer" class="w-8 h-8 text-indigo-500" />
@@ -346,7 +352,7 @@ import Icon from "../components/Icon.astro";
           </p>
         </div>
         <div
-          class="bg-white border border-zinc-200 rounded-2xl p-8 text-left shadow-sm"
+          class="animate-on-scroll stagger-4 bg-white border border-zinc-200 rounded-2xl p-8 text-left shadow-sm"
         >
           <div class="mb-4">
             <Icon name="rocket" class="w-8 h-8 text-indigo-500" />

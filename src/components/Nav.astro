@@ -23,9 +23,10 @@ function isActive(href: string): boolean {
 <header
   class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-zinc-200 transition-all duration-300"
   id="main-nav"
+  transition:persist
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16 lg:h-20">
+    <div class="nav-row flex items-center justify-between h-16 lg:h-20">
       <!-- Logo -->
       <a href="/" class="flex items-center gap-3 group">
         <span class="font-display text-2xl lg:text-3xl font-bold tracking-tight text-zinc-900">
@@ -170,6 +171,7 @@ function isActive(href: string): boolean {
 <div class="h-16 lg:h-20"></div>
 
 <script>
+  // ── Mobile menu toggle ────────────────────────────────────────
   const btn = document.getElementById('mobile-menu-btn');
   const menu = document.getElementById('mobile-menu');
   const bar1 = document.getElementById('bar1');
@@ -216,4 +218,67 @@ function isActive(href: string): boolean {
       }
     });
   });
+
+  // ── Nav scroll shrink ─────────────────────────────────────────
+  // Compresses nav height and intensifies shadow/bg after scrolling 50px
+  function initNavScroll() {
+    const nav = document.getElementById('main-nav');
+    if (!nav) return;
+
+    let ticking = false;
+    const THRESHOLD = 50;
+
+    function updateNav() {
+      if (window.scrollY > THRESHOLD) {
+        nav?.classList.add('nav-scrolled');
+      } else {
+        nav?.classList.remove('nav-scrolled');
+      }
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(updateNav);
+        ticking = true;
+      }
+    }, { passive: true });
+
+    // Apply correct state immediately (e.g. after View Transition to a mid-scroll page)
+    updateNav();
+  }
+
+  document.addEventListener('astro:page-load', initNavScroll);
 </script>
+
+<style is:global>
+  /* Nav scroll-shrink styles — toggled by JS */
+  #main-nav {
+    transition: height 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+
+  #main-nav .nav-inner {
+    transition: height 0.3s ease;
+  }
+
+  #main-nav.nav-scrolled {
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+    background-color: rgba(255, 255, 255, 0.97);
+  }
+
+  /* Shrink the flex row height via a CSS custom property approach */
+  #main-nav .nav-row {
+    transition: height 0.3s ease;
+    height: 5rem; /* lg:h-20 default */
+  }
+
+  @media (max-width: 1023px) {
+    #main-nav .nav-row {
+      height: 4rem; /* h-16 on mobile */
+    }
+  }
+
+  #main-nav.nav-scrolled .nav-row {
+    height: 3.5rem;
+  }
+</style>
