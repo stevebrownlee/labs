@@ -1,0 +1,657 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Icon from "../../components/Icon.astro";
+
+const weeks = [
+  {
+    week: 1,
+    title: "Foundations",
+    subtitle: "How LLMs Actually Work",
+    sessions: [
+      {
+        number: 1,
+        title: "Tokens → Context Window",
+        duration: "30 min",
+        description:
+          "Understand how LLMs read and process text as tokens, and how the context window defines the boundaries of what a model can see. Every token costs money — you'll watch it happen in real time.",
+        takeaway: "The mental model everything else builds on.",
+      },
+      {
+        number: 2,
+        title: "Prompt Engineering",
+        duration: "30 min",
+        description:
+          "Learn the four failure modes in a poorly written prompt and how to diagnose exactly why a prompt failed before reaching for a fix. Prompt engineering is debugging, not guessing.",
+        takeaway: "A diagnostic framework you'll apply to every prompt you write.",
+      },
+      {
+        number: 3,
+        title: "Modes / System Prompt",
+        duration: "30 min",
+        description:
+          "Understand how system prompts set the operating context for a model. You'll write a system prompt from scratch and see what changes — and what doesn't — when it's vague versus precise.",
+        takeaway: "Replace the model's defaults with something that works for you.",
+      },
+      {
+        number: 4,
+        title: "Model Selection",
+        duration: "30 min",
+        description:
+          "Learn the tradeoffs between reasoning models, fast models, and multimodal models across capability, cost, and latency. You'll run the same complex prompt across four configurations and compare.",
+        takeaway: "The judgment to pick the right model — not just the most capable one.",
+      },
+    ],
+  },
+  {
+    week: 2,
+    title: "Evaluation & Rules",
+    subtitle: "Reading Output Critically",
+    sessions: [
+      {
+        number: 5,
+        title: "Evaluation",
+        duration: "30 min",
+        description:
+          "Build the instinct to read LLM output critically. You'll apply a three-point review protocol — SID, Patterns, Simplicity — to a realistic code sample and find what slipped through.",
+        takeaway: "A structured protocol for catching what you'd normally skim and ship.",
+      },
+      {
+        number: 6,
+        title: "Basic Rules",
+        duration: "60 min",
+        description:
+          "Distinguish between rules that actually change model behavior and rules that only sound correct. You'll sort 10 real rules — then write your own from the failures you found in session 5.",
+        takeaway: "A working rulebook built from real failure modes, ready to use immediately.",
+      },
+    ],
+  },
+  {
+    week: 3,
+    title: "Agent Configuration",
+    subtitle: "Making Behavior Persistent",
+    sessions: [
+      {
+        number: 7,
+        title: "AGENTS.md / CLAUDE.md",
+        duration: "60 min",
+        description:
+          "Learn how to define agent behavior in a persistent rules file the agent reads automatically. You'll adapt a real AGENTS.md to your project and extend it with rules that exist only in your head right now.",
+        takeaway: "Your rules live in the project — not in a prompt you have to remember to paste.",
+      },
+      {
+        number: 8,
+        title: "Scoped Rules",
+        duration: "60 min",
+        description:
+          "Go beyond global rules to define context-specific behavior. You'll sort every rule you've written into the right scope, build a routing table, and verify that the agent loads only what's relevant.",
+        takeaway: "A leaner AGENTS.md, scoped rule files, and a token budget that thanks you.",
+      },
+    ],
+  },
+  {
+    week: 4,
+    title: "Agentic Systems",
+    subtitle: "Tools, Chains, and Harnesses",
+    sessions: [
+      {
+        number: 9,
+        title: "Tool Use / MCP + Function Calling",
+        duration: "60 min",
+        description:
+          "Understand how models interact with external tools through function calling and MCP. You'll build a multi-tool chain connecting GitHub and Slack, run it, then deliberately break it to understand partial failure.",
+        takeaway: "The design principles for tool chains that are safe to run in production.",
+      },
+      {
+        number: 10,
+        title: "Harness Engineering",
+        duration: "60 min",
+        description:
+          "Every mistake the agent makes is a signal that something in the environment is missing or unenforced. You'll audit your own repository against three pillars — context engineering, architectural constraints, and garbage collection.",
+        takeaway: "A harness that makes agent mistakes structurally impossible, not just less likely.",
+      },
+    ],
+  },
+  {
+    week: 5,
+    title: "Spec-Driven Development",
+    subtitle: "The Capstone Skill",
+    sessions: [
+      {
+        number: 11,
+        title: "Writing Specs for Agents",
+        duration: "60 min",
+        description:
+          "Learn to write precise, unambiguous specifications that an agent can execute reliably. You'll hunt gaps in a deliberately flawed spec, rewrite it with exhaustive Given → When → Then criteria, and produce a complete spec for a real task in your own project.",
+        takeaway: "The mindset shift that changes how you work with AI permanently.",
+      },
+      {
+        number: null,
+        title: "Retrospective & Next Steps",
+        duration: "60 min",
+        description:
+          "Look back at the full arc — from tokens to specs — and take stock of what's changed in how you work. We'll surface the highest-leverage next steps for each participant and map a path to the advanced workshop.",
+        takeaway: "A clear picture of where you are and what to build next.",
+      },
+    ],
+  },
+];
+
+const outcomes = [
+  {
+    icon: "bot",
+    title: "Genuine AI Fluency",
+    description:
+      "Not surface familiarity — a mental model of how LLMs actually work, what they cost, and where they fail.",
+  },
+  {
+    icon: "search",
+    title: "A Diagnostic Instinct",
+    description:
+      "When a prompt fails or output looks wrong, you'll know why — and fix the right thing, not just retry.",
+  },
+  {
+    icon: "settings",
+    title: "A Working Rulebook",
+    description:
+      "Rules that come from real failures in your own work, encoded in an AGENTS.md that lives in your project.",
+  },
+  {
+    icon: "trending-up",
+    title: "Spec-Driven Thinking",
+    description:
+      "The capstone skill: writing specs an agent can execute reliably, with no gaps left to inference.",
+  },
+];
+---
+
+<BaseLayout
+  title="AI/LLM Skills Workshop — 5-Week Cohort"
+  description="A progressive, hands-on 5-week workshop for software developers to build real fluency with AI and LLM tools — from foundational concepts to spec-driven agent development. 2 hours every Saturday."
+>
+  <!-- Hero -->
+  <section class="relative bg-zinc-900 py-28 lg:py-40 overflow-hidden">
+    <div class="absolute inset-0 opacity-5">
+      <div
+        class="absolute inset-0"
+        style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 32px 32px;"
+      ></div>
+    </div>
+    <div
+      class="absolute top-0 right-0 w-96 h-96 bg-teal-500 opacity-10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"
+    ></div>
+    <div
+      class="absolute bottom-0 left-0 w-64 h-64 bg-indigo-500 opacity-10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4"
+    ></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="font-mono text-teal-400 text-sm uppercase tracking-widest mb-4">
+        Workshop — 5 Weeks · Saturdays · 2 Hours
+      </p>
+      <h1
+        class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl leading-tight"
+      >
+        AI/LLM Skills Workshop
+      </h1>
+      <p class="text-xl text-zinc-300 max-w-2xl leading-relaxed mb-10">
+        A progressive, hands-on curriculum for software developers — from
+        foundational concepts to spec-driven agent development. 11 sessions
+        across 5 Saturdays.
+      </p>
+      <div class="flex flex-wrap gap-6">
+        <div class="flex items-center gap-2 text-zinc-400 text-sm">
+          <svg
+            class="w-4 h-4 text-teal-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+            ></path>
+          </svg>
+           5 Saturdays
+        </div>
+        <div class="flex items-center gap-2 text-zinc-400 text-sm">
+          <svg
+            class="w-4 h-4 text-teal-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+           2 hours each
+        </div>
+        <div class="flex items-center gap-2 text-zinc-400 text-sm">
+          <svg
+            class="w-4 h-4 text-teal-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+            ></path>
+          </svg>
+           Small cohort format
+        </div>
+        <div class="flex items-center gap-2 text-zinc-400 text-sm">
+          <svg
+            class="w-4 h-4 text-teal-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+            ></path>
+          </svg>
+           Software developers
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="bg-white py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div class="animate-on-scroll">
+          <p
+            class="font-mono text-teal-600 text-xs uppercase tracking-widest mb-4"
+          >
+            What This Is
+          </p>
+          <h2
+            class="font-display text-3xl sm:text-4xl font-bold text-zinc-900 mb-6"
+          >
+            From token costs to executable specs — in five sessions
+          </h2>
+          <p class="text-zinc-600 text-lg leading-relaxed mb-6">
+            Most developers use AI tools every day but haven't built a mental
+            model of how they actually work. That gap shows up as unpredictable
+            results, expensive mistakes, and a ceiling on what they can do with
+            AI.
+          </p>
+          <p class="text-zinc-500 leading-relaxed mb-6">
+            This workshop closes that gap systematically. Each session builds on
+            the last — from understanding what a token costs to writing
+            specifications that an agent can execute reliably with no gaps left
+            to inference.
+          </p>
+          <p class="text-zinc-500 leading-relaxed">
+            The goal isn't to make you faster at prompting. It's to bring you to
+            the point where you adopt a <strong class="text-zinc-700"
+              >spec-driven development mindset</strong
+            > with AI agents — where clarity of intent drives everything downstream.
+          </p>
+        </div>
+        <div class="animate-on-scroll space-y-4">
+          <div class="bg-zinc-50 rounded-2xl p-6 border border-zinc-200">
+            <h3 class="font-display text-lg font-bold text-zinc-900 mb-1">
+              Format
+            </h3>
+            <p class="text-zinc-500 text-sm leading-relaxed">
+              Small cohort — learn alongside other developers. 2 hours every
+              Saturday for 5 weeks. Hands-on throughout: every session involves
+              live demos, real code, and work you do during the session.
+            </p>
+          </div>
+          <div class="bg-zinc-50 rounded-2xl p-6 border border-zinc-200">
+            <h3 class="font-display text-lg font-bold text-zinc-900 mb-1">
+              Who It's For
+            </h3>
+            <p class="text-zinc-500 text-sm leading-relaxed">
+              Software developers who use AI tools regularly but want to go
+              deeper — past the surface-level prompting into real fluency with
+              LLMs, agents, and the patterns that make them reliable.
+            </p>
+          </div>
+          <div class="bg-zinc-50 rounded-2xl p-6 border border-zinc-200">
+            <h3 class="font-display text-lg font-bold text-zinc-900 mb-1">
+              What You Bring
+            </h3>
+            <p class="text-zinc-500 text-sm leading-relaxed">
+              A laptop, an active Claude or ChatGPT account, and a real
+              codebase you're working on. Sessions are more valuable when
+              grounded in your actual work.
+            </p>
+          </div>
+          <div
+            class="bg-teal-50 rounded-2xl p-6 border border-teal-200 flex items-start gap-3"
+          >
+            <svg
+              class="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <p class="text-teal-700 text-sm leading-relaxed">
+              <strong>Advanced workshop planned.</strong> Participants who complete
+              this cohort get priority access to the advanced track — covering quantitative
+              evals, multi-agent orchestration, and production-grade agentic workflows.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-Week Schedule -->
+  <section class="bg-zinc-50 py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-on-scroll">
+        <p
+          class="font-mono text-teal-600 text-xs uppercase tracking-widest mb-4"
+        >
+          The Schedule
+        </p>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-zinc-900">
+          5 Saturdays. 11 Sessions.
+        </h2>
+        <p class="text-zinc-500 text-lg mt-4 max-w-xl mx-auto">
+          Each week has a theme. Each session has a takeaway you can apply before
+          the next one.
+        </p>
+      </div>
+
+      <div class="space-y-10">
+        {
+          weeks.map((week, weekIndex) => (
+            <div class="animate-on-scroll">
+              <!-- Week header -->
+              <div class="flex items-center gap-4 mb-6">
+                <div class="flex-shrink-0 w-14 h-14 bg-teal-600 rounded-2xl flex flex-col items-center justify-center shadow-sm">
+                  <span class="font-mono text-teal-200 text-xs uppercase leading-none">
+                    Wk
+                  </span>
+                  <span class="font-display text-white text-2xl font-bold leading-none">
+                    {week.week}
+                  </span>
+                </div>
+                <div>
+                  <p class="font-mono text-teal-600 text-xs uppercase tracking-widest">
+                    {week.subtitle}
+                  </p>
+                  <h3 class="font-display text-2xl font-bold text-zinc-900">
+                    {week.title}
+                  </h3>
+                </div>
+                <div class="hidden sm:block flex-1 border-t border-zinc-200 ml-2" />
+                <div class="hidden sm:flex items-center gap-1.5 text-zinc-400 text-sm flex-shrink-0">
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  2 hours
+                </div>
+              </div>
+
+              <!-- Sessions grid -->
+              <div
+                class={`grid gap-4 ${week.sessions.length === 1 ? "grid-cols-1 max-w-2xl" : week.sessions.length === 2 ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"}`}
+              >
+                {week.sessions.map((session) => (
+                  <div class="bg-white rounded-2xl border border-zinc-200 p-6 shadow-sm flex flex-col">
+                    <div class="flex items-start justify-between gap-3 mb-3">
+                      <div class="flex items-center gap-2">
+                        {session.number ? (
+                          <span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-teal-50 text-teal-600 font-mono text-xs font-bold flex-shrink-0">
+                            {session.number}
+                          </span>
+                        ) : (
+                          <span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-zinc-100 text-zinc-400 font-mono text-xs flex-shrink-0">
+                            ★
+                          </span>
+                        )}
+                        <h4 class="font-display font-bold text-zinc-900 text-base leading-snug">
+                          {session.title}
+                        </h4>
+                      </div>
+                      <span class="text-xs font-mono text-zinc-400 bg-zinc-50 border border-zinc-200 rounded-md px-2 py-0.5 flex-shrink-0">
+                        {session.duration}
+                      </span>
+                    </div>
+                    <p class="text-zinc-500 text-sm leading-relaxed flex-1 mb-4">
+                      {session.description}
+                    </p>
+                    <div class="border-t border-zinc-100 pt-3 flex items-start gap-2">
+                      <svg
+                        class="w-4 h-4 text-teal-500 flex-shrink-0 mt-0.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                      <p class="text-xs text-teal-700 font-medium leading-snug">
+                        {session.takeaway}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Outcomes -->
+  <section class="bg-white py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-on-scroll">
+        <p
+          class="font-mono text-teal-600 text-xs uppercase tracking-widest mb-4"
+        >
+          What You'll Build
+        </p>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-zinc-900">
+          Skills that compound
+        </h2>
+        <p class="text-zinc-500 text-lg mt-4 max-w-xl mx-auto">
+          Every session connects to the next. By the end, these aren't concepts
+          you've heard about — they're habits you've practiced.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        {
+          outcomes.map((outcome, i) => (
+            <div
+              class={`animate-on-scroll stagger-${i + 1} bg-zinc-50 border border-zinc-200 rounded-2xl p-6`}
+            >
+              <div class="w-10 h-10 bg-teal-50 rounded-xl flex items-center justify-center mb-4">
+                <Icon name={outcome.icon} class="w-5 h-5 text-teal-500" />
+              </div>
+              <h3 class="font-display text-lg font-bold text-zinc-900 mb-2">
+                {outcome.title}
+              </h3>
+              <p class="text-zinc-500 text-sm leading-relaxed">
+                {outcome.description}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Session arc visualization -->
+  <section class="bg-zinc-50 py-24 lg:py-32">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 animate-on-scroll">
+        <p
+          class="font-mono text-teal-600 text-xs uppercase tracking-widest mb-4"
+        >
+          The Arc
+        </p>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-zinc-900">
+          Everything builds on everything
+        </h2>
+      </div>
+
+      <div class="animate-on-scroll">
+        <div
+          class="bg-white border border-zinc-200 rounded-3xl p-8 lg:p-10 shadow-sm"
+        >
+          <div class="flex flex-col gap-0">
+            {
+              [
+                {
+                  label: "Weeks 1–2",
+                  color: "teal",
+                  title: "Understanding",
+                  items: [
+                    "You learn what tokens cost and how they drain",
+                    "You develop a diagnostic framework for prompt failures",
+                    "You see how system prompts shape everything downstream",
+                    "You pick the right model for the right task",
+                    "You evaluate LLM output before acting on it",
+                  ],
+                },
+                {
+                  label: "Week 2–3",
+                  color: "indigo",
+                  title: "Control",
+                  items: [
+                    "You write rules that actually change model behavior",
+                    "Your rules live in the project — not in your head",
+                    "Context-specific behavior loads only when needed",
+                  ],
+                },
+                {
+                  label: "Week 4",
+                  color: "violet",
+                  title: "Systems",
+                  items: [
+                    "You design multi-step tool chains safely",
+                    "You audit your own repo and close the highest-leverage gaps",
+                  ],
+                },
+                {
+                  label: "Week 5",
+                  color: "zinc",
+                  title: "Mastery",
+                  items: [
+                    "You write specs an agent can execute with zero gaps left to inference",
+                  ],
+                },
+              ].map((phase, i, arr) => (
+                <div class="flex items-start gap-6">
+                  <div class="flex flex-col items-center flex-shrink-0">
+                    <div
+                      class={`w-10 h-10 rounded-xl flex items-center justify-center text-white text-xs font-bold font-mono ${phase.color === "teal" ? "bg-teal-500" : phase.color === "indigo" ? "bg-indigo-500" : phase.color === "violet" ? "bg-violet-500" : "bg-zinc-800"}`}
+                    >
+                      {i + 1}
+                    </div>
+                    {i < arr.length - 1 && (
+                      <div class="w-0.5 bg-zinc-100 flex-1 my-2 min-h-8" />
+                    )}
+                  </div>
+                  <div class={`pb-${i < arr.length - 1 ? "8" : "0"} flex-1`}>
+                    <div class="flex items-baseline gap-3 mb-2">
+                      <span
+                        class={`font-mono text-xs uppercase tracking-widest ${phase.color === "teal" ? "text-teal-600" : phase.color === "indigo" ? "text-indigo-600" : phase.color === "violet" ? "text-violet-600" : "text-zinc-500"}`}
+                      >
+                        {phase.label}
+                      </span>
+                      <h3 class="font-display text-lg font-bold text-zinc-900">
+                        {phase.title}
+                      </h3>
+                    </div>
+                    <ul class="space-y-1.5">
+                      {phase.items.map((item) => (
+                        <li class="flex items-start gap-2 text-zinc-500 text-sm">
+                          <svg
+                            class={`w-4 h-4 flex-shrink-0 mt-0.5 ${phase.color === "teal" ? "text-teal-400" : phase.color === "indigo" ? "text-indigo-400" : phase.color === "violet" ? "text-violet-400" : "text-zinc-400"}`}
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-teal-600 py-20 lg:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
+        Ready to build real AI fluency?
+      </h2>
+      <p class="text-teal-100 text-lg mb-10 max-w-xl mx-auto">
+        Cohorts are small by design. Book a free discovery call to talk through
+        whether this workshop is the right fit for where you are right now.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="https://calendly.com/stevebrownlee/consultation"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center px-10 py-4 bg-white text-teal-700 font-semibold rounded-xl hover:bg-teal-50 transition-colors duration-200 text-lg"
+        >
+          Book a Free Discovery Call
+        </a>
+        <a
+          href="/packages/coaching"
+          class="inline-flex items-center justify-center px-10 py-4 border-2 border-teal-400 text-white font-semibold rounded-xl hover:bg-teal-700 transition-colors duration-200 text-lg"
+        >
+          See All Coaching Options
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
