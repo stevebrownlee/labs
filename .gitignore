@@ -7,3 +7,5 @@ dist
 *.bak
 *.swp
 .astro
+.roo
+.playwright-mcp

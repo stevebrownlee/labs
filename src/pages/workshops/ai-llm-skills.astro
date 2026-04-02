@@ -44,12 +44,12 @@ const weeks = [
   },
   {
     week: 2,
-    title: "Evaluation & Rules",
-    subtitle: "Reading Output Critically",
+    title: "Evaluation & Guidance",
+    subtitle: "Tell the Model What It Can and Can't Do",
     sessions: [
       {
         number: 5,
-        title: "Evaluation",
+        title: "Output Evaluation",
         duration: "30 min",
         description:
           "Build the instinct to read LLM output critically. You'll apply a three-point review protocol — SID, Patterns, Simplicity — to a realistic code sample and find what slipped through.",
@@ -57,34 +57,66 @@ const weeks = [
       },
       {
         number: 6,
-        title: "Basic Rules",
-        duration: "60 min",
+        title: "Rules",
+        duration: "30 min",
         description:
           "Distinguish between rules that actually change model behavior and rules that only sound correct. You'll sort 10 real rules — then write your own from the failures you found in session 5.",
         takeaway: "A working rulebook built from real failure modes, ready to use immediately.",
       },
-    ],
-  },
-  {
-    week: 3,
-    title: "Agent Configuration",
-    subtitle: "Making Behavior Persistent",
-    sessions: [
       {
         number: 7,
-        title: "AGENTS.md / CLAUDE.md",
-        duration: "60 min",
+        title: "AGENTS.md",
+        duration: "30 min",
         description:
           "Learn how to define agent behavior in a persistent rules file the agent reads automatically. You'll adapt a real AGENTS.md to your project and extend it with rules that exist only in your head right now.",
         takeaway: "Your rules live in the project — not in a prompt you have to remember to paste.",
       },
       {
         number: 8,
-        title: "Scoped Rules",
+        title: "Skills",
+        duration: "30 min",
+        description:
+          "Skills are rules that load only when they're relevant. You'll write skills that trigger on specific contexts in your work — so the agent has guidance when it needs it, without overwhelming it with rules that don't apply.",
+        takeaway: "How to define skills that guide agent behavior in specific contexts without overwhelming it with rules that don't apply.",
+      }
+    ],
+  },
+  {
+    week: 3,
+    title: "Constraints & Harnesses",
+    subtitle: "Constraining the Agent Makes It Perform Better, Not Worse",
+    sessions: [
+      {
+        number: 9,
+        title: "The Paradigm Shift",
+        duration: "10 min",
+        description:
+          "The engineer's job changes when agents do the coding. You'll internalize the three foundational principles of harness engineering — and why every mistake the agent makes is an engineering problem, not a prompting problem.",
+        takeaway: "A fundamentally different orientation toward AI-assisted development.",
+      },
+      {
+        number: 10,
+        title: "Context Engineering",
+        duration: "20 min",
+        description:
+          "The agent sees only the repository. You'll learn how to structure your docs/ directory as a machine-readable knowledge base — design docs, architecture maps, quality grades, and execution plans — so the agent always has what it needs.",
+        takeaway: "A repository the agent can navigate without asking you for context.",
+      },
+      {
+        number: 11,
+        title: "Architectural Constraints",
         duration: "60 min",
         description:
-          "Go beyond global rules to define context-specific behavior. You'll sort every rule you've written into the right scope, build a routing table, and verify that the agent loads only what's relevant.",
-        takeaway: "A leaner AGENTS.md, scoped rule files, and a token budget that thanks you.",
+          "A rule the agent can ignore isn't a rule — it's a suggestion. You'll learn how to enforce architectural boundaries mechanically through linters, structural tests, and CI gates so violations are impossible, not just discouraged.",
+        takeaway: "At least one architectural rule that is now enforced by the build, not by hope.",
+      },
+      {
+        number: 12,
+        title: "Garbage Collection & Full Audit",
+        duration: "30 min",
+        description:
+          "Harnesses rot. Docs go stale, architecture maps diverge from reality, and rules that made sense six months ago no longer apply. You'll build a garbage collection strategy and run a full three-pillar audit of your own repository.",
+        takeaway: "A harness that stays accurate — and a clear list of what to fix next.",
       },
     ],
   },
@@ -94,35 +126,35 @@ const weeks = [
     subtitle: "Tools, Chains, and Harnesses",
     sessions: [
       {
-        number: 9,
-        title: "Tool Use / MCP + Function Calling",
-        duration: "60 min",
-        description:
-          "Understand how models interact with external tools through function calling and MCP. You'll build a multi-tool chain connecting GitHub and Slack, run it, then deliberately break it to understand partial failure.",
-        takeaway: "The design principles for tool chains that are safe to run in production.",
-      },
-      {
-        number: 10,
-        title: "Harness Engineering",
-        duration: "60 min",
-        description:
-          "Every mistake the agent makes is a signal that something in the environment is missing or unenforced. You'll audit your own repository against three pillars — context engineering, architectural constraints, and garbage collection.",
-        takeaway: "A harness that makes agent mistakes structurally impossible, not just less likely.",
-      },
-    ],
-  },
-  {
-    week: 5,
-    title: "Spec-Driven Development",
-    subtitle: "The Capstone Skill",
-    sessions: [
-      {
-        number: 11,
+        number: 13,
         title: "Writing Specs for Agents",
         duration: "60 min",
         description:
           "Learn to write precise, unambiguous specifications that an agent can execute reliably. You'll hunt gaps in a deliberately flawed spec, rewrite it with exhaustive Given → When → Then criteria, and produce a complete spec for a real task in your own project.",
         takeaway: "The mindset shift that changes how you work with AI permanently.",
+      },
+      {
+        number: 14,
+        title: "Orchestration and Sub-Agents",
+        duration: "60 min",
+        description:
+          "Understand how models interact with external tools through function calling and MCP. You'll build a multi-tool chain connecting GitHub and Slack, run it, then deliberately break it to understand partial failure.",
+        takeaway: "The design principles for tool chains that are safe to run in production.",
+      },
+    ],
+  },
+  {
+    week: 5,
+    title: "Demos & Retrospective",
+    subtitle: "The Capstone Skill",
+    sessions: [
+      {
+        number: 15,
+        title: "Project Demo",
+        duration: "60 min",
+        description:
+          "This is a chance to show off what you've built. You'll demo your project with the new skills you've developed — and talk through how the skills connect in real time as you work through a task.",
+        takeaway: "A clear picture of how the skills you've built connect and compound in real work.",
       },
       {
         number: null,
@@ -168,6 +200,12 @@ const outcomes = [
   title="AI/LLM Skills Workshop — 5-Week Cohort"
   description="A progressive, hands-on 5-week workshop for software developers to build real fluency with AI and LLM tools — from foundational concepts to spec-driven agent development. 2 hours every Saturday."
 >
+  <!-- PayPal SDK -->
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=BAAYj6nb01QyJCJh7tun1h1ZXmk0kejDgcGAyxrSKD7xvo76zDFW29avvX1rsF46cBSIeppANVp1blTCuY&components=hosted-buttons&enable-funding=venmo&currency=USD"
+    is:inline
+  ></script>
+
   <!-- Hero -->
   <section class="relative bg-zinc-900 py-28 lg:py-40 overflow-hidden">
     <div class="absolute inset-0 opacity-5">
@@ -195,7 +233,7 @@ const outcomes = [
       <p class="text-xl text-zinc-300 max-w-2xl leading-relaxed mb-10">
         A progressive, hands-on curriculum for software developers — from
         foundational concepts to spec-driven agent development. 11 sessions
-        across 5 Saturdays.
+        across 5 Saturdays. <strong class="text-white">$899 per participant.</strong>
       </p>
       <div class="flex flex-wrap gap-6">
         <div class="flex items-center gap-2 text-zinc-400 text-sm">
@@ -469,6 +507,26 @@ const outcomes = [
             </div>
           ))
         }
+      </div>
+    </div>
+  </section>
+
+ <!-- Enroll -->
+  <section class="bg-zinc-50 py-20 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+      <div class="w-full max-w-sm bg-white border border-zinc-200 rounded-2xl shadow-sm p-8 text-center">
+        <p class="font-mono text-teal-600 text-xs uppercase tracking-widest mb-3">
+          Enroll Now
+        </p>
+        <h2 class="font-display text-2xl font-bold text-zinc-900 mb-6">
+          $899 per participant
+        </h2>
+        <div id="paypal-container-ZPK9QPHPUGR62"></div>
+        <script is:inline>
+          paypal.HostedButtons({
+            hostedButtonId: "ZPK9QPHPUGR62",
+          }).render("#paypal-container-ZPK9QPHPUGR62")
+        </script>
       </div>
     </div>
   </section>
